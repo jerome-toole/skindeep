@@ -266,6 +266,7 @@ function catchbase_scripts() {
 	$web_fonts = array(
 		'allan'					=> 'Allan',
 		'allerta'				=> 'Allerta',
+		'amiri'				=> 'Amiri',
 		'amaranth'				=> 'Amaranth',
 		'bitter'				=> 'Bitter',
 		'cabin'					=> 'Cabin',
@@ -296,6 +297,7 @@ function catchbase_scripts() {
 		'quattrocento-sans' 	=> 'Quattrocento+Sans',
 		'roboto'				=> 'Roboto',
 		'roboto-slab'			=> 'Roboto+Slab',
+		'roboto-condensed'			=> 'Roboto+Condensed',
 		'source-sans-pro'		=> 'Source+Sans+Pro',
 		'ubuntu'				=> 'Ubuntu',
 		'varela'				=> 'Varela',

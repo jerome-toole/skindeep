@@ -260,7 +260,7 @@ big {
 }
 
 #feature-slider .cycle-pager span { 
-    font-size: 45px; 
+    font-size: 45px;
 }
 
 .site-title {
@@ -349,10 +349,6 @@ body {
 	-moz-box-shadow:   none;
 	box-shadow: none;
 	width: 100%;	
-}
-
-.site-content {
-	padding: 1em 4%;
 }
 
 a {
@@ -574,8 +570,10 @@ blockquote:before {
 
 #masthead .sidebar-header-right {
 	padding: 0;
-  position: relative;
+  position: absolute;
   top: 22px;
+  right: 0;
+  padding-right: 2vw;
 }
 
 #masthead .wrapper {
@@ -869,7 +867,6 @@ textarea {
 }
 
 .nav-header-right .wrapper {
-	float: right;
 	margin-right: -18px;
 }
 
@@ -882,6 +879,8 @@ textarea {
 	z-index: 198;
 	background-color: rgba(0,0,0,0);
 	display: inline-block;
+	float: right;
+	padding-right: 135px;
 }
 
 .nav-primary ul {
@@ -1016,6 +1015,7 @@ textarea {
 	padding: 0 0.5em;
 	text-transform: uppercase;
 	font-size: 1.3em;
+	font-weight: 700;
 }
 
 /* Menu Search */
@@ -1243,6 +1243,22 @@ textarea {
 	visibility: hidden;
 }
 
+.post-main .sidebar-primary:after,
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.post-main .sidebar-primary,
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 /*--------------------------------------------------------------
 10. Header Area
 --------------------------------------------------------------*/
@@ -1254,7 +1270,6 @@ textarea {
 }
 
 #site-branding {
-	padding-left: .5em;
 	position: relative;
 	top: 10px;
 }
@@ -1291,11 +1306,6 @@ textarea {
 
 .site-description {
 	font-style: italic;
-}
-
-.sidebar-header-right,
-.sidebar-header-right .widget-wrap {
-	float: right;
 }
 
 #header-featured-image {
@@ -1410,17 +1420,70 @@ textarea {
 --------------------------------------------------------------*/
 #main {
 	float: left;
-	width: 820px;
+	width: 75%;
+}
+
+#main.article-post {
+	float: none;
+	width: 100%;
+}
+
+.post-main {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	padding: 0 2em;
+}
+
+.post-main .sidebar-primary {
+	position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
 }
 
 .sidebar-primary {
 	float: right;
-	width: 340px;
+	width: 25%;
 }
 
 .archive-post-wrap,
 .page-header .page-title {
     border-bottom: 1px solid #eee;
+}
+
+.article-post article.post {
+  max-width: 46em;
+  margin: auto;
+}
+
+section.post-header {
+  margin: -20px -20px 0;
+  position: relative;
+}
+
+section.post-header img {
+	width: 100%;
+}
+
+section.post-header .entry-header {
+	position: absolute;
+	bottom: 4.5em;
+	left: 7vw;
+	background-color: black;
+	color: white;
+  padding: 1.2em 1.8em;
+}
+
+section.post-header .entry-header h1 {
+	color: white;
+	font-size: 3.8vw;
+  max-width: 14em;
+}
+
+section.post-header .entry-header h2 {
+	color: white;
+	font-size: 3vw;
 }
 
 .entry-title,
@@ -1986,6 +2049,7 @@ caption {
 #feature-slider .cycle-slideshow img {
     display: block;
     margin: 0 auto;
+		width: 100%;
 }
 
 #feature-slider .cycle-pager { 

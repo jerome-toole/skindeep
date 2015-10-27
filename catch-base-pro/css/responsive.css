@@ -265,12 +265,6 @@ Responsive Style
 3. x <= 1280px
 --------------------------------------------------------------*/
 @media screen and (max-width: 1280px) {
-	.site {
-	}
-
-	#main {
-	    width: 720px;
-	}
 
 	#promotion-message .left {
 		max-width: 80%;	
@@ -436,8 +430,30 @@ Responsive Style
 		font-size: 1.2em;
 	}
 
+
+	.post-main .sidebar-primary {
+		position: static;
+		display: table;
+		clear: both;
+		padding: 0;
+		width: 100%;
+		float: none;
+	}
+
+	.post-main .sidebar-primary .widget {
+		display: table-cell;
+		vertical-align: middle;
+    padding: 0;
+    width: 33.3%;
+    height: 100%;
+	}
+
 	.wrapper {
 	    padding: 0 15px;
+	}
+
+	section.post-header {
+	  margin: -15px -15px 0;
 	}
 
 	#site-generator .wrapper {
@@ -467,14 +483,6 @@ Responsive Style
 
 	.catchbase-nav-menu a {
 	    padding: 10px 15px;
-	}
-
-	#main {
-	    width: 680px;
-	}
-
-	.sidebar-primary {
-	    width: 330px;
 	}
 
 	/* Three Columns */
@@ -561,13 +569,9 @@ Responsive Style
 --------------------------------------------------------------*/
 @media screen and (max-width: 1100px) {
 
-	#main {
-	    width: 600px;
-	}
-
 	.nav-primary li a {
 		padding: 0 0.5em;
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	/* Three Columns */
@@ -674,6 +678,11 @@ Responsive Style
 	    padding: 0 10px;
 	}
 
+	section.post-header {
+	  margin: -10px -10px 0;
+	}
+
+
 	.nav-primary li a {
 		padding: 0 0.5em;
 		font-size: 1em;
@@ -776,7 +785,7 @@ Responsive Style
 	}
 
 	#site-generator {
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	#main,
@@ -804,7 +813,6 @@ Responsive Style
 		padding: 0;
 	}
 
-	.sidebar-primary .widget,
 	.sidebar-secondary .widget,
 	#featured-content.layout-four .hentry,
 	#supplementary.four .widget-area,
@@ -812,7 +820,7 @@ Responsive Style
 	#supplementary.two .widget-area {
 	    float: left;
 	    padding: 10px;
-	    width: 50%;
+	    width: 33.3%;
 	}
 
 	.one-column .layout-four .featured-content-wrap {
@@ -823,11 +831,10 @@ Responsive Style
 	.one-column #featured-content.layout-four .hentry {
 		float: left;
 		margin-left: 0;
-	    padding: 10px;
-	    width: 50%;	
+    padding: 10px;
+    width: 50%;	
 	}
 
-	.sidebar-primary .widget:nth-child(2n+1),
 	#featured-content.layout-four .hentry:nth-child(2n+1),
 	#supplementary .widget-area:nth-child(2n+1) {  
 		clear: both;
@@ -973,6 +980,22 @@ Responsive Style
 	.no-sidebar.one-column .site {
 	}
 
+	.post-main .sidebar-primary {
+		position: static;
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
+
+	.post-main .sidebar-primary .widget {
+		display: block;
+		vertical-align: middle;
+		margin: auto;
+    padding: 0;
+    width: 60%;
+    height: 100%;
+	}
+
 
 	#promotion-message .left {
 	    max-width: 75%;
@@ -980,13 +1003,6 @@ Responsive Style
 
 	#promotion-message .right {
 	    max-width: 25%;
-	}
-
-	#footer-left-content, 
-	#footer-right-content {
-		display: block;
-		text-align: center;
-	    width: 100%;
 	}
 
 }
@@ -1065,6 +1081,17 @@ Responsive Style
 
 	#promotion-message .right {
 	    max-width: 30%;
+	}
+
+	#footer-left-content, 
+	#footer-right-content {
+		display: block;
+		text-align: center;
+    width: 100%;
+	}
+
+	#footer-left-content {
+		/*margin-bottom: 1em;*/
 	}
 
 	body, 
@@ -1149,8 +1176,8 @@ Responsive Style
 	#supplementary.two .widget-area,
 	.one-column #featured-content.layout-four .hentry {
 		display: block;
-	    float: none;
-	    width: 100%;
+    float: none;
+    width: 100%;
 	}	
 
 	#promotion-message .section {
@@ -1170,7 +1197,7 @@ Responsive Style
 	}
 
 	#site-generator {
-		font-size: 11px;
+		font-size: 15px;
 	}	
 
 	/* Layout Options with Featured Image on Left */
@@ -1199,6 +1226,10 @@ Responsive Style
 
 	.wrapper {
 	    padding: 0 5px;
+	}
+
+	section.post-header {
+	  margin: -5px -5px 0;
 	}
 
 	#site-branding,

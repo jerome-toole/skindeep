@@ -784,6 +784,10 @@ function catchbase_avaliable_fonts() {
 			'value' => 'amaranth',
 			'label' => '"Amaranth", sans-serif',
 		),
+		'amiri' => array(
+			'value' => 'amiri',
+			'label' => '"Amiri", sans-serif',
+		),
 		'arial' => array(
 			'value' => 'arial',
 			'label' => 'Arial, Helvetica, sans-serif',
@@ -943,6 +947,10 @@ function catchbase_avaliable_fonts() {
 		'roboto-slab' => array(
 			'value' => 'roboto-slab',
 			'label' => '"Roboto Slab", serif',
+		),
+		'roboto-condensed' => array(
+			'value' => 'roboto-condensed',
+			'label' => '"Roboto Condensed", serif',
 		),
 		'sans-serif' => array(
 			'value' => 'sans-serif',

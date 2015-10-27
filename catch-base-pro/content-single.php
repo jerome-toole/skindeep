@@ -18,13 +18,6 @@
 	do_action( 'catchbase_before_post_container' ); ?>
 
 	<div class="entry-container">
-		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<h2 class="entry-author"><?php the_author(); ?></h2>
-
-			<?php catchbase_entry_meta(); ?>
-		</header><!-- .entry-header -->
-
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php

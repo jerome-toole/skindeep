@@ -9,7 +9,18 @@
 
 get_header(); ?>
 
-	<main id="main" class="site-main" role="main">
+<section class="post-header">
+	<?php the_post_thumbnail('large'); /* Large */ ?>
+	<header class="entry-header">
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h2 class="entry-author"><?php the_author(); ?></h2>
+
+			<?php catchbase_entry_meta(); ?>
+	</header><!-- .entry-header -->
+</section>
+
+<section class="post-main">
+	<main id="main" class="site-main article-post" role="main">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,5 +45,7 @@ get_header(); ?>
 
 	</main><!-- #main -->
 	
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
+</section>
+
 <?php get_footer(); ?>
