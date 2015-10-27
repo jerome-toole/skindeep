@@ -1,0 +1,2240 @@
+# Copyright (C) 2014 Catch Themes
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Base Pro\n"
+"Report-Msgid-Bugs-To: http://catchthemes.com/support-forum/forum/catch-base-pro-"
+"premium/pro-premium/\n"
+"POT-Creation-Date: 2015-08-20 14:20+0545\n"
+"PO-Revision-Date: 2015-08-20 14:20+0545\n"
+"Last-Translator: Valdir Trombini <valdirtrombini@hotmail.com>\n"
+"Language-Team: Valdir Trombini <valdirtrombini@hotmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_attr_e;esc_attr__;"
+"_nx:1,2,4c;esc_html__;esc_attr_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ops! Essa página não pode ser encontrada"
+
+#: ../404.php:27
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Parece que nada foi encontrado que se relacione com sua pesquisa. Como sugestão, "
+"tente um dos links abaixo ou faça uma nova pesquisa, com novo termo, semelhante, "
+"seja a solução?"
+
+#: ../archive.php:30
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Day: %s"
+msgstr "Dia: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Month: %s"
+msgstr "Mês: %s"
+
+#: ../archive.php:36
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: ../archive.php:39
+#, php-format
+msgid "Year: %s"
+msgstr "Ano: %s"
+
+#: ../archive.php:39
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: ../archive.php:42
+msgid "Asides"
+msgstr "Lados"
+
+#: ../archive.php:45
+msgid "Galleries"
+msgstr "Galerias"
+
+#: ../archive.php:48
+msgid "Images"
+msgstr "Imagens"
+
+#: ../archive.php:51
+msgid "Videos"
+msgstr "Vídeos"
+
+#: ../archive.php:54
+msgid "Quotes"
+msgstr "Citações"
+
+#: ../archive.php:57
+msgid "Links"
+msgstr "Links"
+
+#: ../archive.php:60
+msgid "Statuses"
+msgstr "Status"
+
+#: ../archive.php:63
+msgid "Audios"
+msgstr "Audios"
+
+#: ../archive.php:66
+msgid "Chats"
+msgstr "Bate-papo"
+
+#: ../archive.php:69 ../sidebar-secondary.php:48 ../sidebar.php:135
+msgid "Archives"
+msgstr "Arquivos"
+
+#: ../comments.php:27
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentário em:  &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentários em: &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:34 ../comments.php:59
+msgid "Comment navigation"
+msgstr "Navegação dos comentários"
+
+#: ../comments.php:35 ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentários mais antigos"
+
+#: ../comments.php:36 ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Comentários mais recentes &rarr;"
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr "Os comentários estão fechados."
+
+#: ../content-none.php:15
+msgid "Nothing Found"
+msgstr "Infelizmente sua pesquisa não gerou um resultado válido!"
+
+#: ../content-none.php:21 ../no-results.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+
+#: ../content-none.php:25 ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desculpe, mas não encontramos nada que corresponda com os termos da sua "
+"pesquisa. Por favor, tente novamente com algumas palavras-chave diferentes."
+
+#: ../content-none.php:30 ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr ""
+"Parece que não consegue encontrar o que você está procurando. Talvez o campo "
+"Pesquisar poderá ajudar em sua busca, tente!"
+
+#: ../content-page.php:29 ../content-single.php:31 ../content.php:46
+msgid "Pages:"
+msgstr "Páginas: "
+
+#: ../content-page.php:36 ../inc/catchbase-core.php:1104
+#: ../inc/catchbase-core.php:1123 ../inc/catchbase-core.php:1249
+msgid "Edit"
+msgstr "Editar"
+
+#: ../inc/catchbase-breadcrumb.php:56
+msgid "Home"
+msgstr "Inicio"
+
+#: ../inc/catchbase-breadcrumb.php:57
+#, php-format
+msgid "%1$s Archive for %2$s"
+msgstr "%1$s Arquivo para %2$s"
+
+#: ../inc/catchbase-breadcrumb.php:58
+#, php-format
+msgid "%1$sSearch results for: %2$s"
+msgstr "%1$s Resultados da Busca para: <strong>%2$s</strong>"
+
+#: ../inc/catchbase-breadcrumb.php:59
+#, php-format
+msgid "%1$sPosts tagged %2$s"
+msgstr "%1$s Postagens com a tag: %2$s"
+
+#: ../inc/catchbase-breadcrumb.php:60
+#, php-format
+msgid "%1$sView all posts by %2$s"
+msgstr "%1$s Ver todas as postagens de: %2$s"
+
+#: ../inc/catchbase-breadcrumb.php:61
+msgid "Error 404"
+msgstr "Erro 404 - Página não encontrada."
+
+#: ../inc/catchbase-breadcrumb.php:221
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../inc/catchbase-core.php:179 ../inc/catchbase-menus.php:29
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: ../inc/catchbase-core.php:180 ../inc/catchbase-menus.php:87
+msgid "Secondary Menu"
+msgstr "Menu secundário"
+
+#: ../inc/catchbase-core.php:181 ../sidebar-header-right.php:23
+msgid "Header Right Menu"
+msgstr "Menu do cabeçalho à direita"
+
+#: ../inc/catchbase-core.php:182 ../inc/catchbase-menus.php:117
+msgid "Footer Menu"
+msgstr "Menu do rodapé"
+
+#: ../inc/catchbase-core.php:1070
+msgid "Post navigation"
+msgstr "Navegação das postagens"
+
+#: ../inc/catchbase-core.php:1079
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Posts mais antigos"
+
+#: ../inc/catchbase-core.php:1080
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Posts mais recentes <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/catchbase-core.php:1104
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../inc/catchbase-core.php:1114
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">diz: </span>"
+
+#: ../inc/catchbase-core.php:1120
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s em %2$s"
+
+#: ../inc/catchbase-core.php:1127
+msgid "Your comment is awaiting moderation."
+msgstr ""
+"<strong>Seu comentário está aguardando a nossa moderação; obrigado por comentar!"
+"</strong>"
+
+#: ../inc/catchbase-core.php:1230
+msgctxt "Used before publish date."
+msgid "<span class=\"screen-reader-text\">Posted on</span>"
+msgstr "<span class=\"screen-reader-text\">Publicado em: </span>"
+
+#: ../inc/catchbase-core.php:1237
+msgctxt "Used before post author name."
+msgid "<span class=\"screen-reader-text\">Author</span>"
+msgstr "<span class=\"screen-reader-text\">Autor: </span>"
+
+#: ../inc/catchbase-core.php:1245
+msgid "Leave a comment"
+msgstr "Deixe um Comentário"
+
+#: ../inc/catchbase-core.php:1245
+msgid "1 Comment"
+msgstr "1 Comentário &darr;"
+
+#: ../inc/catchbase-core.php:1245
+msgid "% Comments"
+msgstr "% Comentários &darr;"
+
+#: ../inc/catchbase-core.php:1266 ../inc/catchbase-core.php:1274
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: ../inc/catchbase-core.php:1269
+msgctxt "Used before category names."
+msgid "<span class=\"screen-reader-text\">Categories</span>"
+msgstr "<span class=\"screen-reader-text\">Categorias: </span>"
+
+#: ../inc/catchbase-core.php:1277
+msgctxt "Used before tag names."
+msgid "<span class=\"screen-reader-text\">Tags</span>"
+msgstr "<span class=\"screen-reader-text\">Tags: </span>"
+
+#: ../inc/catchbase-core.php:1433
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../inc/catchbase-core.php:2040
+msgid "Scroll Up"
+msgstr "Rolar para cima"
+
+#: ../inc/catchbase-core.php:2103
+msgid "Posted on"
+msgstr "Postada na"
+
+#: ../inc/catchbase-core.php:2104
+msgid "By"
+msgstr "Por"
+
+#: ../inc/catchbase-core.php:2204
+msgid "Next &rarr;"
+msgstr "Próximo &rarr;"
+
+#: ../inc/catchbase-core.php:2205
+msgid "Next post:"
+msgstr "Próxima postagem:"
+
+#: ../inc/catchbase-core.php:2207
+msgid "&larr; Previous"
+msgstr "&larr;  Anterior"
+
+#: ../inc/catchbase-core.php:2208
+msgid "Previous post:"
+msgstr "Postagem anterior:"
+
+#: ../inc/catchbase-default-options.php:72
+msgid "Read More ..."
+msgstr "Leia mais... &raquo;"
+
+#: ../inc/catchbase-default-options.php:82
+msgid "Catch Base Pro is a Premium Responsive WordPress Theme"
+msgstr "Catch Base Pro é um tema WordPress responsivo premium"
+
+#: ../inc/catchbase-default-options.php:83
+msgid ""
+"This is promotion headline. You can edit this from Appearance -> Customize -> "
+"Theme Options -> Promotion Headline Options"
+msgstr ""
+"Esta é a Promoção da Manchete. E você pode editar a partir de: Aparência => "
+"Personalizar => Opções do Tema => Opções da frase de apresentação da manchete"
+
+#: ../inc/catchbase-default-options.php:84
+msgid "Buy Now"
+msgstr "Comprar agora"
+
+#: ../inc/catchbase-default-options.php:93
+msgid "Search..."
+msgstr "Pesquisar..."
+
+#: ../inc/catchbase-default-options.php:111
+#: ../inc/catchbase-default-options.php:1560
+#, php-format
+msgctxt "1: Year, 2: Site Title with home URL"
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr "Copyright &copy; %1$s %2$s. Todos os direitos reservados."
+
+#: ../inc/catchbase-default-options.php:112
+#: ../inc/catchbase-default-options.php:1561
+msgid "by"
+msgstr "por"
+
+#: ../inc/catchbase-default-options.php:265
+msgid "True"
+msgstr "Verdade"
+
+#: ../inc/catchbase-default-options.php:269
+msgid "Wait"
+msgstr "Aguardar"
+
+#: ../inc/catchbase-default-options.php:273
+msgid "False"
+msgstr "Falso"
+
+#: ../inc/catchbase-default-options.php:290
+msgid "Light"
+msgstr "Claro"
+
+#: ../inc/catchbase-default-options.php:294
+msgid "Dark"
+msgstr "Escuro"
+
+#: ../inc/catchbase-default-options.php:311
+#: ../inc/catchbase-default-options.php:1239
+msgid "Primary Sidebar, Content"
+msgstr "Barra lateral principal, Conteúdo"
+
+#: ../inc/catchbase-default-options.php:315
+#: ../inc/catchbase-default-options.php:1244
+msgid "Content, Primary Sidebar"
+msgstr "Conteúdo, Barra lateral principal"
+
+#: ../inc/catchbase-default-options.php:319
+#: ../inc/catchbase-default-options.php:1249
+msgid "Three Columns ( Secondary Sidebar, Content, Primary Sidebar )"
+msgstr "Três colunas (barra lateral secundária, conteúdo, barra lateral principal)"
+
+#: ../inc/catchbase-default-options.php:323
+#: ../inc/catchbase-default-options.php:1254
+msgid "Three Columns ( Mobile Secondary Sidebar First )"
+msgstr "Três colunas (em primeiro lugar a barra lateral para dispositivo móvel)"
+
+#: ../inc/catchbase-default-options.php:327
+#: ../inc/catchbase-default-options.php:1259
+msgid "Three Columns ( Equal Primary and Secondary Sidebars )"
+msgstr ""
+"Três colunas (a barra lateral principal e secundária são iguais na largura)"
+
+#: ../inc/catchbase-default-options.php:331
+#: ../inc/catchbase-default-options.php:1264
+msgid "Three Columns ( Equal Secondary Sidebar, Content, Primary Sidebar )"
+msgstr ""
+"Três colunas (a barra lateral secundária, conteúdo, barra lateral principal são "
+"iguais na largura)"
+
+#: ../inc/catchbase-default-options.php:335
+#: ../inc/catchbase-default-options.php:1269
+msgid "Three Columns ( Content, Primary Sidebar, Secondary Sidebar )"
+msgstr "Três colunas (conteúdo, barra lateral principal, barra lateral secundária)"
+
+#: ../inc/catchbase-default-options.php:339
+#: ../inc/catchbase-default-options.php:1274
+msgid "Three Columns ( Secondary Sidebar, Primary Sidebar, Content ) "
+msgstr "Três colunas (barra lateral secundária, barra lateral principal, conteúdo)"
+
+#: ../inc/catchbase-default-options.php:343
+#: ../inc/catchbase-default-options.php:1279
+msgid "No Sidebar ( Content Width )"
+msgstr "Sem barra lateral (largura do conteúdo)"
+
+#: ../inc/catchbase-default-options.php:347
+#: ../inc/catchbase-default-options.php:1284
+msgid "No Sidebar ( One Column )"
+msgstr "Sem barra lateral (uma coluna)"
+
+#: ../inc/catchbase-default-options.php:351
+#: ../inc/catchbase-default-options.php:1289
+msgid "No Sidebar ( Full Width )"
+msgstr "Sem barra lateral (largura total)"
+
+#: ../inc/catchbase-default-options.php:367
+#: ../inc/catchbase-default-options.php:577
+msgid "Show Excerpt"
+msgstr "Mostrar o trecho do post (excerpt - resumo do post)"
+
+#: ../inc/catchbase-default-options.php:371
+msgid "Show Excerpt (Portrait Featured Image)"
+msgstr ""
+"Estilo de exibição do trecho (excerpt) no blog (imagem em destaque no formato "
+"retrato - largura: 169px e altura: 300px )"
+
+#: ../inc/catchbase-default-options.php:375
+msgid "Show Excerpt (Landscape Featured Image)"
+msgstr ""
+"Estilo de exibição do trecho (excerpt) no blog (imagem em destaque no formato "
+"paisagem - largura: 300px e altura: 169px)"
+
+#: ../inc/catchbase-default-options.php:379
+msgid "Show Excerpt (Thumbnail Featured Image)"
+msgstr ""
+"Estilo de exibição do trecho (excerpt) no blog (imagem em destaque flexível no "
+"formato miniatura, mas, recomenda-se 150px na largura e altura)"
+
+#: ../inc/catchbase-default-options.php:383
+msgid "Show Excerpt (Full Featured Image)"
+msgstr ""
+"Estilo de exibição do trecho (excerpt) no blog (imagem em destaque no seu "
+"tamanho completo)"
+
+#: ../inc/catchbase-default-options.php:387
+msgid "Show Full Content (No Featured Image)"
+msgstr "Estilo de exibição do conteúdo completo (sem imagem em destaque)"
+
+#: ../inc/catchbase-default-options.php:404
+#: ../inc/catchbase-default-options.php:499
+msgid "Homepage / Frontpage"
+msgstr "Página inicial (Homepage) e na página de entrada estática (Frontpage)"
+
+#: ../inc/catchbase-default-options.php:408
+msgid "Excluding Homepage"
+msgstr "Excluindo a página inicial"
+
+#: ../inc/catchbase-default-options.php:412
+msgid "Excluding Homepage, Page/Post Featured Image"
+msgstr "Excluir imagem em destaque na Homepage, e também em página/postagens"
+
+#: ../inc/catchbase-default-options.php:416
+#: ../inc/catchbase-default-options.php:503
+msgid "Entire Site"
+msgstr "Todo o Site"
+
+#: ../inc/catchbase-default-options.php:420
+msgid "Entire Site, Page/Post Featured Image"
+msgstr "Incluir imagem em destaque em página/postagens do site todo"
+
+#: ../inc/catchbase-default-options.php:424
+msgid "Pages and Posts"
+msgstr "Páginas e Postagens"
+
+#: ../inc/catchbase-default-options.php:428
+#: ../inc/catchbase-default-options.php:507
+#: ../inc/catchbase-default-options.php:732
+msgid "Disabled"
+msgstr "- Desativado -"
+
+#: ../inc/catchbase-default-options.php:445
+msgid "Before Menu"
+msgstr "Antes do menu"
+
+#: ../inc/catchbase-default-options.php:449
+msgid "After Menu"
+msgstr "Após o menu"
+
+#: ../inc/catchbase-default-options.php:453
+msgid "Before Header"
+msgstr "Antes do cabeçalho"
+
+#: ../inc/catchbase-default-options.php:457
+msgid "After Slider"
+msgstr "Após o slider show"
+
+#: ../inc/catchbase-default-options.php:474
+#: ../inc/catchbase-default-options.php:1374
+msgid "Full Image"
+msgstr "Imagem completa"
+
+#: ../inc/catchbase-default-options.php:478
+msgid "Large Image"
+msgstr "Imagem de grande dimensão"
+
+#: ../inc/catchbase-default-options.php:482
+#: ../inc/catchbase-default-options.php:1379
+msgid "Slider Image"
+msgstr "Slider imagem"
+
+#: ../inc/catchbase-default-options.php:524
+msgid "Demo Featured Content"
+msgstr "Demonstração do conteúdo em destaque"
+
+#: ../inc/catchbase-default-options.php:528
+msgid "Featured Post Content"
+msgstr "Postagens em destaque no Slider Show"
+
+#: ../inc/catchbase-default-options.php:532
+msgid "Featured Page Content"
+msgstr "Conteúdo da página em destaque"
+
+#: ../inc/catchbase-default-options.php:536
+msgid "Featured Category Content"
+msgstr "Conteúdo em destaque da categoria"
+
+#: ../inc/catchbase-default-options.php:540
+msgid "Featured Image Content"
+msgstr "Conteúdo em destaque de imagem"
+
+#: ../inc/catchbase-default-options.php:557
+msgid "3 columns"
+msgstr "3 colunas"
+
+#: ../inc/catchbase-default-options.php:561
+msgid "4 columns"
+msgstr "4 colunas"
+
+#: ../inc/catchbase-default-options.php:581
+msgid "Show Full Content"
+msgstr "Mostrar o conteúdo completo"
+
+#: ../inc/catchbase-default-options.php:585
+msgid "Hide Content"
+msgstr "Ocultar o conteúdo"
+
+#: ../inc/catchbase-default-options.php:601
+msgid "Demo Featured Slider"
+msgstr "Demonstração em destaque no slider show"
+
+#: ../inc/catchbase-default-options.php:605
+msgid "Featured Post Slider"
+msgstr "Opções do Slider Show da postagem em destaque"
+
+#: ../inc/catchbase-default-options.php:609
+msgid "Featured Page Slider"
+msgstr "Opções do Slider Show da página em destaque"
+
+#: ../inc/catchbase-default-options.php:613
+msgid "Featured Category Slider"
+msgstr "Opções do Slider Show da categoria em destaque"
+
+#: ../inc/catchbase-default-options.php:617
+msgid "Featured Image Slider"
+msgstr "Opções do Slider Show da imagem em destaque"
+
+#: ../inc/catchbase-default-options.php:634
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: ../inc/catchbase-default-options.php:638
+msgid "Fade Out"
+msgstr "Efeito desaparecer gradualmente"
+
+#: ../inc/catchbase-default-options.php:642
+msgid "None"
+msgstr "Sem nenhum efeito de transição (somente a troca da imagem)"
+
+#: ../inc/catchbase-default-options.php:646
+msgid "Scroll Horizontal"
+msgstr "Rolar a imagem horizontalmente"
+
+#: ../inc/catchbase-default-options.php:650
+msgid "Scroll Vertical"
+msgstr "Rolar a imagem verticalmente"
+
+#: ../inc/catchbase-default-options.php:654
+msgid "Flip Horizontal"
+msgstr "Inverter a imagem na horizontal"
+
+#: ../inc/catchbase-default-options.php:658
+msgid "Flip Vertical"
+msgstr "Inverter a imagem na vertical"
+
+#: ../inc/catchbase-default-options.php:662
+msgid "Tile Slide"
+msgstr "Deslizar em pedaços para baixo"
+
+#: ../inc/catchbase-default-options.php:666
+msgid "Tile Blind"
+msgstr "Deslizar com efeito persiana"
+
+#: ../inc/catchbase-default-options.php:670
+msgid "Suffle"
+msgstr "Passar a imagem da frente para trás"
+
+#: ../inc/catchbase-default-options.php:687
+msgid "Default(Older Posts/Newer Posts)"
+msgstr "Padrão (Posts mais antigos/Posts mais recentes)"
+
+#: ../inc/catchbase-default-options.php:691
+msgid "Numeric"
+msgstr "Numérico"
+
+#: ../inc/catchbase-default-options.php:695
+msgid "Infinite Scroll (Click)"
+msgstr "Rolagem infinita (através do clique do mouse)"
+
+#: ../inc/catchbase-default-options.php:699
+msgid "Infinite Scroll (Scroll)"
+msgstr "Rolagem infinita (através da barra de rolagem)"
+
+#: ../inc/catchbase-default-options.php:716
+msgid "Large"
+msgstr "Grande"
+
+#: ../inc/catchbase-default-options.php:720
+msgid "Medium"
+msgstr "Médio"
+
+#: ../inc/catchbase-default-options.php:724
+msgid "Full size"
+msgstr "Tamanho completo"
+
+#: ../inc/catchbase-default-options.php:728
+msgid "Slider Image Size"
+msgstr "Tamanho da imagem no Slider"
+
+#: ../inc/catchbase-default-options.php:748
+msgid "Use WordPress Setting"
+msgstr "Usar as configurações do WordPress"
+
+#: ../inc/catchbase-default-options.php:752
+msgid "Disable in Pages"
+msgstr "Desativar em páginas"
+
+#: ../inc/catchbase-default-options.php:756
+msgid "Disable Completely"
+msgstr "Desativar completamente"
+
+#: ../inc/catchbase-default-options.php:996
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:93
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/catchbase-default-options.php:997
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:97
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/catchbase-default-options.php:998
+msgid "Googleplus"
+msgstr "Googleplus"
+
+#: ../inc/catchbase-default-options.php:999 ../inc/catchbase-social-icons.php:62
+msgid "Email"
+msgstr "Email"
+
+#: ../inc/catchbase-default-options.php:1000
+msgid "Feed"
+msgstr "Feed RSS"
+
+#: ../inc/catchbase-default-options.php:1001
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../inc/catchbase-default-options.php:1002
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../inc/catchbase-default-options.php:1003
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../inc/catchbase-default-options.php:1004
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:105
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../inc/catchbase-default-options.php:1005
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../inc/catchbase-default-options.php:1006
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../inc/catchbase-default-options.php:1007
+msgid "YouTube"
+msgstr "Youtube"
+
+#: ../inc/catchbase-default-options.php:1008
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../inc/catchbase-default-options.php:1009
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../inc/catchbase-default-options.php:1010
+msgid "PollDaddy"
+msgstr "PollDaddy"
+
+#: ../inc/catchbase-default-options.php:1011
+msgid "CodePen"
+msgstr "CodePen"
+
+#: ../inc/catchbase-default-options.php:1012
+msgid "Path"
+msgstr "Path"
+
+#: ../inc/catchbase-default-options.php:1013
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../inc/catchbase-default-options.php:1014
+msgid "Skype"
+msgstr "Skype"
+
+#: ../inc/catchbase-default-options.php:1015
+msgid "Digg"
+msgstr "Digg"
+
+#: ../inc/catchbase-default-options.php:1016
+msgid "Reddit"
+msgstr "Reddit"
+
+#: ../inc/catchbase-default-options.php:1017
+msgid "Stumbleupon"
+msgstr "Stumbleupon"
+
+#: ../inc/catchbase-default-options.php:1018
+msgid "Pocket"
+msgstr "Pocket"
+
+#: ../inc/catchbase-default-options.php:1019
+msgid "DropBox"
+msgstr "DropBox"
+
+#: ../inc/catchbase-default-options.php:1020
+#: ../inc/catchbase-default-options.php:1022
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../inc/catchbase-default-options.php:1021
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../inc/catchbase-default-options.php:1023
+msgid "Twitch"
+msgstr "Twitch"
+
+#: ../inc/catchbase-default-options.php:1037
+msgid "Text Color"
+msgstr "Cor do texto"
+
+#: ../inc/catchbase-default-options.php:1038
+msgid "Link Color"
+msgstr "Cor do Link"
+
+#: ../inc/catchbase-default-options.php:1039
+msgid "Link Hover Color"
+msgstr "Cor do link no efeito pairar o mouse em cima (Hover)"
+
+#: ../inc/catchbase-default-options.php:1053
+msgid "Content Wrapper Background Color"
+msgstr "Cor de fundo do invólucro do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1054
+msgid "Content Background Color"
+msgstr "Personalizar a cor do fundo (Background) do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1055
+msgid "Content Title Color"
+msgstr "Personalizar a cor do título do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1056
+msgid "Content Title Hover Color"
+msgstr ""
+"Personalizar a cor do título do efeito pairar o mouse em cima (Hover) do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1057
+msgid "Content Meta Color"
+msgstr "Personalizar a cor dos meta dados do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1058
+msgid "Content Meta Hover Color"
+msgstr "Cor dos meta dados no efeito pairar o mouse em cima (Hover) do conteúdo"
+
+#: ../inc/catchbase-default-options.php:1072
+msgid "Header Background color"
+msgstr "Personalizar a cor do fundo (Background) do cabeçalho"
+
+#: ../inc/catchbase-default-options.php:1073
+msgid "Site Title Hover Color"
+msgstr ""
+"Personalizar a cor do título no efeito pairar o mouse em cima (Hover) no Website"
+
+#: ../inc/catchbase-default-options.php:1074
+msgid "Tagline Color"
+msgstr "A cor da linha de Tag do Website"
+
+#: ../inc/catchbase-default-options.php:1088
+msgid "Sidebar Background Color"
+msgstr "Personalizar a cor do fundo na barra lateral"
+
+#: ../inc/catchbase-default-options.php:1089
+msgid "Sidebar Widget Title Color"
+msgstr "Cor do título usado no Widget da barra lateral"
+
+#: ../inc/catchbase-default-options.php:1090
+msgid "Sidebar Widget Text Color"
+msgstr "Cor do texto usado no Widget da barra lateral"
+
+#: ../inc/catchbase-default-options.php:1091
+msgid "Sidebar Widget Link Color"
+msgstr "Cor do link usado no Widget da barra lateral"
+
+#: ../inc/catchbase-default-options.php:1104
+msgid "Pagination Background Color"
+msgstr "Cor de fundo na paginação"
+
+#: ../inc/catchbase-default-options.php:1105
+msgid "Pagination Hover Background Color"
+msgstr "Cor de fundo com o efeito pairar o mouse em cima (Hover) na paginação "
+
+#: ../inc/catchbase-default-options.php:1106
+msgid "Pagination Text Color"
+msgstr "Cor do texto na paginação"
+
+#: ../inc/catchbase-default-options.php:1107
+msgid "Pagination Link Color"
+msgstr "Cor do link na paginação"
+
+#: ../inc/catchbase-default-options.php:1108
+msgid "Pagination Hover/Active Color"
+msgstr "Cor do efeito Hover/Active na paginação"
+
+#: ../inc/catchbase-default-options.php:1109
+msgid "Numeric/Infinite Scroll Background Color"
+msgstr "Cor do fundo numérico/rolagem infinita"
+
+#: ../inc/catchbase-default-options.php:1110
+msgid "Numeric/Infinite Scroll Hover Background Color"
+msgstr ""
+"Cor do fundo numérico/rolagem infinita no efeito pairar o mouse em cima (Hover)"
+
+#: ../inc/catchbase-default-options.php:1123
+msgid "Footer Background Color"
+msgstr "Cor de fundo usado no rodapé"
+
+#: ../inc/catchbase-default-options.php:1124
+msgid "Footer Text Color"
+msgstr "Cor do texto usado no rodapé"
+
+#: ../inc/catchbase-default-options.php:1125
+msgid "Footer Link Color"
+msgstr "Cor do link usado no rodapé"
+
+#: ../inc/catchbase-default-options.php:1126
+msgid "Footer Sidebar Area Background Color"
+msgstr "Cor de fundo usado na área da barra lateral no rodapé"
+
+#: ../inc/catchbase-default-options.php:1127
+msgid "Footer Widget Background Color"
+msgstr "Cor de fundo usado no Widget da barra lateral no rodapé"
+
+#: ../inc/catchbase-default-options.php:1128
+msgid "Footer Widget Title Color"
+msgstr "Cor do título usado no Widget do rodapé"
+
+#: ../inc/catchbase-default-options.php:1129
+msgid "Footer Widget Text Color"
+msgstr "Cor do texto usado no Widget do rodapé"
+
+#: ../inc/catchbase-default-options.php:1130
+msgid "Footer Widget Link Color"
+msgstr "Cor do link usado no Widget do rodapé"
+
+#: ../inc/catchbase-default-options.php:1144
+msgid "Promotion Headline Background Color"
+msgstr "Cor de fundo na promoção da manchete"
+
+#: ../inc/catchbase-default-options.php:1145
+msgid "Promotion Headline Text Color"
+msgstr "Cor do texto na promoção da manchete"
+
+#: ../inc/catchbase-default-options.php:1146
+msgid "Promotion Headline Link Color"
+msgstr "Cor do link na promoção da manchete"
+
+#: ../inc/catchbase-default-options.php:1147
+msgid "Promotion Headline Button Background Color"
+msgstr "Cor de fundo no botão na promoção da manchete"
+
+#: ../inc/catchbase-default-options.php:1148
+msgid "Promotion Headline Button Text Color"
+msgstr "Cor do texto no botão na promoção da manchete"
+
+#: ../inc/catchbase-default-options.php:1149
+msgid "Promotion Headline Button Hover Background Color"
+msgstr ""
+"Cor de fundo no botão com o efeito pairar o mouse em cima (Hover) na promoção da "
+"manchete"
+
+#: ../inc/catchbase-default-options.php:1150
+msgid "Promotion Headline Button Hover Text Color"
+msgstr ""
+"Cor do texto no botão com o efeito pairar o mouse em cima (Hover) na promoção da "
+"manchete"
+
+#: ../inc/catchbase-default-options.php:1164
+msgid "Scrollup Background Color"
+msgstr "Cor do fundo no efeito rolar a página para cima"
+
+#: ../inc/catchbase-default-options.php:1165
+msgid "Scrollup Hover Background Color"
+msgstr ""
+"Cor do fundo na rolagem da página para cima com o efeito pairar o mouse em cima "
+"(Hover)"
+
+#: ../inc/catchbase-default-options.php:1166
+msgid "Scrollup Text Color"
+msgstr "Cor do texto no efeito rolar a página para cima"
+
+#: ../inc/catchbase-default-options.php:1167
+msgid "Scrollup Hover Text Color"
+msgstr ""
+"Cor do texto na rolagem da página para cima com o efeito pairar o mouse em cima "
+"(Hover)"
+
+#: ../inc/catchbase-default-options.php:1181
+msgid "Slider Background Color"
+msgstr "Cor de fundo usado no Slider Show"
+
+#: ../inc/catchbase-default-options.php:1182
+msgid "Slider Text Color"
+msgstr "Cor do texto usado no Slider Show"
+
+#: ../inc/catchbase-default-options.php:1183
+msgid "Slider Link Color"
+msgstr "Cor do link no slider show"
+
+#: ../inc/catchbase-default-options.php:1197
+msgid "Featured Content Background Color"
+msgstr "Cor de fundo usado no conteúdo em destaque"
+
+#: ../inc/catchbase-default-options.php:1198
+msgid "Featured Content Title Color"
+msgstr "Cor do título usado no conteúdo em destaque"
+
+#: ../inc/catchbase-default-options.php:1199
+msgid "Featured Content Text Color"
+msgstr "Cor do texto usado no conteúdo em destaque"
+
+#: ../inc/catchbase-default-options.php:1200
+msgid "Featured Content Link Color"
+msgstr "Cor do link usado no conteúdo em destaque"
+
+#: ../inc/catchbase-default-options.php:1214
+msgid "Menu Background color"
+msgstr "Cor de fundo usado no menu"
+
+#: ../inc/catchbase-default-options.php:1215
+msgid "Menu Color"
+msgstr "Cor do menu"
+
+#: ../inc/catchbase-default-options.php:1216
+msgid "Hover Active Color"
+msgstr "Cor ativa do efeito pairar o mouse em cima (Hover)"
+
+#: ../inc/catchbase-default-options.php:1217
+msgid "Hover Active Text Color"
+msgstr "Efeito pairar o mouse em cima (Hover) que ativa a cor do texto"
+
+#: ../inc/catchbase-default-options.php:1218
+msgid "Sub Menu Background Color"
+msgstr "Cor de fundo usado no sub menu"
+
+#: ../inc/catchbase-default-options.php:1219
+msgid "Sub Menu Text Color"
+msgstr "Cor do texto usado no sub menu"
+
+#: ../inc/catchbase-default-options.php:1234
+#: ../inc/catchbase-default-options.php:1305
+#: ../inc/catchbase-default-options.php:1364
+msgid "Default"
+msgstr "Padrão"
+
+#: ../inc/catchbase-default-options.php:1310
+msgid "Enable"
+msgstr "Ativar"
+
+#: ../inc/catchbase-default-options.php:1315
+msgid "Disable"
+msgstr "Desativar"
+
+#: ../inc/catchbase-default-options.php:1332
+msgid "Default Sidebar"
+msgstr "Barra lateral padrão"
+
+#: ../inc/catchbase-default-options.php:1337 ../inc/catchbase-widgets.php:114
+msgid "Optional Sidebar One"
+msgstr "Barra lateral opcional Um"
+
+#: ../inc/catchbase-default-options.php:1342 ../inc/catchbase-widgets.php:125
+msgid "Optional Sidebar Two"
+msgstr "Barra lateral opcional Dois"
+
+#: ../inc/catchbase-default-options.php:1347
+msgid "Optional Sidebar three"
+msgstr "Barra lateral opcional Três"
+
+#: ../inc/catchbase-default-options.php:1369
+msgid "Featured Image"
+msgstr "Imagem em destaque"
+
+#: ../inc/catchbase-default-options.php:1384
+msgid "Disable Image"
+msgstr "Desativar imagem"
+
+#: ../inc/catchbase-featured-content.php:56
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:20
+msgid "Featured Content"
+msgstr "Conteúdo em destaque"
+
+#: ../inc/catchbase-featured-content.php:57
+msgid ""
+"Here you can showcase the x number of Featured Content. You can edit this "
+"Headline, Subheadline and Feaured Content from \"Appearance -> Customize -> "
+"Featured Content Options\"."
+msgstr ""
+"Aqui você pode mostrar o número x de conteúdo em destaque. Você pode editar esta "
+"manchete, o subtítulo e o conteúdo apresentado a partir de \"Aparência => "
+"Personalizar => Conteúdo em destaque => Opções do conteúdo em destaque\"."
+
+#: ../inc/catchbase-featured-content.php:287
+#: ../inc/catchbase-featured-content.php:294
+#: ../inc/catchbase-featured-content.php:305
+#: ../inc/catchbase-featured-content.php:382
+#: ../inc/catchbase-featured-content.php:391
+#: ../inc/catchbase-featured-content.php:402
+#: ../inc/catchbase-featured-content.php:466
+#: ../inc/catchbase-featured-content.php:473
+#: ../inc/catchbase-featured-content.php:484
+#: ../inc/catchbase-featured-slider.php:193
+#: ../inc/catchbase-featured-slider.php:285
+#: ../inc/catchbase-featured-slider.php:364
+msgid "Permalink to:"
+msgstr "Link permanente para: "
+
+#: ../inc/catchbase-menus.php:30 ../inc/catchbase-menus.php:88
+#: ../inc/catchbase-menus.php:118 ../sidebar-header-right.php:24
+msgid "Skip to content"
+msgstr "Ir para o conteúdo"
+
+#: ../inc/catchbase-menus.php:46
+msgid "Search"
+msgstr "Pesquisar"
+
+#: ../inc/catchbase-menus.php:278 ../inc/catchbase-menus.php:296
+#: ../inc/catchbase-menus.php:325 ../inc/catchbase-menus.php:353
+msgid "Menu"
+msgstr "Menu"
+
+#: ../inc/catchbase-metabox.php:94
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:408
+msgid "Layout Options"
+msgstr "Opções de layout"
+
+#: ../inc/catchbase-metabox.php:95
+msgid "Select Sidebar"
+msgstr "Selecionar a barra lateral"
+
+#: ../inc/catchbase-metabox.php:96
+msgid "Header Featured Image Options"
+msgstr "Opções da imagem em destaque no cabeçalho (Header)"
+
+#: ../inc/catchbase-metabox.php:97
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:481
+msgid "Single Page/Post Image Layout "
+msgstr "Layout de imagem único em página/post"
+
+#: ../inc/catchbase-metabox.php:250
+msgid "Catchbase Options"
+msgstr "Opções do Catch Base"
+
+#: ../inc/catchbase-widgets.php:25
+msgid "Primary Sidebar"
+msgstr "Barra lateral principal"
+
+#: ../inc/catchbase-widgets.php:31
+msgid ""
+"This is the primary sidebar if you are using a two or three column site layout "
+"option."
+msgstr ""
+"Esta é a barra lateral principal se você estiver usando uma opção de layout para "
+"o Website de duas ou três colunas."
+
+#: ../inc/catchbase-widgets.php:36
+msgid "Secondary Sidebar"
+msgstr "Barra lateral secundária"
+
+#: ../inc/catchbase-widgets.php:42
+msgid ""
+"This is the secondary sidebar if you are using a three column site layout option."
+msgstr ""
+"Esta é a barra lateral secundária, se você estiver usando uma opção de layout "
+"para o Website de três colunas."
+
+#: ../inc/catchbase-widgets.php:48
+msgid "WooCommerce Primary Sidebar"
+msgstr "Barra lateral principal para o WooCommerce"
+
+#: ../inc/catchbase-widgets.php:50
+msgid "This is Optional Primary Sidebar for WooCommerce"
+msgstr "Esta é a barra lateral principal opcional para o WooCommerce"
+
+#: ../inc/catchbase-widgets.php:58
+msgid "WooCommerce Secondary Sidebar"
+msgstr "Barra lateral secundária para o WooCommerce"
+
+#: ../inc/catchbase-widgets.php:60
+msgid "This is Optional Secondary Sidebar for WooCommerce"
+msgstr "Esta é a barra lateral secundária opcional para o WooCommerce"
+
+#: ../inc/catchbase-widgets.php:70
+msgid "Optional Homepage Sidebar"
+msgstr "Barra lateral opcional da página inicial (Homepage)"
+
+#: ../inc/catchbase-widgets.php:72
+msgid "This is Optional Sidebar for Homepage"
+msgstr "Esta é a barra lateral opcional para página inicial (Homepage)"
+
+#: ../inc/catchbase-widgets.php:81
+msgid "Optional Archive Sidebar"
+msgstr "Barra lateral opcional para os arquivos"
+
+#: ../inc/catchbase-widgets.php:83
+msgid "This is Optional Sidebar for Archive"
+msgstr "Esta é a barra lateral opcional para os arquivos"
+
+#: ../inc/catchbase-widgets.php:92
+msgid "Optional Page Sidebar"
+msgstr "Barra lateral opcional das páginas"
+
+#: ../inc/catchbase-widgets.php:94
+msgid "This is Optional Sidebar for Page"
+msgstr "Esta é a barra lateral opcional para as páginas"
+
+#: ../inc/catchbase-widgets.php:103
+msgid "Optional Post Sidebar"
+msgstr "Barra lateral opcional das postagens"
+
+#: ../inc/catchbase-widgets.php:105
+msgid "This is Optional Sidebar for Post"
+msgstr "Esta é a barra lateral opcional para as postagens"
+
+#: ../inc/catchbase-widgets.php:116
+msgid "This is Optional Sidebar One"
+msgstr "Esta é a barra lateral opcional Um"
+
+#: ../inc/catchbase-widgets.php:127
+msgid "This is Optional Sidebar Two"
+msgstr "Esta é a barra lateral opcional Dois"
+
+#: ../inc/catchbase-widgets.php:136
+msgid "Optional Sidebar Three"
+msgstr "Barra lateral opcional Três"
+
+#: ../inc/catchbase-widgets.php:138
+msgid "This is Optional Sidebar Three"
+msgstr "Esta é a barra lateral opcional Três"
+
+#: ../inc/catchbase-widgets.php:147
+msgid "404 Page Not Found Content"
+msgstr "Erro 404 - Página não Encontrada."
+
+#: ../inc/catchbase-widgets.php:149
+msgid "Replaces the default 404 Page Not Found Content"
+msgstr "Substitui a página 404 padrão (Erro 404 - Página não Encontrada.)"
+
+#: ../inc/catchbase-widgets.php:160
+#, php-format
+msgid "Footer Area %d"
+msgstr "Área do rodapé %d"
+
+#: ../inc/catchbase-widgets.php:166
+#, php-format
+msgid "Footer %d widget area."
+msgstr "Área Widget do rodapé %d"
+
+#: ../inc/catchbase-widgets.php:172
+msgid "Header Right"
+msgstr "Cabeçalho à direita"
+
+#: ../inc/catchbase-widgets.php:178
+msgid ""
+"This is the header right widget area. It typically appears on the right of the "
+"site title or logo. This widget area is not equipped to display any widget, and "
+"works best with a custom menu assigned as header right menu, a search form, "
+"social icons widget or possibly a text widget."
+msgstr ""
+"Esta é a área widget à direita do cabeçalho. Ele geralmente aparece no lado "
+"direito do título ou do logotipo do seu Website. Esta área widget não está "
+"equipado para exibir qualquer widget, e funciona melhor com um menu "
+"personalizado, atribuído como menu à direita do cabeçalho, uma caixa para "
+"colocar o formulário de Pesquisar, um widget com ícones sociais, ou, "
+"possivelmente, um widget de texto simples."
+
+#: ../inc/catchbase-widgets.php:197
+msgid "CT: Social Icons"
+msgstr "CT: Ícones sociais"
+
+#: ../inc/catchbase-widgets.php:198
+msgid "Use this widget to add Social Icons as a widget. "
+msgstr "Utilize esta ferramenta para adicionar ícones sociais como um widget."
+
+#: ../inc/catchbase-widgets.php:239 ../inc/catchbase-widgets.php:731
+msgid "Title (optional):"
+msgstr "Título (opcional):"
+
+#: ../inc/catchbase-widgets.php:278
+msgid "CT: Featured Page"
+msgstr "CT: Página em destaque"
+
+#: ../inc/catchbase-widgets.php:279
+msgid "Display Featured Page. Suitable for Home Top Area and Home Left Area"
+msgstr ""
+"Exibição de página em destaque. Adequado para colocar na área de topo da Home e "
+"na área esquerda da Home"
+
+#: ../inc/catchbase-widgets.php:302 ../inc/catchbase-widgets.php:495
+msgid "Title:"
+msgstr "Titulo:"
+
+#: ../inc/catchbase-widgets.php:307
+msgid "Displays the title of the Page if title input is empty."
+msgstr "Exibe o título da página se a entrada de título está vazia."
+
+#: ../inc/catchbase-widgets.php:311
+msgid "Page"
+msgstr "Página"
+
+#: ../inc/catchbase-widgets.php:321 ../inc/catchbase-widgets.php:517
+msgid "Remove Featured image"
+msgstr "Remover a imagem em destaque"
+
+#: ../inc/catchbase-widgets.php:326 ../inc/catchbase-widgets.php:331
+#: ../inc/catchbase-widgets.php:522 ../inc/catchbase-widgets.php:527
+msgid "Show Image Before Title"
+msgstr "Mostrar imagem antes do título"
+
+#: ../inc/catchbase-widgets.php:327 ../inc/catchbase-widgets.php:332
+#: ../inc/catchbase-widgets.php:523 ../inc/catchbase-widgets.php:528
+msgid "Show Image After Title"
+msgstr "Mostrar imagem depois do título"
+
+#: ../inc/catchbase-widgets.php:337 ../inc/catchbase-widgets.php:533
+msgid "Show Content"
+msgstr "Mostrar o conteúdo"
+
+#: ../inc/catchbase-widgets.php:339 ../inc/catchbase-widgets.php:535
+msgid "Excerpt"
+msgstr "Resumo"
+
+#: ../inc/catchbase-widgets.php:340 ../inc/catchbase-widgets.php:536
+msgid "Full Content"
+msgstr "Conteúdo completo"
+
+#: ../inc/catchbase-widgets.php:341 ../inc/catchbase-widgets.php:537
+msgid "Hide"
+msgstr "Ocultar"
+
+#: ../inc/catchbase-widgets.php:346
+msgid "Content Character Limit for Excerpt Only"
+msgstr "O limite de caracteres no resumo do conteúdo é de apenas"
+
+#: ../inc/catchbase-widgets.php:469
+msgid "CT: Featured Post"
+msgstr "CT: Postagem em destaque"
+
+#: ../inc/catchbase-widgets.php:470
+msgid "Display Featured Post. Suitable for Home Top Area and Home Left Area"
+msgstr ""
+"Exibição de post em destaque. Adequado para colocar na área de topo da Home e na "
+"área esquerda da Home"
+
+#: ../inc/catchbase-widgets.php:500
+msgid "Displays the title of the Post if title input is empty."
+msgstr "Exibe o título do post se a entrada de título está vazia."
+
+#: ../inc/catchbase-widgets.php:504
+msgid "ID of the Post:"
+msgstr "ID do Post:"
+
+#: ../inc/catchbase-widgets.php:509
+msgid "This Post ID is Not Valid"
+msgstr "Este ID do post não é válido"
+
+#: ../inc/catchbase-widgets.php:542
+msgid "Content Character Limit"
+msgstr "Limite de caracteres no conteúdo"
+
+#: ../inc/catchbase-widgets.php:701
+msgid "CT: Advertisement"
+msgstr "CT: Publicidade"
+
+#: ../inc/catchbase-widgets.php:702
+msgid "Use this widget to add any type of Advertisement as a widget."
+msgstr ""
+"Utilize esta ferramenta (Widget) como espaço publicitário para veiculação dos "
+"seus produtos para comércio (código fonte do banner de quem você é afiliado), "
+"adicionando qualquer tipo de anúncio como um widget, no local de sua preferência."
+
+#: ../inc/catchbase-widgets.php:736
+msgid "Advertisement Code:"
+msgstr "Código do anúncio:"
+
+#: ../inc/catchbase-widgets.php:742
+msgid "Image Url:"
+msgstr "URL - endereço da Imagem:"
+
+#: ../inc/catchbase-widgets.php:746
+msgid "Link URL:"
+msgstr "URL - endereço do Link:"
+
+#: ../inc/catchbase-widgets.php:750
+msgid "Open Link in New Window"
+msgstr "Abrir link em nova janela"
+
+#: ../inc/catchbase-widgets.php:753
+msgid "Alt text:"
+msgstr "Texto alternativo (alt text):"
+
+#: ../inc/catchbase-widgets.php:821
+msgid "Add Advertisement Code or Image URL"
+msgstr "Adicionar o código do anúncio ou URL da imagem"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:18
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:20
+msgid "Color Options"
+msgstr "Opções de Cores"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:26
+msgid "Basic Color Options"
+msgstr "Opções de cores básicas"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:45
+msgid "Color Scheme"
+msgstr "Esquema de Cores"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:78
+msgid "Header Color Options"
+msgstr "Opções de cores do cabeçalho"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:107
+msgid "Content Color Options"
+msgstr "Opções de cores do conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:134
+msgid "Only for Primary and Secondary Sidebars"
+msgstr "Apenas para as barras laterais principal e secundária"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:137
+msgid "Sidebar Color Options"
+msgstr "Opções de cores na barra lateral"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:166
+msgid "Pagination Color Options"
+msgstr "Opções de cores na paginação"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:199
+msgid "Footer Color Options"
+msgstr "Opções de cores do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:228
+msgid "Promotion Headline Color Options"
+msgstr "Opções de cores na promoção da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:257
+msgid "Scrollup Color Options"
+msgstr "Opções de cores do efeito rolar a página para cima:"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:286
+msgid "Slider Color Options"
+msgstr "Opções de cores no Slider Show"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:315
+msgid "Featured Content Color Options"
+msgstr "Opções de cores em destaque do conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:343
+msgid "Primary Menu Color Options"
+msgstr "Opções de cores do menu principal"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:361
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:388
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:418
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:447
+msgid "Hover Active Background Color"
+msgstr "Efeito pairar o mouse em cima (Hover) que ativa a cor do fundo"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:375
+msgid "Secondary Menu Color Options"
+msgstr "Opções de cores do menu secundário"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:405
+msgid "Header Right Menu Color Options"
+msgstr "Opções de cores do menu do cabeçalho à direita"
+
+#: ../inc/customizer-includes/catchbase-customizer-color-options.php:434
+msgid "Footer Menu Color Options"
+msgstr "Opções de cores do menu do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:58
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple options."
+msgstr ""
+"Mantenha pressionado o botão Ctrl no (Windows) ou Command no (Mac) para "
+"selecionar múltiplas opções."
+
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:81
+msgid "Theme Instructions"
+msgstr "Instruções para configurar o Tema"
+
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:85
+msgid "Support"
+msgstr "Dar suporte para suas dúvidas"
+
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:89
+msgid "Changelog"
+msgstr "Registro de alterações no tema"
+
+#: ../inc/customizer-includes/catchbase-customizer-custom-controls.php:101
+msgid "Google+"
+msgstr "Google+"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:18
+msgid "Options for Featured Content"
+msgstr "Opções para o conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:27
+msgid "Featured Content Options"
+msgstr "Opções do Conteúdo em Destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:44
+msgid "Enable Featured Content on"
+msgstr "Ativar o conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:65
+msgid "Select Featured Content Layout"
+msgstr "Selecionar o layout do conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:79
+msgid "Check to Move above Footer"
+msgstr "Marque aqui para mover acima do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:100
+msgid "Select Content Type"
+msgstr "Selecione o tipo de conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:114
+msgid "Leave field empty if you want to remove Headline"
+msgstr ""
+"Deixe em branco se você quiser remover a frase de apresentação da manchete na "
+"página inicial"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:115
+msgid "Headline for Featured Content"
+msgstr "Manchete para o conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:130
+msgid "Leave field empty if you want to remove Sub-headline"
+msgstr ""
+"Deixe em branco se você quiser remover a frase de apresentação do subtítulo da "
+"manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:131
+msgid "Sub-headline for Featured Content"
+msgstr "Subtítulo para o conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:146
+msgid ""
+"Save and refresh the page if No. of Featured Content is changed (Max no of "
+"Featured Content is 20)"
+msgstr ""
+"<strong>\"Salvar & Publicar\"</strong> a página se o número de conteúdo em "
+"destaque for alterada (Max. número de conteúdo em destaque é de 20)"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:153
+msgid "No of Featured Content"
+msgstr "Nenhum conteúdo em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:175
+msgid "Display Content"
+msgstr "Exibir o conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:195
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:198
+msgid "Featured Post"
+msgstr "Postagens em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:212
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:215
+msgid "Featured Page"
+msgstr "Página em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:226
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:229
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:363
+msgid "Select Categories"
+msgstr "Selecionar as categorias do Slider Show"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:245
+msgid "Featured Content #"
+msgstr "Conteúdo em destaque #"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:258
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:262
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:166
+msgid "Image"
+msgstr "Imagem"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:270
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:274
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:190
+msgid "Link"
+msgstr "Link"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:282
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:286
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:110
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:638
+msgid "Check to Open Link in New Window/Tab"
+msgstr "Marque aqui para abrir o link em uma nova janela/aba"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:295
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:299
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:154
+msgid "Title"
+msgstr "Título"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:308
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:312
+msgid "Content"
+msgstr "Conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:18
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:26
+msgid "Featured Slider Options"
+msgstr "Opções do Slider Show"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:20
+msgid "Featured Slider"
+msgstr "Slider em destaque"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:43
+msgid "Enable Slider on"
+msgstr "Ativar Slider Show em:"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:64
+msgid "Transition Effect"
+msgstr "Escolha o efeito de transição"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:79
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:97
+msgid "seconds(s)"
+msgstr ""
+"O tempo em segundo(s)<br/>Exemplo: de 0.1 a 0.9 ou 1 ou 2 ou 7 ou 15 ou 23,  "
+"enfim... o número é para sua livre escolha!<br/>Teste abaixo qualquer número e "
+"escolha o que fique melhor para a visualização!"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:83
+msgid "Transition Delay"
+msgstr "Regular o tempo de exposição do Slide, para leitura do texto."
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:101
+msgid "Transition Length"
+msgstr "Regular a velocidade da transição entre os Slides."
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:121
+msgid ""
+"True: Fixes the height overlap issue. Slideshow will start as soon as two slider "
+"are available. Slide may display in random, as image is fetch.<br>Wait: Fixes "
+"the height overlap issue.<br> Slideshow will start only after all images are "
+"available."
+msgstr ""
+"Verdade: corrige o problema de sobreposição na altura. Apresentação será "
+"iniciada tão logo dois slides estarem disponíveis. O slider pode exibir de forma "
+"aleatória, como a imagem é apresentada.<br>Aguardar: corrige o problema de "
+"sobreposição na altura.<br>Apresentação será iniciada somente após todas as "
+"imagens estarem disponíveis."
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:123
+msgid "Image Loader"
+msgstr "Carregador de imagens"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:144
+msgid "Select Slider Type"
+msgstr "Selecione o tipo de Slider Show"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:158
+msgid ""
+"Save and refresh the page if No. of Slides is changed (Max no of slides is 20)"
+msgstr ""
+"<strong>\"Salvar & Publicar\"</strong> a página se o número de slides for "
+"alterado (Max número de slides é 20)"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:165
+msgid "No of Slides"
+msgstr "Escolha o número de Slides!"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:180
+msgid "Check to exclude Slider post from Homepage posts"
+msgstr "Marque aqui para excluir slider das mensagens na Homepage"
+
+#: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:249
+msgid "Featured Slide #"
+msgstr "Slider em destaque #"
+
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:31
+msgid "Enable Featured Header Image on "
+msgstr "Ativar a imagem em destaque no cabeçalho (Header)"
+
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:51
+msgid "Featured Header Image Position"
+msgstr "Posição da imagem em destaque no cabeçalho"
+
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:71
+msgid "Page/Post Featured Header Image Size"
+msgstr "Tamanho da imagem em destaque em página/postagem"
+
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:84
+msgid "Featured Header Image Alt/Title Tag "
+msgstr "Descrevendo a imagem do cabeçalho com as tags alt/title"
+
+#: ../inc/customizer-includes/catchbase-customizer-header-options.php:97
+msgid "Featured Header Image Link URL"
+msgstr "Atribuindo um link de destino para a imagem do cabeçalho (URL)"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:19
+msgid "Note: Enter the url for correponding social networking website"
+msgstr ""
+"<strong>Nota:</strong> Digite abaixo o url da  Rede Social, a qual você é "
+"cadastrado e que corresponda ao seu perfil ou página nessa Rede Social, "
+"disponibilizando assim, o local onde todos poderão lhe encontrar e também "
+"interagir com Você!<br/><strong>Importante:</strong> Lembre-se de clicar em "
+"<strong>\"Salvar & Publicar\"</strong>, acima, sempre que incluir ou alterar "
+"algum link nesta seção!"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:21
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:27
+msgid "Social Links"
+msgstr "Links das Redes Sociais"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:43
+msgid "Social Icon Size(px)"
+msgstr "Tamanho do ícone social na unidade de medida pixel (px)"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:65
+msgid ""
+"Skype link can be of formats:<br>callto://+{number}<br> skype:{username}?"
+"{action}. More Information in readme file"
+msgstr ""
+"Ligação Skype podem ser nos formatos:<br>callto://+{número}<br> skype:{nome de "
+"usuário}?{ação}. Mais <strong>informações importantes de configuração</strong> "
+"você encontra no arquivo leia-me (readme.txt) dentro da pasta principal deste "
+"tema."
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:101
+msgid ""
+"Save and refresh the page if No. of custom social icon is changed (Max number of "
+"icons is 10)"
+msgstr ""
+"<strong>\"Salvar & Publicar\"</strong> a página se o número de ícone sociais "
+"personalizado for alterado (o número máximo de ícones é 10)"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:104
+msgid "Custom Social Links"
+msgstr "Personalizar os links das redes sociais"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:121
+msgid "Number of Custom Social Icons"
+msgstr "Número de ícones sociais personalizados"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:141
+msgid "Custom Social Icon #"
+msgstr "Ícone dessa rede social personalizado #"
+
+#: ../inc/customizer-includes/catchbase-customizer-social-icons.php:178
+msgid "Hover Image(Optional)"
+msgstr "Efeito pairar o mouse em cima (Hover) da imagem (é opcional)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:19
+msgid "Basic theme Options"
+msgstr "Opções básicas do tema"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:22
+msgid "Theme Options"
+msgstr "Opções do Tema"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:27
+msgid ""
+"Breadcrumbs are a great way of letting your visitors find out where they are on "
+"your site with just a glance. You can enable/disable them on homepage and entire "
+"site."
+msgstr ""
+"Caminho de navegação (Breadcrumbs - navegação orientada que é exibida no alto do "
+"conteúdo da página inicial (Home), das páginas ou postagens) é uma ótima maneira "
+"de você deixar seus visitantes descobrir onde eles estão navegando em seu site, "
+"com apenas um olhar. Aqui você pode ativá-lo ou desativa-lo na página inicial ou "
+"no site inteiro."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:29
+msgid "Breadcrumb Options"
+msgstr "Exibir o caminho de navegação"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:40
+msgid "Check to enable Breadcrumb"
+msgstr "Marque aqui para ativar o caminho de navegação no site inteiro"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:53
+msgid "Check to enable Breadcrumb on Homepage"
+msgstr ""
+"Marque aqui para ativar o caminho de navegação na página inicial (Homepage)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:69
+msgid "Separator between Breadcrumbs"
+msgstr "Separador indicativo que é usado no caminho de navegação"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:79
+msgid ""
+"Comments can also be disabled on a per post/page basis when creating/editing "
+"posts/pages."
+msgstr ""
+"Comentários também pode ser desativado em sua base de construção no post/página "
+"e também ao editar posts/páginas."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:82
+msgid "Comment Options"
+msgstr "Opções para os comentários"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:100
+msgid "Comment Option"
+msgstr "Opção de comentário"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:114
+msgid "Check to Disable Notes"
+msgstr "Marque para desativar os comentários"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:127
+msgid "Check to Disable Website Field"
+msgstr "Marque para desativar esta área no Website"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:136
+msgid "Custom/Inline CSS"
+msgstr "Personalizar o CSS em linha"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:139
+msgid "Custom CSS Options"
+msgstr "Opções de personalização do CSS"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:149
+msgid "Enter Custom CSS"
+msgstr "Coloque aqui a sua folha de estilo CSS personalizado!"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:161
+msgid "Excerpt Options"
+msgstr "Opções do resumo do post (Excerpt)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:171
+msgid "Excerpt length. Default is 40 words"
+msgstr ""
+"Quantidade de palavras (excerpt) que serão usadas para apresentar o resumo da "
+"postagem, em páginas que usarem esse recurso. ( exemplo: home, categorias, "
+"etc...).<br><strong>O padrão é de 40 palavras.</strong>"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:178
+msgid "Excerpt Length (words)"
+msgstr ""
+"Quantidade de palavras que serão usadas para apresentar o resumo da postagem, "
+"(Excerpt), em páginas que usarem esse recurso. ( exemplo: home, categorias, "
+"etc...)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:192
+msgid "Read More Text"
+msgstr "Texto leia mais"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:202
+msgid ""
+"If your custom feed(s) are not handled by Feedblitz or Feedburner, do not use "
+"the redirect options."
+msgstr ""
+"Se o seu feed(s) personalizado não são manipulados por Feedblitz ou Feedburner, "
+"não use as opções de redirecionamento."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:204
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:214
+msgid "Feed Redirect"
+msgstr "Redirecionamento para o seu Feed"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:225
+msgid "Font Family Options"
+msgstr "Opções da família de fontes usadas"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:237
+msgid "Site Title Font Family"
+msgstr "Família de fonte usada no título do site"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:238
+msgid "Default Font Family"
+msgstr "Família de fonte padrão"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:239
+msgid "Site Tagline Font Family"
+msgstr "Família de fonte usada na Tagline"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:240
+msgid "Content Title Font Family"
+msgstr "Família de fonte usada no título do conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:241
+msgid "Content Body Font Family"
+msgstr "Família de fonte usada no corpo do conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:242
+msgid "Headings Tags from h1 to h6 Font Family"
+msgstr "Família de fonte usada para as tags de títulos de h1 até h6"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:268
+msgid "Check to reset fonts"
+msgstr "Marque aqui para redefinir (Reset) as fontes para o padrão original"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:277
+msgid "You can either add html or plain text"
+msgstr "Você pode adicionar código HTML ou texto simples"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:280
+msgid "Footer Editor Options"
+msgstr "Opções do editor de rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:290
+msgid ""
+"You can add custom shortcodes, which will be automatically inserted into your "
+"theme. Some shorcodes: [the-year] and [site-link] for current year and site link "
+"respectively."
+msgstr ""
+"Você pode adicionar códigos de acesso personalizados, que serão automaticamente "
+"inseridos em seu tema. Alguns códigos de acesso: [the-year] e [site-link] para o "
+"ano atual e link do site respectivamente."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:291
+msgid "Footer Left Content"
+msgstr "Conteúdo do lado esquerdo do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:305
+msgid "Footer Right Content"
+msgstr "Conteúdo do lado direito do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:319
+msgid "Check to reset Footer Content"
+msgstr "Marque aqui para redefinir (Reset) o conteúdo do rodapé"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:331
+msgid "Header Right Sidebar Options"
+msgstr "Opções da barra lateral no cabeçalho à direita"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:341
+msgid "Check to disable Header Right Sidebar"
+msgstr "Marque aqui para desativar a barra lateral no cabeçalho à direita"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:350
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on the "
+"front page"
+msgstr ""
+"Somente as postagens que pertencem às categorias selecionadas aqui, serão "
+"exibidas na primeira página."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:353
+msgid "Homepage / Frontpage Options"
+msgstr "Opções da Homepage/Frontpage"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:374
+msgid ""
+"Remove Icon images to disable. <br/> Web Clip Icon for Apple devices. "
+"Recommended Size - Width 144px and Height 144px height, which will support High "
+"Resolution Devices like iPad Retina."
+msgstr ""
+"Remova a imagem do ícone para desativar.<br>Ícone Web Clip para dispositivos da "
+"Apple. Tamanho recomendado - largura de 144px e altura de 144px, a imagem do "
+"ícone nessa configuração oferecerá suporte a alta resolução de dispositivos como "
+"iPad Retina."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:377
+msgid "Icon Options"
+msgstr "Opções para os ícones"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:386
+msgid "Select/Add Favicon"
+msgstr "Adicionar/Mudar - Favicon"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:397
+msgid "Select/Add Web Clip Icon"
+msgstr "Adicionar/Mudar Web Clip Icone"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:425
+msgid "Default Layout"
+msgstr "Layout padrão"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:440
+msgid "Woocommerce Layout"
+msgstr "Layout do WooCommerce"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:461
+msgid "Archive Content Layout"
+msgstr "Layout do arquivo de conteúdo"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:492
+#, php-format
+msgid ""
+"Numeric Option requires <a target=\"_blank\" href=\"%s\">WP-PageNavi Plugin</a>."
+"<br/>Infinite Scroll Options requires <a target=\"_blank\" href=\"%s\">JetPack "
+"Plugin</a> with Infinite Scroll module Enabled."
+msgstr ""
+"Opção numérica requer <a target=\"_blank\" href=\"%s\">Plugin WP-PageNavi</a>."
+"<br/>Opção de rolagem infinita requer <a target=\"_blank\" href=\"%s\">Plugin "
+"JetPack</a> com módulo de rolagem infinita habilitado."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:499
+#, php-format
+msgid ""
+"Infinite Scroll Options requires <a target=\"_blank\" href=\"%s\">JetPack "
+"Plugin</a> with Infinite Scroll module Enabled."
+msgstr ""
+"Opção de rolagem infinita requer <a target=\"_blank\" href=\"%s\">Plugin "
+"JetPack</a> com o módulo de rolagem infinita habilitado."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:510
+#, php-format
+msgid ""
+"Numeric Option requires <a target=\"_blank\" href=\"%s\">WP-PageNavi Plugin</a>."
+msgstr ""
+"Opção numérica requer <a target=\"_blank\" href=\"%s\">Plugin WP-PageNavi</a>."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:521
+msgid "Pagination Options"
+msgstr "Opções de paginação"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:538
+msgid "Pagination type"
+msgstr "Tipo de paginação"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:547
+msgid "To disable the fields, simply leave them empty."
+msgstr "Para desativar os campos, basta deixá-los vazio."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:550
+msgid "Promotion Headline Options"
+msgstr "Opções da frase de apresentação da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:567
+msgid "Enable Promotion Headline on"
+msgstr "Habilitar a promoção da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:581
+msgid "Appropriate Words: 10"
+msgstr "Quantidade de palavras apropriada é: 10"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:582
+msgid "Promotion Headline Text"
+msgstr "Texto da promoção da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:595
+msgid "Appropriate Words: 15"
+msgstr "Quantidade de palavras apropriada é: 15"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:596
+msgid "Promotion Subheadline Text"
+msgstr "O texto do subtítulo na promoção"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:609
+msgid "Appropriate Words: 3"
+msgstr "Quantidade de palavras apropriada é: 3"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:610
+msgid "Promotion Headline Button Text "
+msgstr "Texto no botão da promoção da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:624
+msgid "Promotion Headline Link"
+msgstr "Link vinculado a promoção da manchete"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:650
+msgid "Responsive Options"
+msgstr "Opções responsivas"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:660
+msgid "Check to disable responsive style"
+msgstr ""
+"Marque aqui para desativar o projeto responsivo. Você quer mesmo desativar? Esse "
+"projeto foi cuidadosamente desenhado e desenvolvido para ser responsivo e, "
+"apresentar o conteúdo desenvolvido por você, totalmente compatível e adaptável "
+"para a tela de aparelhos pequenos ou dispositivos móveis, como: aparelhos "
+"Celulares, Smartphones, Tablets, Notebooks, Ultrabooks, PDA's e similares."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:673
+msgid "Check to disable footer mobile menu"
+msgstr ""
+"Marque aqui para desativar o menu de rodapé em dispositivos móveis, como: "
+"aparelhos Celulares, Smartphones, Tablets, Notebooks, Ultrabooks, PDA's e "
+"similares."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:684
+msgid "Scrollup Options"
+msgstr "Opções do efeito rolar a página para cima (Scrollup)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:694
+msgid "Check to disable Scroll Up"
+msgstr ""
+"Marque aqui para desativar a rolagem de volta ao topo do Website (Scroll Up)"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:703
+msgid "Change default placeholder text in Search."
+msgstr "Alterar o texto do espaço reservado padrão no campo Pesquisar."
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:706
+msgid "Search Options"
+msgstr "Opções do campo Pesquisar"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:716
+msgid "Default Display Text in Search"
+msgstr "Exibição do texto padrão no campo Pesquisar é:"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:727
+msgid "Single Post Navigation"
+msgstr ""
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:737
+msgid "Check to disable Single Post Navigation"
+msgstr ""
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:746
+msgid "Update Notifier"
+msgstr "Receber notificação de atualização do tema"
+
+#: ../inc/customizer-includes/catchbase-customizer-theme-options.php:758
+msgid "Check to disable update notifications"
+msgstr "Marque aqui para desativar as notificações de atualização do tema"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:51
+msgid "Logo"
+msgstr "Logotipo padrão"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:64
+msgid "Check to disable logo"
+msgstr "Marque aqui para desativar o logotipo"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:78
+msgid "Logo Alt Text"
+msgstr "Texto Alt do logotipo do Website"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:92
+msgid "Check to move Site Title and Tagline before logo"
+msgstr "Marque aqui para mover o título e o slogan do Website antes do logotipo"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:106
+msgid "Extra Menu Options specific to this theme"
+msgstr ""
+
+#: ../inc/customizer-includes/catchbase-customizer.php:108
+msgid "Menu Options"
+msgstr ""
+
+#: ../inc/customizer-includes/catchbase-customizer.php:118
+msgid "Check to disable Primary Menu"
+msgstr "Marque aqui para desativar o menu principal"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:131
+msgid "Check to disable search box in Primary Menu"
+msgstr "Marque aqui para desativar a caixa de pesquisa no menu principal"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:158
+msgid ""
+"Caution: Reset all settings to default. Refresh the page after save to view full "
+"effects."
+msgstr ""
+"<strong>Atenção:</strong> Essa é uma ação para repor, redefinir (Reset) ou "
+"reinstalar todas as configurações para o padrão original do tema."
+"<br><strong>Importante:</strong> Certifique-se de fazer uma cópia de todas as "
+"configurações personalizadas por você, caso queira voltar àquilo que havia feito "
+"anteriormente.<br>Se é isso que realmente você quer <strong>(redefinir as "
+"configurações para o padrão original)</strong>, precisará marcar a caixa de "
+"seleção abaixo, clicar em <strong>\"Salvar & Publicar\"</strong>, atualizar sua "
+"página no navegador para visualizar os efeitos completos no padrão original do "
+"tema. E assim, começar uma nova configuração personalizada do zero."
+
+#: ../inc/customizer-includes/catchbase-customizer.php:160
+msgid "Reset all settings"
+msgstr "Redefinir (Reset) todas as configurações"
+
+#: ../inc/customizer-includes/catchbase-customizer.php:171
+msgid "Check to reset all settings to default"
+msgstr ""
+"Marque essa caixa de seleção, para redefinir (Reset) todas as configurações para "
+"o padrão original do tema."
+
+#: ../inc/customizer-includes/catchbase-customizer.php:182
+#: ../inc/customizer-includes/catchbase-customizer.php:193
+msgid "Important Links"
+msgstr "Links que são muito importantes"
+
+#: ../no-results.php:14
+msgid "Error 404-Page NOT Found"
+msgstr "Erro 404 - Página não encontrada"
+
+#: ../search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados da sua pesquisa para: %s"
+
+#: ../searchform.php:14 ../searchform.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr "Pesquisar por:"
+
+#: ../searchform.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr "Buscar"
+
+#: ../sidebar-secondary.php:31
+msgid "Secondary Sidebar Widget Area"
+msgstr "Área da barra lateral secundária"
+
+#: ../sidebar-secondary.php:34
+msgid ""
+"This is the Secondary Sidebar Widget Area if you are using a three column site "
+"layout option."
+msgstr ""
+"Esta é a barra lateral secundária, se você estiver usando uma opção de layout "
+"para o site de três colunas."
+
+#: ../sidebar-secondary.php:35 ../sidebar.php:122
+#, php-format
+msgid ""
+"By default it will load Search and Archives widgets as shown below. You can add "
+"widget to this area by visiting your <a href=\"%s\">Widgets Panel</a> which will "
+"replace default widgets."
+msgstr ""
+"Por padrão ele irá carregar os widgets Pesquisar e Arquivos, conforme mostrado "
+"abaixo. Você pode adicionar widget para esta área, visitando o seu <a href=\"%s"
+"\">Painel Widgets</a> que irá substituir os widgets padrão."
+
+#: ../sidebar.php:118
+msgid "Primary Sidebar Widget Area"
+msgstr "Área da barra lateral principal"
+
+#: ../sidebar.php:121
+msgid ""
+"This is the Primary Sidebar Widget Area if you are using a two or three column "
+"site layout option."
+msgstr ""
+"Esta é a barra lateral principal se você estiver usando uma opção de layout para "
+"o site de duas ou três colunas."
+
+#~ msgid "Excerpt length(words)"
+#~ msgstr ""
+#~ "Quantidade de palavras (excerpt) que serão usadas para apresentar o resumo da "
+#~ "postagem, em páginas que usarem esse recurso. ( exemplo: home, categorias, "
+#~ "etc...)"
+
+#~ msgid "Catchbase Advertisement"
+#~ msgstr "Publicidade Catch Base"
+
+#~ msgid "Featured Content Settings"
+#~ msgstr "Configurações do conteúdo em destaque"
+
+#~ msgid "Featured Content Type"
+#~ msgstr "Tipo de exibição do conteúdo em destaque"
+
+#~ msgid "Featured Slider Settings"
+#~ msgstr "Configurações do slider em destaque"
+
+#~ msgid "Featured Slider Type"
+#~ msgstr "O tipo de slider em destaque"
+
+#~ msgid "Archive for %s"
+#~ msgstr "Arquivo para: %s"
+
+#~ msgid "Search results for: %s"
+#~ msgstr "Resultados da pesquisa para: %s"
+
+#~ msgid "Posts tagged %s"
+#~ msgstr "Posts com a tag: %s"
+
+#~ msgid "View all posts by %s"
+#~ msgstr "Ver todas as postagens de: %s"
+
+#~ msgid "Promotion Headine Link"
+#~ msgstr "Link na promoção da manchete"
+
+#, fuzzy
+#~ msgid "Hedaer Right Menu"
+#~ msgstr "Menu do cabeçalho à direita"
+
+#, fuzzy
+#~ msgid ""
+#~ "You can add content to this area by visiting your <a href=\"%s\">Widgets "
+#~ "Panel</a> and adding new widgets to this area."
+#~ msgstr ""
+#~ "Você pode adicionar conteúdo a esta área visitando o seu <a href=\"%s"
+#~ "\">Painel de Widgets</a> e assim, adicionando novos widgets para esta área."

@@ -1,0 +1,133 @@
+== Changelog ==
+
+= 3.1 =
+* Added: Hungarian translation hu_HU.po and hu_HU.mo
+* Added: Missing keywords esc_attr_x in .pot file
+* Bug Fixed: Changed esc_attr_e to echo esc_attr in searchform.php
+* Bug Fixed: German language translation issue in de_DE.po and de_DE.mo file (Reported by mydreamin )
+* Compatible with WordPress 4.3
+* Optimized: Customizer custom script for color scheme
+* Removed support for WordPress version less than 4.1
+* Updated: French translation fr_FR.po and fr_FR.mo
+* Updated codes to comply with deprecating PHP4 style constructors in WordPress 4.3
+* Updated text-domain
+
+= 3.0.1 = 
+* Added Single Post Navigation Disable Option
+* Bug Fixed: Featured Image size change from 860x484 to 780x439
+* Bug Fixed: Content box not showing on Featured Image Slider selection
+* Bug Fixed: Featured slider overlapping text and image issue
+
+= 3.0 =
+* Added: Support for WooCommerce Plugin
+* Added: WooCommerce Primary and Secondary Sidebar widget areas
+* Added: Support for WPML, Polylang, qTranslate X, mqTranslate and qTranslate Plugins
+* Added: Support for Random Header Image
+* Added: Brazilian Portuguese translation pt_BR.po and pt_BR.mo
+* Added Featured Content "Display Content" option
+* Bug Fixed: Removal of extra '/' in sub-categories in breadcrumb and updates in breadcrumb
+* Bug Fixed: Blog page featured image not overwriting default header image
+* Combined options for Featured Content and renamed the section From Featured Content Options to Featured Content in Customizer
+* Combined options for Featured Slider and renamed the section From Featured Slider Options to Featured Slider in Customizer
+* Removed unnecessary js from custom customizer js as support for WordPress versions less than 4.0 is not required
+* Updated Widgets and their names
+
+= 2.4 =
+* Updated German translation de_DE.po and de_DE.mo
+* Bug Fixed: Fixed Slider height overlaps issue. Added Image Loader option on Featured Slider that specifies image-loading support
+* Bug Fixed: Color Options not working for Default page menu
+* Bug Fixed: Header Color options showing blank in custom css when disabling site title and tagline
+* Bug Fixed: Metabox Options not saving properly
+
+= 2.3 =
+* Added German translation de_DE.po and de_DE.mo
+* Bug Fixed: Skype Social icon and open link in new window for email issues
+* Bug Fixed: Custom Social icon hover issue
+* Bug Fixed: Content Layout issue with content width 
+* Bug Fixed: Added jquery.cycle2.js.map ( Reported by tualatinweb )
+* Bug Fixed: Image Slider open link in new tab
+* Bug Fixed: Sidebar layout option 
+* Bug Fixed: Social icon wrap
+* Bug Fixed: Featured content issues ( Reported by alphaxyz )
+** Featured category content not showing title and excerpt
+** Remove extra link below the content
+
+= 2.2 =
+* Added Header Right Menu Color Options
+* Added Colors auto change on scheme change
+* Added Swedish translation sv_SE.po and sv_SE.mo
+* Bug Fixed: Content Width Issue
+* Bug Fixed: Html is now allowed in Featured Content Headline and Sub-headline
+* Bug Fixed: Featured Content Layout Type css issue
+* Bug Fixed: added missing keyword _nx:1,2,4c and esc_html__ in language file catchbase.pot
+* Bug Fixed: Undefined variable: catchbase_page_content in catchbase-featured-content.php on line 313 (Reported by Andreas)
+* Removed unnecessary file catchbase-menu.js
+* Removed duplicate class site-­header as ID found
+* Renamed all Hover Active Color to Hover Active Background Color
+* Replaced the_title() with the_title_attribute() where title is used as attribute
+* Replaced all require_once with require
+
+= 2.1 =
+* Added new google font
+	** Josefin Sans
+	** Libre Baskerville
+	** Valera 
+* Added Option in Enable Header Image: Excluding Home, Page/Post Featured Image
+* Added shortcode support in footer left content
+* Added catchbase- prefix to some js handles as done in _s
+* Added Catchbase Advertisement Widget
+* Bug Fixed: undefined index $page_for_posts for Featured Header Image
+* Bug Fixed: featured-heading-wrap, $headline and $subheadline empty check in featured content
+* Bug Fixed: Featured Content missing classes entry-header and entry-title
+* Bug Fixed: Html is now allowed in Promotion Headline
+* Bug Fixed: Setting max-width for button, input, select, textarea
+* Changed get_page to get_post as get_page is depreciated
+* Fixed header text condition for Sidebar
+* Removed jquery cookie and its dependencies
+* Renamed "custom_meta_box_nonce" renamed to  "catchbase_custom_meta_box_nonce"
+* Sanitized custom metabox settings
+
+= 2.0 =
+* Bug Fixed: Dark color scheme CSS
+* Bug Fixed: Featured Image Slider
+* Bug Fixed: Featured Image Content
+* Bug Fixed: Default Options now saving on saving other options in customizer
+* Bug Fixed: Options Spelling Mistake
+* Bug Fixed: Primary Menu Warning Message fixed when no menu is present in customizer
+* Removed unnecessary CSS
+
+= 1.2 =
+* Added title tag via add theme support
+* Added new google fonts
+	** Exo
+	** Exo 2
+	** Montserrat
+	** Noto Serif
+	** Neuton
+	** Roboto Slab
+	** Source Sans Pro
+* Bug Fixed: Classes for excerpt and content fixed in content.php
+* Bug Fixed: Stylesheet enqueue version
+* Bug Fixed: Assistive text 
+* Bug Fixed: Secondary Menu anchor ID
+* Changed hook customize_controls_print_footer_scripts to customize_controls_enqueue_scripts for function catchbase_customize_scripts in catchbase-customizer.php
+* Removed unnecessary file catchbase-update-notifier.php
+* Renamed Page/Post Featured Image Size to Page/Post Featured Header Image Size
+
+= 1.1 =
+* Added Foursquare, PollDaddy, Spotify and Twitch TV social icons
+* Added Optional Homepage, Archive, Page, Posts, 404, Sidbear one, Sidebar two and Sidebar three 
+* Bug Fixed: Contextual text in Customizer
+* Bug Fixed: Featured Post and Featured Page widgets
+* Bug Fixed: Replaced custom header and background color with core colors
+* Bug Fixed: Featured header image
+* Bug Fixed: Featured content width in mobile and undefined varible
+* Bug Fixed: Sanitize email for email output
+* Bug Fixed: Typo in content featured image
+* Bug Fixed: Primary sidebar closing tag issue
+* Removed unnecessary body_class for page-blog
+* Moved Featured Content Position option from Homepage/Frontpage Options to Featured Content Settings
+* Changed catchbase_footer_menu, catchbase_mobile_footer_nav_anchor, catchbase_footer_content_start and catchbase_footer_sidebar hook priority  
+
+= 1.0 =
+* Initial Release

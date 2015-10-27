@@ -1,0 +1,19 @@
+Hook-name -> location
+catchbase_before 				-> header.php (before tag header #masthead)
+catchbase_before_site_branding -> header.php (before tag div .site-branding)
+catchbase_site_branding 		-> header.php (inside tag div .site-branding)
+catchbase_after_site_branding	-> header.php (after tag div .site-branding)
+catchbase_after_menu			-> header.php (after tag div .wrapper)
+catchbase_after_header			-> header.php (after tag header #masthead)
+catchbase_before_content		-> header.php (before tag header #content)
+catchbase_before_content		-> header.php (inside tag div .wrapper)
+
+catchbase_breadcrumb			-> before tag main #main
+
+catchbase_before_entry_content -> before tag div .entry-content
+
+catchbase_before_secondary		-> at start of sidebar.php ( before tag div #secondary)
+catchbase_after_secondary		-> at start of sidebar.php ( after tag div #secondary)
+
+catchbase_footer_above_siteinfo-> footer.php ( before tag div .site-info)
+catchbase_credits 				-> footer.php ( inside tag div .site-info)
