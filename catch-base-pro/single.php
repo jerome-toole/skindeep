@@ -44,6 +44,11 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 
 	</main><!-- #main -->
+
+	<div class="social-sharing">
+		<span>Share this on</span>
+		<?php echo do_shortcode('[supsystic-social-sharing id="2"]') ?>
+	</div>
 	
 	<?php get_sidebar(); ?>
 </section>

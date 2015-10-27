@@ -448,6 +448,10 @@ Responsive Style
     height: 100%;
 	}
 
+	.post-main .social-sharing {
+		width: 17%;
+	}
+
 	.wrapper {
 	    padding: 0 15px;
 	}
@@ -574,6 +578,11 @@ Responsive Style
 		font-size: 1.1em;
 	}
 
+	.post-main .social-sharing {
+		font-size: 1.1em;
+		width: 15%;
+	}
+
 	/* Three Columns */
 	#content_sidebar_wrap {
 	    width: 730px;
@@ -664,6 +673,18 @@ Responsive Style
 	    width: 720px;
 	}	
 
+}
+
+@media screen and (max-width: 1020px) {	
+	.nav-primary {
+		padding-right: 115px;
+	}
+
+	.post-main .social-sharing {
+		display: block;
+		position: static;
+		width: 100%;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -860,19 +881,6 @@ Responsive Style
 		padding-right: 0;
 	}
 
-	#site-logo img {
-		width: 12em;
-	}
-
-	/* Sidebar Header Right */
-/*	.sidebar-header-right {
-	    clear: both;
-	    display: inline-block;
-	    float: none;
-	    text-align: center;
-	    width: 100%;
-	}*/
-
 	.sidebar-header-right .widget-wrap {
 	    float: none;
 	}
@@ -970,7 +978,15 @@ Responsive Style
 	.site,
 	.no-sidebar.one-column .site {
 	}
+	section.post-header .entry-header h1 {
+		font-size:2.7em;
+	}
+
+	section.post-header .entry-header h2 {
+		font-size: 1.2em;
+	}
 }
+
 
 /*--------------------------------------------------------------
 8. x <= 700px
@@ -980,14 +996,16 @@ Responsive Style
 	.no-sidebar.one-column .site {
 	}
 
-	.post-main .sidebar-primary {
+	.post-main .sidebar-primary,
+	.sidebar-primary {
 		position: static;
 		display: block;
 		padding: 0;
 		width: 100%;
 	}
 
-	.post-main .sidebar-primary .widget {
+		.post-main .sidebar-primary .widget,
+		.sidebar-primary .widget {
 		display: block;
 		vertical-align: middle;
 		margin: auto;
@@ -1013,6 +1031,10 @@ Responsive Style
 @media screen and (max-width:600px) {
 	.site,
 	.no-sidebar.one-column .site {
+	}
+
+	section.post-header .entry-header {
+		font-size: .85em;
 	}
 
 	#feature-slider .entry-container {

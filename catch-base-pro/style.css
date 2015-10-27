@@ -571,7 +571,7 @@ blockquote:before {
 #masthead .sidebar-header-right {
 	padding: 0;
   position: absolute;
-  top: 22px;
+  top: 25px;
   right: 0;
   padding-right: 2vw;
 }
@@ -1271,7 +1271,7 @@ textarea {
 
 #site-branding {
 	position: relative;
-	top: 10px;
+	top: 5px;
 }
 
 #site-logo a {
@@ -1280,7 +1280,7 @@ textarea {
 }
 
 #site-logo img {
-	width: 12em;
+	width: 14.5em;
 }
 
 #site-header.logo-enable.logo-left {
@@ -1435,6 +1435,34 @@ textarea {
 	padding: 0 2em;
 }
 
+.post-main .social-sharing {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 1em;
+	font-size: 1.25em;
+	width: 20%;
+}
+
+.post-main .social-sharing span {
+	font-weight: 300;
+}
+
+.post-main .social-sharing .supsystic-social-sharing .sharer-flat {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #FDAA2C;
+	margin: 0.2em;
+	transition: all ease-in-out .2s;
+}
+
+.post-main .social-sharing .supsystic-social-sharing .sharer-flat:hover {
+	background-color: #FFBA2F;
+}
+
 .post-main .sidebar-primary {
 	position: absolute;
   top: 0;
@@ -1477,13 +1505,13 @@ section.post-header .entry-header {
 
 section.post-header .entry-header h1 {
 	color: white;
-	font-size: 3.8vw;
+	font-size: 4.5vmax;
   max-width: 14em;
 }
 
 section.post-header .entry-header h2 {
 	color: white;
-	font-size: 3vw;
+	font-size: 2vmax;
 }
 
 .entry-title,
@@ -2194,8 +2222,6 @@ caption {
 }
 
 .widget_catchbase_social_icons a.genericon {
-	background-color: #f2f2f2;
-	border: 1px solid #eee;
 	border-radius: 3px;
 	-moz-border-radius:	3px;
 	box-sizing: content-box;
@@ -2203,8 +2229,9 @@ caption {
     -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
 	-moz-box-sizing:    content-box;
 	color: #404040;
-    margin: 0 0 5px 5px;
-    padding: 5px;
+  margin: 0 0 5px 5px;
+  padding: 5px;
+  transition: all ease-in-out .2s;
 }
 
 .widget_catchbase_social_icons a.genericon:hover {
