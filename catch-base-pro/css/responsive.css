@@ -321,7 +321,7 @@ Responsive Style
 
 	/* Layout Options with Featured Image on Left */
 	/* Three Colummns */
-	.three-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
+/*	.three-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
 	.three-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
 	.three-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .featured-image {
 	    width: 30%;
@@ -331,73 +331,73 @@ Responsive Style
 	.three-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container,
 	.three-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 66%;
-	}
+	}*/
 
 	/* Three Equal Columns */
-	.three-columns.equal-columns .has-post-thumbnail .featured-image {
+/*	.three-columns.equal-columns .has-post-thumbnail .featured-image {
 	    width: 100%;
 	}
 
 	.three-columns.equal-columns .has-post-thumbnail .entry-container {
 	    width: 100%;
-	}
+	}*/
 
 	/* Two Colummns */
 	/* Show Excerpt Landscape Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
+/*	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
 	    width: 220px;
-	}
+	}*/
 
 	/* Show Excerpt Portrait Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container {
+/*	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container {
 	    width: 491px;
-	}
+	}*/
 
 	/* Show Excerpt Landscape Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
+/*	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 	    width: 440px;
-	}
+	}*/
 
 	/* Show Excerpt Thumbnail Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+/*	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 510px;
-	}
+	}*/
 
 	/* One Column  */
 	/* Show Excerpt Landscape Featured Image */
-	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
+/*	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
 	    width: 300px;
-	}
+	}*/
 
-	.no-sidebar .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
+/*	.no-sidebar .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
 	    width: 591px;
-	}
+	}*/
 
 	/* Show Excerpt Landscape Featured Image */
-	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
+/*	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 	    width: 460px;
-	}
+	}*/
 
 	/* Show Excerpt Thumbnail Featured Image */
-	.no-sidebar .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+/*	.no-sidebar .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 610px;
-	}
+	}*/
 
 	/* Full Width */
 	/* Show Excerpt Portrait Featured Image */
-	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
+/*	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
 	    width: 821px;
-	}
+	}*/
 
 	/* Show Excerpt Landscape Featured Image */
-	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
+/*	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 	    width: 680px;
-	}
+	}*/
 
 	/* Show Excerpt Thumbnail Featured Image */
-	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+/*	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 830px;
-	}
+	}*/
 
 	#featured-content.layout-four .hentry,
 	#supplementary.four .widget-area {
@@ -430,7 +430,32 @@ Responsive Style
 		font-size: 1.2em;
 	}
 
+	#main,
+	.no-sidebar.content-width #main,
+	.no-sidebar.one-column #main,
+	#content_sidebar_wrap,
+	#content_sidebar_wrap #main,
+	.sidebar-primary,
+	.three-columns .sidebar-primary,
+	.sidebar-secondary,
+	.three-columns.equal-sidebars #content_sidebar_wrap,
+	.three-columns.equal-sidebars #content_sidebar_wrap #main,
+	.three-columns.equal-sidebars .sidebar-primary,
+	.three-columns.equal-sidebars .sidebar-secondary,
+	.three-columns.equal-columns #content_sidebar_wrap,
+	.three-columns.equal-columns #content_sidebar_wrap #main,
+	.three-columns.equal-columns .sidebar-primary, 
+	.three-columns.equal-columns .sidebar-secondary {
+	    width: 100%;
+	}	
 
+	.sidebar-primary,
+	.sidebar-secondary {
+		clear: both;
+		padding: 0;
+	}
+
+	.site-content .sidebar-primary,
 	.post-main .sidebar-primary {
 		position: static;
 		display: table;
@@ -440,6 +465,7 @@ Responsive Style
 		float: none;
 	}
 
+	.site-content .sidebar-primary .widget,
 	.post-main .sidebar-primary .widget {
 		display: table-cell;
 		vertical-align: middle;
@@ -532,40 +558,40 @@ Responsive Style
 
 	/* Two Colummns */
 	/* Show Excerpt Landscape Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
+	/*.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
 	    width: 200px;
 	}
 
 	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 	    width: 430px;
-	}
+	}*/
 
 	/* Show Excerpt Portrait Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container {
+/*	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container {
 	    width: 461px;
-	}
+	}*/
 
 	/* Show Excerpt Thumbnail Featured Image */
-	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+/*	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 480px;
-	}
+	}*/
 
 	/* Full Width */
 	/* Show Excerpt Portrait Featured Image */
-	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
+/*	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
 	    width: 781px;
-	}
+	}*/
 
 	/* Show Excerpt Landscape Featured Image */
-	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
+/*	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 	    width: 650px;
-	}
+	}*/
 
 	/* Show Excerpt Thumbnail Featured Image */
-	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+/*	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
 	    width: 800px;
 	}
-
+*/
 }
 
 /*--------------------------------------------------------------
@@ -644,35 +670,6 @@ Responsive Style
 	    width: 30px;
 	    height: 30px;   
 	} 
-
-	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
-	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
-	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .featured-image {
-	    width: 26%;
-	}
-
-	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container,
-	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container,
-	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
-	    width: 70%;
-	}
-
-	/* Full Width */
-	/* Show Excerpt Portrait Featured Image */
-	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
-	    width: 701px;
-	}
-
-	/* Show Excerpt Landscape Featured Image */
-	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
-	    width: 570px;
-	}
-
-	/* Show Excerpt Thumbnail Featured Image */
-	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
-	    width: 720px;
-	}	
-
 }
 
 @media screen and (max-width: 1020px) {	
@@ -809,31 +806,6 @@ Responsive Style
 		font-size: 15px;
 	}
 
-	#main,
-	.no-sidebar.content-width #main,
-	.no-sidebar.one-column #main,
-	#content_sidebar_wrap,
-	#content_sidebar_wrap #main,
-	.sidebar-primary,
-	.three-columns .sidebar-primary,
-	.sidebar-secondary,
-	.three-columns.equal-sidebars #content_sidebar_wrap,
-	.three-columns.equal-sidebars #content_sidebar_wrap #main,
-	.three-columns.equal-sidebars .sidebar-primary,
-	.three-columns.equal-sidebars .sidebar-secondary,
-	.three-columns.equal-columns #content_sidebar_wrap,
-	.three-columns.equal-columns #content_sidebar_wrap #main,
-	.three-columns.equal-columns .sidebar-primary, 
-	.three-columns.equal-columns .sidebar-secondary {
-	    width: 100%;
-	}	
-
-	.sidebar-primary,
-	.sidebar-secondary {
-		clear: both;
-		padding: 0;
-	}
-
 	.sidebar-secondary .widget,
 	#featured-content.layout-four .hentry,
 	#supplementary.four .widget-area,
@@ -865,35 +837,6 @@ Responsive Style
 	#supplementary.three .widget-area,
 	#supplementary.two .widget-area {
 		padding: 0;
-	}
-
-	.mobile-menu-anchor {
-		display: inline-block;
-	}
-
-	.logo-left #site-header {
-		padding-top: 8px;
-		padding-left: 0;
-	}
-
-	.logo-right #site-header {
-		padding-top:  10px;
-		padding-right: 0;
-	}
-
-	.sidebar-header-right .widget-wrap {
-	    float: none;
-	}
-
-	.nav-primary,
-	.nav-header-right,
-	.nav-secondary,
-	.nav-footer {
-		display: none;
-	}
-
-	#site-branding {
-	    text-align: center;
 	}
 
 	#mobile-secondary-menu {
@@ -930,7 +873,7 @@ Responsive Style
 
 	/* Layout Options with Featured Image on Left */
 	/* Three Colummns */
-	.three-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
+/*	.three-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
 	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
 	.no-sidebar .has-post-thumbnail.excerpt-portrait-featured-image .featured-image {
 	    width: 24%;
@@ -968,7 +911,42 @@ Responsive Style
 		clear: none;
 	    width: 76%;
 	}	
+*/
+}
 
+@media screen and (max-width: 920px) {
+	.nav-primary {
+		display: none;
+	}
+
+	.mobile-menu-anchor {
+		display: inline-block;
+	}
+
+	.logo-left #site-header {
+		padding-top: 8px;
+		padding-left: 0;
+	}
+
+	.logo-right #site-header {
+		padding-top:  10px;
+		padding-right: 0;
+	}
+
+	.sidebar-header-right .widget-wrap {
+	    float: none;
+	}
+
+
+	.nav-header-right,
+	.nav-secondary,
+	.nav-footer {
+		display: none;
+	}
+
+	#site-branding {
+    text-align: center;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -979,7 +957,7 @@ Responsive Style
 	.no-sidebar.one-column .site {
 	}
 	section.post-header .entry-header h1 {
-		font-size:2.7em;
+		font-size:1.8em;
 	}
 
 	section.post-header .entry-header h2 {
@@ -1087,6 +1065,37 @@ Responsive Style
 	    font-size: 40px;
 	}
 
+}
+
+@media screen and (max-width: 569px) {
+
+/*	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .featured-image,
+	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
+	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .featured-image {
+	    width: 26%;
+	}
+
+	.two-columns .has-post-thumbnail.excerpt-portrait-featured-image .entry-container,
+	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .entry-container,
+	.two-columns .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+	    width: 70%;
+	}*/
+	
+	/* Full Width */
+	/* Show Excerpt Portrait Featured Image */
+/*	.full-width .has-post-thumbnail.excerpt-portrait-featured-image .entry-container  {
+	    width: 701px;
+	}*/
+
+	/* Show Excerpt Landscape Featured Image */
+/*	.full-width .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
+	    width: 570px;
+	}*/
+
+	/* Show Excerpt Thumbnail Featured Image */
+/*	.full-width .has-post-thumbnail.excerpt-thumbnail-featured-image .entry-container {
+	    width: 720px;
+	}	*/
 }
 
 /*--------------------------------------------------------------
@@ -1223,7 +1232,7 @@ Responsive Style
 	}	
 
 	/* Layout Options with Featured Image on Left */
-	.three-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
+/*	.three-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
 	.two-columns .has-post-thumbnail.excerpt-landscape-featured-image .featured-image,
 	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .featured-image {
 		width: 100%
@@ -1234,7 +1243,7 @@ Responsive Style
 	.no-sidebar .has-post-thumbnail.excerpt-landscape-featured-image .entry-container {
 		clear: both;
 		width: 100%;
-	}	
+	}	*/
 
 }
 

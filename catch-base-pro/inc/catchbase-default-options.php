@@ -68,7 +68,7 @@ function catchbase_get_default_theme_options() {
 		'disable_header_right_sidebar'						=> 0,
 		
 		//Excerpt Options
-		'excerpt_length'									=> '40',
+		'excerpt_length'									=> '200',
 		'excerpt_more_text'									=> __( 'Read More ...', 'catch-base' ),
 		
 		//Homepage / Frontpage Settings

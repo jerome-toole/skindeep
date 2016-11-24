@@ -20,6 +20,17 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	exit();
 }
 
+function filter_jetpack_infinite_scroll_js_settings( $settings ) {
+	$settings['text'] = __( 'Load more...', 'l18n' );
+	return $settings;
+}
+add_filter( 'infinite_scroll_js_settings', 'filter_jetpack_infinite_scroll_js_settings' );
+
+function year_shortcode() {
+  $year = date('Y');
+  return $year;
+}
+add_shortcode('year', 'year_shortcode');
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -170,7 +181,9 @@ if ( ! function_exists( 'catchbase_setup' ) ) :
 
     	add_image_size( 'catchbase-featured-portrait', 169, 300, true ); // used in Archive Portriat Ratio 9:16
 
-    	add_image_size( 'catchbase-featured-landscape', 300, 169, true ); // used in Archive Ratio 16:9
+    	add_image_size( 'catchbase-featured-landscape', 450, 254, true ); // used in Archive Ratio 16:9
+    	
+    	add_image_size( 'square_cats', 450, 450, true );
 		
 		/**
 		 * This theme uses wp_nav_menu() in one location.
@@ -330,7 +343,7 @@ function catchbase_scripts() {
 		$catchbase_deps = false;
 	}
 
-	wp_enqueue_style( 'catchbase-style', get_stylesheet_uri(), $catchbase_deps, CATCHBASE_THEME_VERSION );
+	wp_enqueue_style( 'catchbase-style', get_stylesheet_uri(), $catchbase_deps, '123' );
 
 	wp_enqueue_script( 'catchbase-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
 
@@ -406,6 +419,10 @@ function catchbase_scripts() {
 	/**
 	 * Enqueue custom script for catchbase.
 	 */
+	wp_enqueue_script( 'masonry', 'script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js', array( 'jquery' ), true );
+	wp_enqueue_script(  'images_loaded', 'http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js', array('jquery','masonry'), true  );
+	wp_enqueue_script(  'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', true  );
+	wp_enqueue_script( 'skindeep', get_template_directory_uri() . '/js/skindeep.js', array( 'jquery','masonry', 'modernizr' ), true );
 	wp_enqueue_script( 'catchbase-custom-scripts', get_template_directory_uri() . '/js/catchbase-custom-scripts.min.js', array( 'jquery' ), null );
 }
 add_action( 'wp_enqueue_scripts', 'catchbase_scripts' );
@@ -1432,7 +1449,7 @@ if ( ! function_exists( 'catchbase_continue_reading' ) ) :
 		$options		=	catchbase_get_theme_options();
 		$more_tag_text	= $options['excerpt_more_text'];
 
-		return ' <a class="more-link" href="' . esc_url( get_permalink() ) . '">' .  sprintf( __( '%s', 'catch-base' ) , $more_tag_text ) . '</a>';
+		return '';
 	}
 endif; //catchbase_continue_reading
 add_filter( 'excerpt_more', 'catchbase_continue_reading' );
@@ -1706,7 +1723,6 @@ if ( ! function_exists( 'catchbase_archive_content_image' ) ) :
 			
 		if ( has_post_thumbnail() && 'full-content' != $featured_image ) { ?>
 			<figure class="featured-image">
-	            <a rel="bookmark" href="<?php the_permalink(); ?>">
 	                <?php 
 						if ( $featured_image == 'excerpt-featured-image' ) {
 		                     the_post_thumbnail( 'catchbase-featured' );
@@ -1722,9 +1738,9 @@ if ( ! function_exists( 'catchbase_archive_content_image' ) ) :
 		                }
 		               	elseif ( $featured_image == 'excerpt-full-image' ) {
 		                     the_post_thumbnail( 'full' );
-		                }		                
+		                }
+		                elseif ( is_page() )
 					?>
-				</a>
 	        </figure>
 	   	<?php
 		}
