@@ -13,13 +13,18 @@ get_header(); ?>
 	<?php the_post_thumbnail('large'); /* Large */ ?>
 	<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<h2 class="entry-author"><?php the_author(); ?></h2>
-
+			<?php if ( !empty( get_field('author') ) ) : ?>
+				<h2 class="entry-author"><?php printf('Author: %s', get_field('author')); ?></h2>
+			<?php endif; ?>
+			<?php if( !empty( get_field('illustrator') ) ) : ?>
+				<h2 class="entry-illustrator"><?php printf('Illustrator: %s', get_field('illustrator')); ?></h2>
+			<?php endif; ?>
 			<?php catchbase_entry_meta(); ?>
 	</header><!-- .entry-header -->
 </section>
 
 <section class="post-main">
+
 	<main id="main" class="site-main article-post" role="main">
 
 	<?php while ( have_posts() ) : the_post(); ?>
