@@ -1533,6 +1533,10 @@ textarea {
   padding-top: 2em;
 }
 
+.article-post header.post-header {
+  text-align: right
+}
+
 section.post-header {
   margin: -20px -20px 0;
   position: relative;

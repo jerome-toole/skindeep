@@ -12,14 +12,8 @@ get_header(); ?>
 <section class="post-header">
 	<?php the_post_thumbnail('large'); /* Large */ ?>
 	<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php if ( !empty( get_field('author') ) ) : ?>
-				<h2 class="entry-author"><?php printf('Author: %s', get_field('author')); ?></h2>
-			<?php endif; ?>
-			<?php if( !empty( get_field('illustrator') ) ) : ?>
-				<h2 class="entry-illustrator"><?php printf('Illustrator: %s', get_field('illustrator')); ?></h2>
-			<?php endif; ?>
-			<?php catchbase_entry_meta(); ?>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<?php catchbase_entry_meta(); ?>
 	</header><!-- .entry-header -->
 </section>
 
