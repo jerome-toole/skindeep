@@ -10,12 +10,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<header class="post-header">
+	<header class="post-credits">
 		<?php if ( !empty( get_field('author') ) ) : ?>
-			<h2 class="entry-author"><?php printf('Text by %s', get_field('author')); ?></h2>
+			<h2 class="entry-author post-credits-author"><?php printf('Text by %s', get_field('author')); ?></h2>
 		<?php endif; ?>
 		<?php if( !empty( get_field('illustrator') ) ) : ?>
-			<h2 class="entry-illustrator"><?php printf('Illustration by %s', get_field('illustrator')); ?></h2>
+			<h2 class="entry-illustrator post-credits-illustrator"><?php printf('Illustration by %s', get_field('illustrator')); ?></h2>
 		<?php endif; ?>
 	</header>
 
