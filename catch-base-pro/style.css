@@ -1534,7 +1534,8 @@ textarea {
 }
 
 article.post header.post-credits {
-  text-align: right
+	margin-bottom: 20px;
+  	text-align: right;
 }
 
 section.post-header {
