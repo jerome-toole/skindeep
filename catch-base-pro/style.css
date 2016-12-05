@@ -1072,6 +1072,8 @@ textarea {
 
 .nav-primary .search-form {
     padding: 10px 40px;
+    width: 50%;
+    float: right;
 }
 
 .nav-primary .search-field {
