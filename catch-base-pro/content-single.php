@@ -8,14 +8,29 @@
  */
 ?>
 
+<?php
+// Get theme options
+$options = catchbase_get_theme_options();
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="post-credits">
 		<?php if ( !empty( get_field('author') ) ) : ?>
-			<h2 class="entry-author post-credits-author"><?php printf('Text by %s', get_field('author')); ?></h2>
+			<h2 class="entry-author post-credits-author">
+				<?php printf(
+					'%s %s',
+					$options['post_author_credit_text'],
+					get_field('author')); ?>
+			</h2>
 		<?php endif; ?>
 		<?php if( !empty( get_field('illustrator') ) ) : ?>
-			<h2 class="entry-illustrator post-credits-illustrator"><?php printf('Image by %s', get_field('illustrator')); ?></h2>
+			<h2 class="entry-illustrator post-credits-illustrator">
+				<?php printf(
+					'%s %s',
+					$options['post_illustrator_credit_text'],
+					get_field('illustrator')); ?>
+			</h2>
 		<?php endif; ?>
 	</header>
 
