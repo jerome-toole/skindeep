@@ -706,7 +706,10 @@ blockquote:before {
 }
 
 #search-toggle:before {
-    margin-top: 12px;	
+	position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 #scrollup:before {
@@ -888,6 +891,7 @@ textarea {
 }
 
 .nav-primary {
+	height: 100%;
 	z-index: 198;
 	background-color: rgba(0,0,0,0);
 	display: inline-block;
@@ -1041,7 +1045,7 @@ textarea {
     color: #666;
     cursor: pointer;
     float: right;
-    height: 42px;
+    height: 100%;
     margin-right: 20px;
     text-align: center;
     width: 42px;
@@ -1053,7 +1057,7 @@ textarea {
 }
 
 #search-container {
-    background-color: #fff;
+    background-color: transparent;
     bottom: -56px;
     clear: both;
     left: 0;
@@ -1068,6 +1072,8 @@ textarea {
 
 .nav-primary .search-form {
     padding: 10px 40px;
+    width: 50%;
+    float: right;
 }
 
 .nav-primary .search-field {
@@ -1534,7 +1540,8 @@ textarea {
 }
 
 article.post header.post-credits {
-  text-align: right
+	margin-bottom: 20px;
+  	text-align: right;
 }
 
 section.post-header {

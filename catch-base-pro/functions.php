@@ -142,6 +142,20 @@ function mod_the_author( $author ) {
 }
 add_filter('the_author','mod_the_author');
 
+/**
+ * Update the 'seamless donations' plugin post type to not show in search
+ * results
+ *
+ * @param      post_type  $donor_post_type  The donor post type to modify
+ *
+ * @return     post_type     The updated post type
+ */
+function mod_donor_post ( $donor_post_type ) {
+    $donor_post_type['exclude_from_search'] = true ;
+    return $donor_post_type;
+}
+add_filter('seamless_donations_donors_setup', 'mod_donor_post');
+
 if (!function_exists('write_log')) {
     /**
      * Writes a log message (only defined if WP_DEBUG is enabled)
