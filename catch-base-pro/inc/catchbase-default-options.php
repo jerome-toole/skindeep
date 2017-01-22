@@ -77,6 +77,12 @@ function catchbase_get_default_theme_options() {
 		//Pagination Options
 		'pagination_type'									=> 'default',
 
+		// Post Options
+		'post_author_credit_text'
+					=> 'Writing by',
+		'post_illustrator_credit_text'
+					=> 'Image by',
+
 		//Promotion Headline Options
 		'promotion_headline_option'							=> 'homepage',
 		'promotion_headline'								=> __( 'Catch Base Pro is a Premium Responsive WordPress Theme', 'catch-base' ),
