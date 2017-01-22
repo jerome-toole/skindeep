@@ -541,6 +541,42 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 		'type'	   => 'select',
 	) );
 	// Pagination Options End
+	
+	// Post Options
+	$wp_customize->add_section( 'skindeep_post_options', array(
+		'panel'  	=> 'catchbase_theme_options',
+		'priority' 	=> 212,
+		'title'    	=> __( 'Post Options', 'catch-base' ),
+	) );
+
+	$wp_customize->add_setting( 'catchbase_theme_options[post_author_credit_text]', array(
+		'capability'		=> 'edit_theme_options',
+		'default'			=> $defaults['post_author_credit_text'],
+		'sanitize_callback'	=> 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'post_author_credit_text', array(
+		'label'    => __( 'Author Credit', 'catch-base' ),
+		'description'	=> __( 'Text prepended to author name in credits for a post.'),
+		'section'  => 'skindeep_post_options',
+		'settings' => 'catchbase_theme_options[post_author_credit_text]',
+		'type'	   => 'text',
+	) );
+
+	$wp_customize->add_setting( 'catchbase_theme_options[post_illustrator_credit_text]', array(
+		'capability'		=> 'edit_theme_options',
+		'default'			=> $defaults['post_illustrator_credit_text'],
+		'sanitize_callback'	=> 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'post_illustrator_credit_text', array(
+		'label'    => __( 'Illustrator Credit', 'catch-base' ),
+		'description'	=> __( 'Text prepended to illustrator name in credits for a post.'),
+		'section'  => 'skindeep_post_options',
+		'settings' => 'catchbase_theme_options[post_illustrator_credit_text]',
+		'type'	   => 'text',
+	) );
+	// Excerpt Options End
 
 	//Promotion Headline Options
     $wp_customize->add_section( 'catchbase_promotion_headline_options', array(
