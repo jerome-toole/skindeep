@@ -1539,9 +1539,23 @@ textarea {
   padding-top: 2em;
 }
 
+/* Post Credits */
+
 article.post header.post-credits {
-	margin-bottom: 20px;
+	margin-bottom: 1em;
   	text-align: right;
+  	overflow: auto;
+}
+
+article.post header .post-credits-item {
+	margin-bottom: 0.5em;
+}
+
+article.post header section.left {
+	float: left;
+}
+article.post header section.right {
+	float: right;
 }
 
 section.post-header {
