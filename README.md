@@ -25,4 +25,5 @@ Appearance > Customize > Theme Options > Post Options
 
 Here, by changing the *Author Credit* and *Illustrator Credit* fields, a post can be changed from displaying the default:
 *Written by __author_name__*
+
 *Image by __illustrator_name__*
