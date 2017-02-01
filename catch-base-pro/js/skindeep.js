@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 
   var postgrid = (function( $container ) {
     var $container = jQuery($container);
+    $container.imagesLoaded( function(){ 
     
       $container.masonry({ 
         itemSelector: '.post', 
