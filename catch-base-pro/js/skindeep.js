@@ -1,7 +1,13 @@
 jQuery(document).ready(function($) {
+
+  // Make masthead sticky
+  var sticky = new Waypoint.Sticky({
+    element: $('header#masthead')[0]
+  })
+
   var postgrid = (function( $container ) {
     var $container = jQuery($container);
-    $container.imagesLoaded( function(){ 
+    
       $container.masonry({ 
         itemSelector: '.post', 
         columnWidth: '.post',
