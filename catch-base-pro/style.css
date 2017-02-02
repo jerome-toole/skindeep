@@ -491,6 +491,10 @@ blockquote:before {
 	display: block;
 }
 
+ul#menu-main-menu {
+	display: inline-block;
+}
+
 .displaynone {
 	display:  none;
 }
@@ -577,23 +581,21 @@ blockquote:before {
 }
 
 #masthead {
-  height: 80px;
-  position: fixed;
   width: 100%;
   background: #FFF;
   z-index: 130;
 }
 
 #masthead .sidebar-header-right {
-	padding: 0;
-  position: absolute;
-  top: 25px;
-  right: 0;
+  padding: 0;
   padding-right: 2vw;
 }
 
 #masthead .wrapper {
 	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #promotion-message .section,
@@ -706,10 +708,7 @@ blockquote:before {
 }
 
 #search-toggle:before {
-	position: relative;
-    top:50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    line-height: 80px;
 }
 
 #scrollup:before {
@@ -894,14 +893,16 @@ textarea {
 	height: 100%;
 	z-index: 198;
 	background-color: rgba(0,0,0,0);
-	display: inline-block;
-	float: right;
-	padding-right: 135px;
 }
 
 .nav-primary ul {
 	line-height: 80px;
 	/* width: 100%; */
+}
+
+.stuck {
+	position: fixed;
+	top: 0px;
 }
 
 .nav-secondary {
@@ -1039,15 +1040,10 @@ textarea {
 
 /* Menu Search */
 
-.nav-primary.search-enabled .menu {
-	float: left;
-}
-
 #search-toggle {
     background-color: transparent;
     color: #666;
     cursor: pointer;
-    float: right;
     height: 100%;
     margin-right: 20px;
     text-align: center;
@@ -1279,7 +1275,7 @@ textarea {
 .clear:after,
 .hentry:after,
 .archive-post-wrap:after,
-.wrapper:after,
+/*.wrapper:after,*/
 .catchbase-nav-menu:after,
 .nav-header-right:after,
 .featured-content-wrap:after,
@@ -1315,16 +1311,9 @@ textarea {
 /*--------------------------------------------------------------
 10. Header Area
 --------------------------------------------------------------*/
-#site-branding,
 #site-logo,
 #site-header {
 	display: inline-block;
-	float: left;
-}
-
-#site-branding {
-	position: relative;
-	top: 5px;
 }
 
 #site-logo a {
@@ -1552,13 +1541,6 @@ article.post header.post-credits {
 
 article.post header .post-credits-item {
 	margin-bottom: 0.5em;
-}
-
-article.post header section.left {
-	float: left;
-}
-article.post header section.right {
-	float: right;
 }
 
 section.post-header {

@@ -16,7 +16,7 @@ $options = catchbase_get_theme_options();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="post-credits">
-	<section class="right">
+	<section class="alignright">
 		<?php if ( !empty( get_field('author') ) ) : ?>
 			<h2 id="post-credits-author" class="post-credits-item">
 				<?php printf(
@@ -34,7 +34,7 @@ $options = catchbase_get_theme_options();
 			</h2>
 		<?php endif; ?>
 	</section>
-	<section class="left">
+	<section class="alignleft">
 		<div id="post-credits-date" class="post-credits-item">
 			<?php the_date('d/m/Y'); ?>
 		</div>
