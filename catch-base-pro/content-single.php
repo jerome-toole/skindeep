@@ -16,8 +16,9 @@ $options = catchbase_get_theme_options();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="post-credits">
+	<section class="alignright">
 		<?php if ( !empty( get_field('author') ) ) : ?>
-			<h2 class="entry-author post-credits-author">
+			<h2 id="post-credits-author" class="post-credits-item">
 				<?php printf(
 					'%s %s',
 					$options['post_author_credit_text'],
@@ -25,13 +26,19 @@ $options = catchbase_get_theme_options();
 			</h2>
 		<?php endif; ?>
 		<?php if( !empty( get_field('illustrator') ) ) : ?>
-			<h2 class="entry-illustrator post-credits-illustrator">
+			<h2 id="post-credits-illustrator" class="post-credits-item">
 				<?php printf(
 					'%s %s',
 					$options['post_illustrator_credit_text'],
 					get_field('illustrator')); ?>
 			</h2>
 		<?php endif; ?>
+	</section>
+	<section class="alignleft">
+		<div id="post-credits-date" class="post-credits-item">
+			<?php the_date('d/m/Y'); ?>
+		</div>
+	</section>
 	</header>
 
 	<?php 
