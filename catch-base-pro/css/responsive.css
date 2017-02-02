@@ -673,10 +673,6 @@ Responsive Style
 }
 
 @media screen and (max-width: 1020px) {	
-	.nav-primary {
-		padding-right: 115px;
-	}
-
 	.post-main .social-sharing {
 		display: block;
 		position: static;

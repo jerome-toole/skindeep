@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
   var postgrid = (function( $container ) {
     var $container = jQuery($container);
     $container.imagesLoaded( function(){ 
@@ -35,6 +36,14 @@ jQuery(document).ready(function($) {
 //     $('.featured-grid').masonry( 'appended', $newElems, true );
 //   });
 // });
+
+jQuery(document).ready(function($) {
+  // Make masthead sticky
+  var sticky = new Waypoint.Sticky({
+    element: $('header#masthead')[0],
+    wrapper: '<div class="sticky-wrapper waypoint" />'
+  });
+});
 
 jQuery(document).ready(function($) {
   var radicalGrid = (function() {
