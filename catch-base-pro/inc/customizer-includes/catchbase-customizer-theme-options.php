@@ -545,7 +545,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Post Options
 	$wp_customize->add_section( 'skindeep_post_options', array(
 		'panel'  	=> 'catchbase_theme_options',
-		'priority' 	=> 212,
+		'priority' 	=> 213,
 		'title'    	=> __( 'Post Options', 'catch-base' ),
 	) );
 
@@ -582,7 +582,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
     $wp_customize->add_section( 'catchbase_promotion_headline_options', array(
 		'description'	=> __( 'To disable the fields, simply leave them empty.', 'catch-base' ),
 		'panel'			=> 'catchbase_theme_options',
-		'priority' 		=> 213,
+		'priority' 		=> 214,
 		'title'   	 	=> __( 'Promotion Headline Options', 'catch-base' ),
 	) );
 
@@ -682,7 +682,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Responsive Options
 	$wp_customize->add_section( 'catchbase_responsive_options', array(
 		'panel'  => 'catchbase_theme_options',
-		'priority' => 214,
+		'priority' => 215,
 		'title'    => __( 'Responsive Options', 'catch-base' ),
 	) );
 
@@ -716,7 +716,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Scrollup
 	$wp_customize->add_section( 'catchbase_scrollup', array(
 		'panel'    => 'catchbase_theme_options',
-		'priority' => 215,
+		'priority' => 216,
 		'title'    => __( 'Scrollup Options', 'catch-base' ),
 	) );
 
@@ -738,7 +738,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	$wp_customize->add_section( 'catchbase_search_options', array(
 		'description'=> __( 'Change default placeholder text in Search.', 'catch-base'),
 		'panel'  => 'catchbase_theme_options',
-		'priority' => 216,
+		'priority' => 217,
 		'title'    => __( 'Search Options', 'catch-base' ),
 	) );
 
@@ -759,7 +759,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Single Post Navigation
 	$wp_customize->add_section( 'catchbase_single_post_navigation', array(
 		'panel'  => 'catchbase_theme_options',
-		'priority' => 217,
+		'priority' => 218,
 		'title'    => __( 'Single Post Navigation', 'catch-base' ),
 	) );
 
@@ -780,7 +780,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Update Notifier
 	$wp_customize->add_section( 'catchbase_update_notifier', array(
 		'title'    => __( 'Update Notifier', 'catch-base' ),
-		'priority' => 218,
+		'priority' => 219,
 		'panel'    => 'catchbase_theme_options',
 	) );
 

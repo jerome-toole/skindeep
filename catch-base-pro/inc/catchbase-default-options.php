@@ -79,7 +79,7 @@ function catchbase_get_default_theme_options() {
 
 		// Post Options
 		'post_author_credit_text'
-					=> 'Writing by',
+					=> 'Written by',
 		'post_illustrator_credit_text'
 					=> 'Image by',
 
