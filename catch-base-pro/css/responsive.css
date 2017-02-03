@@ -997,6 +997,9 @@ Responsive Style
 	    max-width: 25%;
 	}
 
+	#feature-slider .entry-container .entry-content {
+		display: none;
+	}
 }
 
 /*--------------------------------------------------------------
