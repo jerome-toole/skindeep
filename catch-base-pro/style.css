@@ -2386,7 +2386,7 @@ caption {
 }
 
 #feature-slider .entry-content {
-    margin: 0
+    margin: 0;
 }
 
 #feature-slider .entry-content p:last-child {
@@ -2666,7 +2666,7 @@ caption {
 	}
 }
 
-#feature-slider .entry-header h1, #feature-slider .entry-header h3, #feature-slider .entry-container .entry-content {
+#feature-slider .entry-header h1, #feature-slider .entry-header h3, #feature-slider .entry-content {
   background: black;
   padding: 3px 8px;
   margin-bottom: 5px;
