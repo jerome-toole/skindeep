@@ -156,6 +156,23 @@ function mod_donor_post ( $donor_post_type ) {
 }
 add_filter('seamless_donations_donors_setup', 'mod_donor_post');
 
+/**
+ * @brief      Exclude products from showing jetpack related posts
+ *
+ * @param      $options  The options
+ *
+ * @return     None
+ */
+function jetpackme_no_related_posts( $options ) {
+    write_log("post_type_exists( 'product' ) = " . post_type_exists( 'product' ));
+    write_log("is_singular( 'product' ) = " . is_singular( 'product' ));
+    if ( is_singular( 'product' ) || is_singular('product_variation') ) {
+        $options['enabled'] = false;
+    }
+    return $options;
+}
+add_filter( 'jetpack_relatedposts_filter_options', 'jetpackme_no_related_posts' );
+
 if (!function_exists('write_log')) {
     /**
      * Writes a log message (only defined if WP_DEBUG is enabled)
