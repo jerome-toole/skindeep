@@ -24,7 +24,7 @@ function catchbase_primary_menu() {
     $options  = catchbase_get_theme_options();
     if ( !$options['primary_menu_disable'] ) :
     	?>
-    	<nav class="nav-primary <?php echo ( !$options['primary_search_disablhee']  ) ? 'search-enabled' : '';?>" role="navigation">
+    	<nav class="nav-primary <?php echo ( !$options['primary_search_disable']  ) ? 'search-enabled' : '';?>" role="navigation">
             <h1 class="assistive-text"><?php _e( 'Primary Menu', 'catch-base' ); ?></h1>
             <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'catch-base' ); ?>"><?php _e( 'Skip to content', 'catch-base' ); ?></a></div>
             <?php
