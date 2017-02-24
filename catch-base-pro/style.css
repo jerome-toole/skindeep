@@ -580,12 +580,14 @@ ul#menu-main-menu {
 }
 
 #masthead {
+	line-height: 0;
   width: 100%;
   background: #FFF;
   z-index: 130;
 }
 
 #masthead .sidebar-header-right {
+	margin-left: auto;
   padding: 0;
   padding-right: 2vw;
 }
@@ -593,7 +595,6 @@ ul#menu-main-menu {
 #masthead .wrapper {
 	height: 100%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
