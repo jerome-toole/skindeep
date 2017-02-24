@@ -2400,7 +2400,7 @@ caption {
 
 /* Social Icons */
 .widget_catchbase_social_icons .widget-wrap {
-	margin-left: -5px;
+	display: flex;
 }
 
 .widget_catchbase_social_icons a.genericon {
@@ -2411,7 +2411,6 @@ caption {
     -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
 	-moz-box-sizing:    content-box;
 	color: #404040;
-  margin: 0 0 5px 5px;
   padding: 5px;
   transition: all ease-in-out .2s;
 }
