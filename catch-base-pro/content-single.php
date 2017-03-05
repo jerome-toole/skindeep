@@ -36,7 +36,7 @@ $options = catchbase_get_theme_options();
 	</section>
 	<section class="alignleft">
 		<div id="post-credits-date" class="post-credits-item">
-			<?php the_date('d/m/Y'); ?>
+			<?php the_date('d.m.y'); ?>
 		</div>
 	</section>
 	</header>
