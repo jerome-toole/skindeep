@@ -36,6 +36,10 @@ add_action('after_setup_theme', 'skindeep_setup' );
 function custom_init() {
     write_log("custom_init() called.");
 
+    // Remove breadcrumbs from woocommerce pages
+    // TODO: Make this a theme option?
+    jk_remove_wc_breadcrumbs();
+
     // e.g. add_post_type_support( 'post', 'excerpt' );
 }
 
@@ -188,4 +192,13 @@ if (!function_exists('write_log')) {
             }
         }
     }
+}
+
+/**
+ * @brief      Remove the breadcrumbs from woocommerce pages
+ *
+ * @return     None
+ */
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }

@@ -15,7 +15,7 @@ get_header(); ?>
 		<h1 class="page-title">
 			<?php
 				if ( is_category() ) :
-					single_cat_title();
+					// Don't show the category title, we leave that to the banner
 
 				elseif ( is_tag() ) :
 					single_tag_title();
