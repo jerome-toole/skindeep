@@ -35,10 +35,13 @@ add_action('after_setup_theme', 'skindeep_setup' );
  */
 function custom_init() {
     write_log("custom_init() called.");
+    $options = catchbase_get_theme_options(); // Get options
 
     // Remove breadcrumbs from woocommerce pages
-    // TODO: Make this a theme option?
-    jk_remove_wc_breadcrumbs();
+    if( isset ( $options['breadcumb_option'] ) ||
+        isset ( $options['breadcumb_option'] ) && !$options['breadcumb_option'] ){
+        jk_remove_wc_breadcrumbs();
+    }
 
     // e.g. add_post_type_support( 'post', 'excerpt' );
 }
@@ -202,3 +205,18 @@ if (!function_exists('write_log')) {
 function jk_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }
+
+/**
+ * @brief      Sets the breadcrumb separator for woocommerce products
+ *
+ * @param      $defaults  The defaults
+ *
+ * @return     The amended default settings
+ */
+function jk_change_breadcrumb_delimiter( $defaults ) {
+    $options = catchbase_get_theme_options(); // Get options
+    $delimiter = '<span class="sep">'. $options['breadcumb_seperator'] .'</span><!-- .sep -->'; // delimiter between crumbs
+    $defaults['delimiter'] = $delimiter;
+    return $defaults;
+}
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
