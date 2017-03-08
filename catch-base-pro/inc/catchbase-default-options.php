@@ -48,6 +48,9 @@ function catchbase_get_default_theme_options() {
 		'primary_menu_disable'								=> 0,
 		'primary_search_disable'							=> 0,
 
+		//Archive Options
+		'archive_hide_title_cat'							=> 0,
+
 		//Breadcrumb Options
 		'breadcumb_option'									=> 0,
 		'breadcumb_onhomepage'								=> 0,
@@ -78,10 +81,8 @@ function catchbase_get_default_theme_options() {
 		'pagination_type'									=> 'default',
 
 		// Post Options
-		'post_author_credit_text'
-					=> 'Written by',
-		'post_illustrator_credit_text'
-					=> 'Image by',
+		'post_author_credit_text'							=> 'Written by',
+		'post_illustrator_credit_text' 						=> 'Image by',
 
 		//Promotion Headline Options
 		'promotion_headline_option'							=> 'homepage',

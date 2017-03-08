@@ -9,13 +9,15 @@
  * @since Catch Base 1.0 
  */
 
+$options = catchbase_get_theme_options(); // Get options
+
 get_header(); ?>
 			
 	<header class="page-header">
-		<h1 class="page-title">
+		<h1 class="page-title <?php if ( $options['archive_hide_title_cat'] ) echo ('hide-cat-title') ?>">
 			<?php
 				if ( is_category() ) :
-					// Don't show the category title, we leave that to the banner
+					single_cat_title();
 
 				elseif ( is_tag() ) :
 					single_tag_title();

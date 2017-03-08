@@ -22,6 +22,28 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	    'title'    		 => __( 'Theme Options', 'catch-base' ),
 	) );
 
+
+	// Archive Options
+	$wp_customize->add_section( 'skindeep_archive_options', array(
+		'panel'  	=> 'catchbase_theme_options',
+		'priority' 	=> 201,
+		'title'    	=> __( 'Archive Options', 'catch-base' ),
+	) );
+
+	$wp_customize->add_setting( 'catchbase_theme_options[archive_hide_title_cat]', array(
+		'capability'		=> 'edit_theme_options',
+		'default'			=> $defaults['archive_hide_title_cat'],
+		'sanitize_callback'	=> 'catchbase_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'skindeep_archive_options', array(
+		'label'    => __( 'Check to hide title on Category archives', 'catch-base' ),
+		'section'  => 'skindeep_archive_options',
+		'settings' => 'catchbase_theme_options[archive_hide_title_cat]',
+		'type'     => 'checkbox',
+	) );
+	// Archive Options End
+
 	// Breadcrumb Option
 	$wp_customize->add_section( 'catchbase_breadcumb_options', array(
 		'description'	=> __( 'Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site.', 'catch-base' ),

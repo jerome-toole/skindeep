@@ -634,6 +634,14 @@ ul#menu-main-menu {
     padding-bottom: 10px;
 }
 
+body.archive.category .page-title.hide-cat-title {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+
 #header-featured-image .wrapper,
 #feature-slider .wrapper {
 	padding: 0;

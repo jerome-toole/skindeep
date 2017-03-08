@@ -42,8 +42,6 @@ function custom_init() {
         isset ( $options['breadcumb_option'] ) && !$options['breadcumb_option'] ){
         jk_remove_wc_breadcrumbs();
     }
-
-    // e.g. add_post_type_support( 'post', 'excerpt' );
 }
 
 /**
@@ -220,3 +218,4 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
     return $defaults;
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
+
