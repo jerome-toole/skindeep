@@ -44,10 +44,19 @@ get_header(); ?>
 
 	</main><!-- #main -->
 
-	<div class="social-sharing">
-		<span>Share this on</span>
-		<?php echo do_shortcode('[supsystic-social-sharing id="2"]') ?>
-	</div>
+	<aside class="sidebar-tertiary">
+		<div class="social-sharing">
+			<span>Share this on</span>
+			<?php echo do_shortcode('[supsystic-social-sharing id="2"]') ?>
+		</div>
+		<div class="related-posts">
+			<?php
+				if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+				    echo do_shortcode( '[jetpack-related-posts]' );
+				}
+			?>
+		</div>
+	</aside>
 	
 	<?php get_sidebar(); ?>
 </section>

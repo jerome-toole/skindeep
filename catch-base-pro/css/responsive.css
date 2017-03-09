@@ -474,7 +474,7 @@ Responsive Style
     height: 100%;
 	}
 
-	.post-main .social-sharing {
+	.post-main .sidebar-tertiary {
 		width: 17%;
 	}
 
@@ -604,7 +604,7 @@ Responsive Style
 		font-size: 1.1em;
 	}
 
-	.post-main .social-sharing {
+	.post-main .sidebar-tertiary {
 		font-size: 1.1em;
 		width: 15%;
 	}
@@ -673,10 +673,19 @@ Responsive Style
 }
 
 @media screen and (max-width: 1020px) {	
-	.post-main .social-sharing {
+	.post-main .sidebar-tertiary {
 		display: block;
 		position: static;
 		width: 100%;
+	}
+
+	/* Revert the Jetpack related posts back to original CSS (horizontal) */
+	.sidebar-tertiary #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+		width: 33%;
+	}
+
+	.sidebar-tertiary #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post {
+	    padding-right: 20px;
 	}
 }
 

@@ -1485,7 +1485,7 @@ textarea {
 	padding: 0 2em;
 }
 
-.post-main .social-sharing {
+.post-main .sidebar-tertiary {
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -1494,6 +1494,19 @@ textarea {
 	padding: 1em;
 	font-size: 1.25em;
 	width: 20%;
+}
+
+.sidebar-tertiary #jp-relatedposts h3.jp-relatedposts-headline {
+    display: block;
+    float: none;
+}
+
+.sidebar-tertiary #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+    width: 100%;
+}
+
+.sidebar-tertiary #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post {
+    padding-right: 0px;
 }
 
 .post-main .social-sharing span {
@@ -1539,16 +1552,10 @@ textarea {
   padding-top: 2em;
 }
 
-/* Post Credits */
-
-article.post header.post-credits {
+article.post header.post-metadata {
 	margin-bottom: 1em;
   	text-align: right;
   	overflow: auto;
-}
-
-article.post header .post-credits-item {
-	margin-bottom: 0.5em;
 }
 
 section.post-header {
