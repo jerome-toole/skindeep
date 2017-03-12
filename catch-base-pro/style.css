@@ -1496,6 +1496,12 @@ textarea {
 	width: 20%;
 }
 
+/* Customise Jetpack Related Posts */
+
+.jp-relatedposts-posts-context {
+	display: none;
+}
+
 .sidebar-tertiary #jp-relatedposts h3.jp-relatedposts-headline {
     display: block;
     float: none;
