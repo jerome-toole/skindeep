@@ -20,15 +20,11 @@ define ( 'CATCHBASE_THEME_VERSION', '3.1' );
  */
 require get_template_directory() . '/inc/catchbase-core.php';
 
-// TODO: Indicate the ACF is a plugin dependency. Include with theme?
-
 // Register action to configure theme requirements
 add_action('init', 'custom_init');
+
 // Register action to initialise skindeep theme
 add_action('after_setup_theme', 'skindeep_setup' );
-// Register action to initialise custom fields
-// TODO: Use acf/init once upgraded
-//add_action('init', 'my_acf_add_local_field_groups');
 
 /**
  * Establishes the requirements of the theme
@@ -42,6 +38,9 @@ function custom_init() {
         isset ( $options['breadcumb_option'] ) && !$options['breadcumb_option'] ){
         jk_remove_wc_breadcrumbs();
     }
+
+    // Skin Deep theme uses an Article post type
+    create_article_post_type();
 }
 
 /**
@@ -81,7 +80,7 @@ function my_acf_add_local_field_groups() {
                     'label' => 'Author',
                     'name' => 'author',
                     'type' => 'text',
-                    'instructions' => 'The person who wrote the piece',
+                    'instructions' => 'The person who wrote the article',
                     'required' => 1,
                     'default_value' => '',
                     'placeholder' => '',
@@ -109,7 +108,7 @@ function my_acf_add_local_field_groups() {
                     array (
                         'param' => 'post_type',
                         'operator' => '==',
-                        'value' => 'post',
+                        'value' => 'sd_articles',
                         'order_no' => 0,
                         'group_no' => 0,
                     ),
@@ -125,6 +124,70 @@ function my_acf_add_local_field_groups() {
             'menu_order' => 0,
         ));
     }
+}
+
+/**
+ * @brief      Creates a cutsom post type of Article
+ *             Note: Must be called on the 'init' hook. the after_setup hook is
+ *             too soon for the 'taxonomies' argument.
+ *
+ * @return     None
+ */
+function create_article_post_type() {
+
+    // Set UI labels for Custom Post Type
+    $labels = array(
+        'name'                => 'Articles',
+        'singular_name'       => 'Article',
+        'menu_name'           => 'Articles',
+        'parent_item_colon'   => 'Parent Article', // Irrelevant
+        'all_items'           => 'All Articles',
+        'view_item'           => 'View Article',
+        'add_new_item'        => 'Add New Article',
+        'add_new'             => 'Add New',
+        'edit_item'           => 'Edit Article',
+        'update_item'         => 'Update Article',
+        'search_items'        => 'Search Article',
+        'not_found'           => 'Not Found',
+        'not_found_in_trash'  => 'Not found in Trash',
+    );
+    // Set other options for Custom Post Type
+    $args = array(
+        'label'               => 'articles',
+        'description'         => 'Article for viewing online',
+        'labels'              => $labels,
+        // Features this CPT supports in Post Editor
+        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions' ),
+        // You can associate this CPT with a taxonomy or custom taxonomy. 
+        'taxonomies'          => array ('category', 'post_tag'),
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post',
+        'rewrite'             => ['slug' => 'online-articles'],
+    );
+    // Registering your Custom Post Type
+    register_post_type( 'sd_articles', $args );
+}
+
+add_filter('manage_sd_articles_columns' , 'add_articles_columns');
+function add_articles_columns($columns) {
+    return array_merge($columns,
+          array('ID' => 'ID'));
+}
+
+function revealid_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
 }
 
 /**
@@ -218,3 +281,44 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
 
+/**
+ * @brief      Include Articles in post queries
+ *
+ * @param      $query  The query
+ *
+ * @return     None
+ */
+function inc_articles_in_queries($query) {
+    $post_type = get_query_var('post_type');
+    if ( !is_admin() &&  $query->is_main_query()) {
+        if (is_home()) {
+            $query->set('post_type', array( 'post', 'sd_articles'));
+        } else if (is_archive() || is_category()) {
+            // Anything querying for Posts should also query Articles
+            if (!$post_type) {
+                $post_type = array('post', 'sd_articles');
+            }
+            $query->set('post_type', $post_type);
+        }
+    } else if ($query->get('post__in')) {
+        write_log($query);
+        // Ensure queries for specific post IDs (e.g. featured slider) include
+        // Articles
+        $post_type = array('nav_menu_item', 'post', 'sd_articles');
+        $query->set('post_type', $post_type);
+    }
+}
+add_action('pre_get_posts','inc_articles_in_queries');
+
+/**
+ * @brief      Have Jetpack display related posts for Articles
+ *
+ * @param      $allowed_post_types  The allowed post types
+ *
+ * @return     An array of post types to display related posts on
+ */
+function allow_my_post_types($allowed_post_types) {
+    $allowed_post_types[] = 'articles';
+    return $allowed_post_types;
+}
+add_filter( 'rest_api_allowed_post_types', 'allow_my_post_types' );

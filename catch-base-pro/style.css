@@ -1552,13 +1552,15 @@ textarea {
     width: 100%;
 }
 
-.article-post article.post {
+.article-post article.post,
+.article-post article.sd_articles {
   max-width: 46em;
   margin: auto;
   padding-top: 2em;
 }
 
-article.post header.post-credits {
+article.post header.post-credits,
+article.sd_articles header.post-credits {
     margin-bottom: 1em;
     text-align: right;
     overflow: auto;

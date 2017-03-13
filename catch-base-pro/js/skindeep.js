@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
     var $container = jQuery($container);
     $container.imagesLoaded( function(){ 
       $container.masonry({ 
-        itemSelector: '.post', 
-        columnWidth: '.post',
+        itemSelector: 'article.post, article.sd_articles',
+        columnWidth: '.post,.sd_articles',
         hiddenStyle: { opacity: 0 }
       }); 
     });
@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
     $( document.body ).on( 'post-load', function () {
       infinite_count = infinite_count + 1;
       var $selector = $('#infinite-view-' + infinite_count);
-      var $elements = $selector.find('.post');
+      var $elements = $selector.find('.post,.sd_articles');
       $container.append( $elements )
       .masonry( 'appended', $elements );
       // $elements.hide();
