@@ -292,16 +292,17 @@ function inc_articles_in_queries($query) {
     $post_type = get_query_var('post_type');
     if ( !is_admin() &&  $query->is_main_query()) {
         if (is_home()) {
+            // The home page should show Articles as well as Posts
             $query->set('post_type', array( 'post', 'sd_articles'));
-        } else if (is_archive() || is_category()) {
-            // Anything querying for Posts should also query Articles
+        } else if (is_category() || is_tag() && empty( $query->query_vars['suppress_filters'])) {
+            // Category/Tag archives should also query Articles
             if (!$post_type) {
                 $post_type = array('post', 'sd_articles');
+                write_log($query);
             }
             $query->set('post_type', $post_type);
         }
     } else if ($query->get('post__in')) {
-        write_log($query);
         // Ensure queries for specific post IDs (e.g. featured slider) include
         // Articles
         $post_type = array('nav_menu_item', 'post', 'sd_articles');
