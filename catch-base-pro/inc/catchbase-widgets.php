@@ -20,6 +20,17 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
  * @since Catch Base 1.0
  */
 function catchbase_widgets_init() {
+	//Optional Home page widget area
+	register_sidebar( array(
+		'name'          => __( 'Home Page Main Content', 'catch-base' ),
+		'id'            => 'home-page-content',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-wrap">',
+		'after_widget'  => '</div><!-- .widget-wrap --></section><!-- #widget-default-search -->',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+		'description'	=> __( 'This is the optional content to be displayed on the home page. Defaults to recent posts', 'catch-base' ),
+	) );
+
 	//Primary Sidebar
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'catch-base' ),

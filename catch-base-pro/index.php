@@ -14,31 +14,42 @@
 
 get_header(); ?>
 
-	<main id="main" class="site-main grid featured-grid" role="main">
+    <main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+        <?php 
+        if (is_home() && is_active_sidebar( 'home-page-content' )) : ?>
+            <?php dynamic_sidebar( 'home-page-content' ); ?>
+        <?php else : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+            <div class="grid featured-grid">
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+            <?php if ( have_posts() ) : ?>
 
-			<?php endwhile; ?>
+                <?php /* Start the Loop */ ?>
+                <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php catchbase_content_nav( 'nav-below' ); ?>
+                    <?php
+                        /* Include the Post-Format-specific template for the content.
+                         * If you want to override this in a child theme then include a file
+                         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                         */
+                        get_template_part( 'content', get_post_format() );
+                    ?>
 
-		<?php else : ?>
+                <?php endwhile; ?>
 
-			<?php get_template_part( 'no-results', 'index' ); ?>
+                <?php catchbase_content_nav( 'nav-below' ); ?>
 
-		<?php endif; ?>
-	</main><!-- #main -->
+            <?php else : ?>
+
+                <?php get_template_part( 'no-results', 'index' ); ?>
+
+            <?php endif; ?>
+
+            </div>
+
+        <?php endif ?>
+    </main><!-- #main -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
