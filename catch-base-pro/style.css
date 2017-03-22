@@ -1998,6 +1998,16 @@ section.post-header .entry-header h2 {
     border-bottom: 1px solid #eee;
 }
 
+/* Home Page Widgets */
+.rpwe-block ul {
+    display: flex;
+    justify-content: space-between;
+}
+.rpwe-block li {
+    margin: 0em 1em;
+    width: 25em;
+}
+
 /*--------------------------------------------------------------
 15. Comments
 --------------------------------------------------------------*/
