@@ -35,20 +35,20 @@ do_action( 'catchbase_before_header_right' ); ?>
 	}
 	
 	//Header Right Widgets Sidebar
+    if ( !has_nav_menu( 'header-right' ) ) { ?> 
+        <?php if ( '' != ( $catchbase_social_icons = catchbase_get_social_icons() ) ) { ?>
+            <section class="widget widget_catchbase_social_icons" id="header-right-social-icons">
+                <div class="widget-wrap">
+                    <?php echo $catchbase_social_icons; ?>
+                </div><!-- .widget-wrap -->
+            </section><!-- #header-right-social-icons -->
+        <?php 
+            }
+        }
 	if ( is_active_sidebar( 'header-right' ) ) {
 	   	dynamic_sidebar( 'header-right' ); 
-	}	
-	elseif ( !has_nav_menu( 'header-right' ) ) { ?> 
-		<?php if ( '' != ( $catchbase_social_icons = catchbase_get_social_icons() ) ) { ?>
-			<section class="widget widget_catchbase_social_icons" id="header-right-social-icons">
-				<div class="widget-wrap">
-					<?php echo $catchbase_social_icons; ?>
-				</div><!-- .widget-wrap -->
-			</section><!-- #header-right-social-icons -->
-		<?php 
-			}
-        }
-	?>
+	}
+    ?>
 </aside><!-- .sidebar .header-sidebar .widget-area -->
 
 <?php 

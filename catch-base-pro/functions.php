@@ -162,21 +162,20 @@ function mod_donor_post ( $donor_post_type ) {
 add_filter('seamless_donations_donors_setup', 'mod_donor_post');
 
 /**
- * @brief      Exclude products from showing jetpack related posts
+ * @brief      Hide jetpack related posts from showing by default
  *
  * @param      $options  The options
  *
  * @return     None
  */
-function jetpackme_no_related_posts( $options ) {
-    write_log("post_type_exists( 'product' ) = " . post_type_exists( 'product' ));
-    write_log("is_singular( 'product' ) = " . is_singular( 'product' ));
-    if ( is_singular( 'product' ) || is_singular('product_variation') ) {
-        $options['enabled'] = false;
+function jetpackme_remove_rp() {
+    if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+        $jprp = Jetpack_RelatedPosts::init();
+        $callback = array( $jprp, 'filter_add_target_to_dom' );
+        remove_filter( 'the_content', $callback, 40 );
     }
-    return $options;
 }
-add_filter( 'jetpack_relatedposts_filter_options', 'jetpackme_no_related_posts' );
+add_filter( 'wp', 'jetpackme_remove_rp', 20 );
 
 if (!function_exists('write_log')) {
     /**
