@@ -581,15 +581,16 @@ ul#menu-main-menu {
 
 #masthead {
     line-height: 0;
-  width: 100%;
-  background: #FFF;
-  z-index: 130;
+    width: 100%;
+    background: #FFF;
+    z-index: 130;
 }
 
 #masthead .sidebar-header-right {
+    line-height: normal;
     margin-left: auto;
-  padding: 0;
-  padding-right: 2vw;
+    padding: 0;
+    padding-right: 2vw;
 }
 
 #masthead .wrapper {
@@ -2421,8 +2422,13 @@ caption {
 }
 
 /* Social Icons */
+.widget_catchbase_social_icons {
+    margin-bottom: 10px;
+}
+
 .widget_catchbase_social_icons .widget-wrap {
     display: flex;
+    justify-content: flex-end;
 }
 
 .widget_catchbase_social_icons a.genericon {
