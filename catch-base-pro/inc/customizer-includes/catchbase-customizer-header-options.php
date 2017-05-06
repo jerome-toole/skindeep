@@ -112,4 +112,17 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 		'settings' 	=> 'catchbase_theme_options[featured_header_image_base]',
 		'type'     	=> 'checkbox',
 	) );	
+
+	$wp_customize->add_setting( 'catchbase_theme_options[featured_header_image_inline_css]', array(
+		'capability'		=> 'edit_theme_options',
+		'default'	=> $defaults['featured_header_image_inline_css'],
+		'sanitize_callback' => 'catchbase_sanitize_custom_css',
+	) );
+
+	$wp_customize->add_control( 'catchbase_theme_options[featured_header_image_inline_css]', array(
+			'label'		=> __( 'Featured Header Image Inline CSS', 'catch-base' ),
+			'section'   => 'header_image',
+	        'settings'  => 'catchbase_theme_options[featured_header_image_inline_css]',
+	        'type'	  	=> 'text',
+	) );
 // Header Options End

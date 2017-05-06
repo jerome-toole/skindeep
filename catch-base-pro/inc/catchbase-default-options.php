@@ -43,6 +43,7 @@ function catchbase_get_default_theme_options() {
 		'featured_header_image_url'							=> '',
 		'featured_header_image_alt'							=> '',
 		'featured_header_image_base'						=> 0,
+		'featured_header_image_inline_css'					=> '',
 
 		//Navigation
 		'primary_menu_disable'								=> 0,
@@ -434,6 +435,9 @@ function catchbase_enable_featured_header_image_options() {
 			'value' => 'disabled',
 			'label' => __( 'Disabled', 'catch-base' ),
 		),
+		'inline-css'	=> array(
+			'value' => '',
+			'label' => __( 'Inline CSS', 'catch-base'))
 	);
 
 	return apply_filters( 'catchbase_enable_featured_header_image_options', $enable_featured_header_image_options );
