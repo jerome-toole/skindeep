@@ -43,6 +43,7 @@ function catchbase_get_default_theme_options() {
 		'featured_header_image_url'							=> '',
 		'featured_header_image_alt'							=> '',
 		'featured_header_image_base'						=> 0,
+		'featured_header_image_width'						=> '100%',
 
 		//Navigation
 		'primary_menu_disable'								=> 0,
@@ -138,6 +139,7 @@ function catchbase_get_default_theme_options() {
 		
 		//Header Color Options
 		'header_background_color'							=> '#ffffff',
+		'header_image_background_color'						=> '#ffffff',
 		'site_title_hover_color'							=> '#21759b',
 		'tagline_color'										=> '#404040',
 		
@@ -1084,7 +1086,8 @@ function catchbase_get_content_color_options() {
 */
 function catchbase_get_header_color_options() {
 	$header_color_options =	array(  
-									__( 'Header Background color', 'catch-base' ), 
+									__( 'Header Background color', 'catch-base' ),
+									__( 'Header Image Background color', 'catch-base' ), 
 									__( 'Site Title Hover Color', 'catch-base' ), 
 									__( 'Tagline Color', 'catch-base' )
 								);
@@ -1417,6 +1420,7 @@ function catchbase_default_dark_color_options() {
 		
 		//Header Color Options
 		'header_background_color'							=> '#111111',
+		'header_image_background_color'						=> '#111111',
 		'site_title_hover_color'							=> '#e4741f',
 		'tagline_color'										=> '#dddddd',
 
@@ -1595,6 +1599,7 @@ function catchbase_setup_options() {
 								
 								//Header Color Options
 								'header_background_color'							=> '#ffffff',
+								'header_image_background_color'						=> '#ffffff',
 								'site_title_hover_color'							=> '#21759b',
 								'tagline_color'										=> '#404040',
 								

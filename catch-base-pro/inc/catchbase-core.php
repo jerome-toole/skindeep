@@ -737,6 +737,15 @@ if ( ! function_exists( 'catchbase_custom_css' ) ) :
 				$catchbase_custom_css	.=  ".site-description { color: ".  $options[ 'tagline_color' ] ."; }". "\n";
 			}
 
+			//Header Image Color (+ Size) Options
+			if( $defaults[ 'header_image_background_color' ] != $options[ 'header_image_background_color' ] ) {
+				$catchbase_custom_css	.=  "#header-featured-image { background-color: ".  $options[ 'header_image_background_color' ] ."; }". "\n";	
+			}
+
+			if( $defaults[ 'featured_header_image_width' ] != $options[ 'featured_header_image_width' ] ) {
+				$catchbase_custom_css	.=  "#header-featured-image img { max-width: ".  $options[ 'featured_header_image_width' ] ."; }". "\n";	
+			}
+
 			//Content Color Options
 			if( $defaults[ 'content_wrapper_background_color' ] != $options[ 'content_wrapper_background_color' ] ) {
 				$catchbase_custom_css	.=  "#content { background-color: ".  $options[ 'content_wrapper_background_color' ] ."; }". "\n";	

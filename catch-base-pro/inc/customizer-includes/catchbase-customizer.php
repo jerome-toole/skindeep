@@ -572,3 +572,37 @@ function catchbase_color_list() {
 
 	return $catchbase_color_list;
 }
+
+function catchbase_sanitize_css_length( $input ) {
+    $return_value = catchbase_get_default_theme_options()['featured_header_image_width'];
+    // Split into value and units
+    if (preg_match('/(\d+)([\w]+|%)/', $input, $matches)) {
+        $value = $matches[1];
+        $unit = $matches[2];
+        switch ($unit) {
+            case '%':
+            case 'cm':
+            case 'em':
+            case 'ex':
+            case 'in':
+            case 'mm':
+            case 'pc':
+            case 'pt':
+            case 'px':
+            case 'vh':
+            case 'vw':
+            case 'vmin':
+                // Valid unit
+                if (is_numeric($value))
+                {
+                    $return_value = $value . $unit;
+                }
+                break;
+
+            default:
+                break;
+
+        }
+    }
+    return $return_value;
+}
