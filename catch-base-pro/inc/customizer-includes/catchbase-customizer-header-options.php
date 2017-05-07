@@ -111,18 +111,18 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 		'section'  	=> 'header_image',
 		'settings' 	=> 'catchbase_theme_options[featured_header_image_base]',
 		'type'     	=> 'checkbox',
-	) );	
+	) );
 
-	$wp_customize->add_setting( 'catchbase_theme_options[featured_header_image_inline_css]', array(
+	$wp_customize->add_setting( 'catchbase_theme_options[featured_header_image_width]', array(
 		'capability'		=> 'edit_theme_options',
-		'default'	=> $defaults['featured_header_image_inline_css'],
-		'sanitize_callback' => 'catchbase_sanitize_custom_css',
+		'default'	=> $defaults['featured_header_image_width'],
+		'sanitize_callback' => 'catchbase_sanitize_css_length',
 	) );
 
-	$wp_customize->add_control( 'catchbase_theme_options[featured_header_image_inline_css]', array(
-			'label'		=> __( 'Featured Header Image Inline CSS', 'catch-base' ),
-			'section'   => 'header_image',
-	        'settings'  => 'catchbase_theme_options[featured_header_image_inline_css]',
-	        'type'	  	=> 'text',
-	) );
+	$wp_customize->add_control( 'catchbase_theme_options[featured_header_image_width]', array(
+		'label'    	=> __( 'Max-Width of Image', 'catch-base' ),
+		'section'  	=> 'header_image',
+		'settings' 	=> 'catchbase_theme_options[featured_header_image_width]',
+		'type'     	=> 'text',
+	) );	
 // Header Options End
