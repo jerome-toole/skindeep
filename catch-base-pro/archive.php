@@ -61,6 +61,9 @@ get_header(); ?>
 				elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 					_e( 'Chats', 'catch-base' );
 
+				elseif ( is_tax( 'it_exchange_category') ) :
+					printf($wp_query->get_queried_object()->name);
+
 				else :
 					_e( 'Archives', 'catch-base' );
 
@@ -82,13 +85,17 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					if (is_tax('it_exchange_category')) :
+						it_exchange_set_product( $post->ID );
+						get_template_part( 'exchange/content', 'category');
+					else :
+						get_template_part( 'content', get_post_format() );
+					endif;
 				?>
 
 			<?php endwhile; ?>

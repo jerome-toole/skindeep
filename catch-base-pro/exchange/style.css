@@ -1,0 +1,9 @@
+/* Styles specific to customising iThemes Exchange */
+
+#it-exchange-store ul.it-exchange-categories {
+    margin: 0 0;
+}
+
+#it-exchange-store ul.it-exchange-categories > li.it-exchange-category {
+    list-style: none;
+}
