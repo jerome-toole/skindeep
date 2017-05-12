@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('unit half'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('unit half grid-item'); ?>>
 	<a href="<?php the_permalink(); ?>" rel="bookmark">
 		<div class="archive-post-wrap">
 			<?php 

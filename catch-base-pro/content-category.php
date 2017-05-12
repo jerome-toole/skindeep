@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('grid-item'); ?>>
 	<div class="archive-post-wrap">
 		<a href="<?php the_permalink(); ?>" >
 		<figure class="featured-image">
