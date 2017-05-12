@@ -72,6 +72,7 @@ function my_acf_add_local_field_groups() {
 
     if(function_exists("register_field_group"))
     {
+        // Author/Illustrator
         register_field_group(array (
             'id' => 'acf_skin-deep-article',
             'title' => 'Skin Deep Article',
@@ -124,7 +125,43 @@ function my_acf_add_local_field_groups() {
             ),
             'menu_order' => 0,
         ));
+
+        // iThemes Exchange product category image
+        register_field_group(array (
+            'id' => 'acf_ithemes-product-category',
+            'title' => 'iThemes Product Category',
+            'fields' => array (
+                array (
+                    'key' => 'field_591178033d922',
+                    'label' => 'Image',
+                    'name' => 'image',
+                    'type' => 'image',
+                    'save_format' => 'object',
+                    'preview_size' => 'thumbnail',
+                    'library' => 'all',
+                ),
+            ),
+            'location' => array (
+                array (
+                    array (
+                        'param' => 'ef_taxonomy',
+                        'operator' => '==',
+                        'value' => 'it_exchange_category',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'normal',
+                'layout' => 'no_box',
+                'hide_on_screen' => array (
+                ),
+            ),
+            'menu_order' => 0,
+        ));
     }
+
 }
 
 /**
