@@ -39,12 +39,12 @@ article.it-exchange-category {
  */
 
 /* Make product featured image look nicer */
-#it-exchange-product .it-exchange-product-standard-content {
+/*#it-exchange-product .it-exchange-product-standard-content {
     display: flex;
 }
 #it-exchange-product .it-exchange-product-has-images .it-exchange-product-images {
     align-self: center;
-}
+}*/
 
 
 /* ============================================================================
