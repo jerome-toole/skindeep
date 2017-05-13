@@ -49,12 +49,12 @@ article.it-exchange-category {
  * Related products plugin
  */
 
-.it-exchange-featured-image {
+.it-exchange-category-related-product .it-exchange-featured-image {
     height: 300px;
     overflow: hidden;
 }
 
-.it-exchange-featured-image img {
+.it-exchange-category-related-product .it-exchange-featured-image img {
     position: relative;
     top: 150px; /* Half height of parent */
     -webkit-transform: translateY(-50%);
