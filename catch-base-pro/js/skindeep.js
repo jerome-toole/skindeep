@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
     var $container = jQuery($container);
     $container.imagesLoaded( function(){ 
       $container.masonry({ 
-        itemSelector: '.post', 
-        columnWidth: '.post',
+        itemSelector: '.grid-item', 
+        columnWidth: '.grid-item',
         hiddenStyle: { opacity: 0 }
       }); 
     });

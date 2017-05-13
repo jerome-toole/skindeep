@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('unit half'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('unit half grid-item'); ?>>
 	<a href="<?php the_permalink(); ?>" rel="bookmark">
 		<div class="archive-post-wrap">
 			<?php 
@@ -25,12 +25,14 @@
 				<header class="entry-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<h3 class="entry-author"><?php the_author(); ?></h3>
-
-
 				</header><!-- .entry-header -->
 
-				<?php 
+				<?php
 				$options = catchbase_get_theme_options();
+
+				if (is_tax('it_exchange_category')) :
+					it_exchange( 'product', 'featured-image', array( 'size' => 'large' ) );
+				endif;
 
 				if ( is_search() || 'full-content' != $options['content_layout'] ) : // Only display Excerpts for Search and if 'full-content' is not selected ?>
 					<div class="entry-summary">

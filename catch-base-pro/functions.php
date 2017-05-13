@@ -60,18 +60,18 @@ function skindeep_setup() {
     write_log("skindeep_setup() called.");
 
     // Skin Deep theme uses custom fields.
-    my_acf_add_local_field_groups();
+    add_custom_skin_deep_fields();
+    install_ithemes_support();
 }
 
 /**
  * Register custom fields using Advanced Custom Fields (ACF). For example
  * 'Illustrator' field on posts.
  */
-function my_acf_add_local_field_groups() {
-    write_log("my_acf_add_local_field_groups() called.");
-
+function add_custom_skin_deep_fields() {
     if(function_exists("register_field_group"))
     {
+        // Author/Illustrator
         register_field_group(array (
             'id' => 'acf_skin-deep-article',
             'title' => 'Skin Deep Article',
@@ -218,3 +218,4 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
 
+require get_template_directory() . '/exchange/functions.php';
