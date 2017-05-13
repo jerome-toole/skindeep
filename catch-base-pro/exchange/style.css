@@ -11,7 +11,9 @@ article.it-exchange-category {
 /* ============================================================================
  * Buttons
  */
-[class^="it-exchange-"] input[type=submit] {
+[class^="it-exchange-"] input[type=submit],
+.it-exchange-button input[type=button],
+.exchange-button input[type=button]{
     box-shadow: none;
     -webkit-box-shadow: none;
     background-color: #a46497;
