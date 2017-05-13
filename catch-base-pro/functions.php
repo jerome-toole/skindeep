@@ -60,16 +60,15 @@ function skindeep_setup() {
     write_log("skindeep_setup() called.");
 
     // Skin Deep theme uses custom fields.
-    my_acf_add_local_field_groups();
+    add_custom_skin_deep_fields();
+    install_ithemes_support();
 }
 
 /**
  * Register custom fields using Advanced Custom Fields (ACF). For example
  * 'Illustrator' field on posts.
  */
-function my_acf_add_local_field_groups() {
-    write_log("my_acf_add_local_field_groups() called.");
-
+function add_custom_skin_deep_fields() {
     if(function_exists("register_field_group"))
     {
         // Author/Illustrator
@@ -125,43 +124,7 @@ function my_acf_add_local_field_groups() {
             ),
             'menu_order' => 0,
         ));
-
-        // iThemes Exchange product category image
-        register_field_group(array (
-            'id' => 'acf_ithemes-product-category',
-            'title' => 'iThemes Product Category',
-            'fields' => array (
-                array (
-                    'key' => 'field_591178033d922',
-                    'label' => 'Image',
-                    'name' => 'image',
-                    'type' => 'image',
-                    'save_format' => 'object',
-                    'preview_size' => 'thumbnail',
-                    'library' => 'all',
-                ),
-            ),
-            'location' => array (
-                array (
-                    array (
-                        'param' => 'ef_taxonomy',
-                        'operator' => '==',
-                        'value' => 'it_exchange_category',
-                        'order_no' => 0,
-                        'group_no' => 0,
-                    ),
-                ),
-            ),
-            'options' => array (
-                'position' => 'normal',
-                'layout' => 'no_box',
-                'hide_on_screen' => array (
-                ),
-            ),
-            'menu_order' => 0,
-        ));
     }
-
 }
 
 /**
@@ -255,3 +218,4 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
 
+require get_template_directory() . '/exchange/functions.php';

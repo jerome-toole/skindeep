@@ -11,46 +11,22 @@
 <?php do_action( 'it_exchange_content_store_begin_categories_loop' ); ?>
 <?php
 
-# Pull out all non-empty product categories
+# Pull out all product categories
 $taxonomy = 'it_exchange_category';
 $terms = get_terms(['taxonomy' => $taxonomy]);
 
 ?>
 
 <?php
-# Loop through the categories
-if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-    foreach ( $terms as $term ) :
-
-        // Consider loading in with include(locate_template('your-template-name.php'));
-
-        ?>
+# Loop through the non-empty categories
+if ( !empty($terms) && ! is_wp_error($terms) ) :
+    foreach ($terms as $term) : ?>
 
         <article class="<?php echo str_replace('_', '-', $taxonomy); ?> grid-item unit half">
             <a href="<?php echo esc_url( get_term_link( $term ) ); ?>"
                alt="<?php esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) ?>">
 
-                <?php
-                // Pull out the ACF image
-                $image = get_field('image', $taxonomy . '_' . $term->term_id);
-                if( !empty($image) ) :
-
-                    // vars
-                    $alt = $image['alt'];
-                    $caption = $image['caption'];
-
-                    // thumbnail
-                    $size = 'shop_catalog';
-                    $src = $image['sizes'][ $size ];
-                    $width = $image['sizes'][ $size . '-width' ];
-                    $height = $image['sizes'][ $size . '-height' ];
-
-                    ?>
-                    <img src="<?php echo $src; ?>"
-                         alt="<?php echo $alt; ?>"
-                         width="<?php echo $width; ?>"
-                         height="<?php echo $height; ?>" />
-                <?php endif; ?>
+                <?php it_product_category_image($taxonomy . '_' . $term->term_id); ?>
 
                 <h2>
                     <?php echo $term->name ?>

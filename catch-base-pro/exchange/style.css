@@ -1,9 +1,65 @@
 /* Styles specific to customising iThemes Exchange */
 
-#it-exchange-store ul.it-exchange-categories {
-    margin: 0 0;
+/* ============================================================================
+ * Custom store page arrangement
+ */
+
+article.it-exchange-category {
+    text-align: center;
 }
 
-#it-exchange-store ul.it-exchange-categories > li.it-exchange-category {
-    list-style: none;
+/* ============================================================================
+ * Buttons
+ */
+[class^="it-exchange-"] input[type=submit] {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: #a46497;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    background-color: #a46497;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+}
+
+[class^="it-exchange-"] input[type=submit]:hover {
+    background-color: #935386;
+}
+
+[class^="it-exchange-"] input[type=submit]:focus {
+  outline-offset: 0;
+}
+
+/* ============================================================================
+ * Single product
+ */
+
+/* Make product featured image look nicer */
+#it-exchange-product .it-exchange-product-standard-content {
+    display: flex;
+}
+#it-exchange-product .it-exchange-product-has-images .it-exchange-product-images {
+    align-self: center;
+}
+
+
+/* ============================================================================
+ * Related products plugin
+ */
+
+.it-exchange-featured-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.it-exchange-featured-image img {
+    position: relative;
+    top: 150px; /* Half height of parent */
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

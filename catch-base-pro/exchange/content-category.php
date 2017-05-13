@@ -23,25 +23,12 @@
 
             <div class="entry-container">
 
-                <?
-
-                // TODO: Install shop_catalog with iThemes (it's from wordpress)
-                $image = it_exchange('product', 'get-images')[0]['shop_catalog'];
-                write_log($image);
-                $src = $image[0];
-                $width = $image[1];
-                $height = $image[2];
-
-                ?>
-
-                <img src="<?php echo $src; ?>"
-                         width="<?php echo $width; ?>"
-                         height="<?php echo $height; ?>" />
+                <? it_get_image('shop_catalog'); ?>
 
                 <!-- <?php it_exchange( 'product', 'featured-image', array( 'size' => 'large' ) ); ?> -->
 
                 <header class="entry-header">
-                    <h2 class="entry-title"><?php the_title(); ?></h2>
+                    <h3 class="entry-title"><?php the_title(); ?></h3>
                 </header><!-- .entry-header -->
 
                 <?php it_exchange( 'product', 'base-price'); ?>
