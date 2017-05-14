@@ -19,7 +19,7 @@ define ( 'CATCHBASE_THEME_VERSION', '3.1' );
  * Implement the core functions
  */
 require get_template_directory() . '/inc/catchbase-core.php';
-require get_template_directory() . '/exchange/functions.php';
+
 // TODO: Indicate the ACF is a plugin dependency. Include with theme?
 
 // Register action to configure theme requirements
@@ -62,8 +62,6 @@ function skindeep_setup() {
     // Skin Deep theme uses custom fields.
     add_custom_skin_deep_fields();
     install_ithemes_support();
-
-    update_db();
 }
 
 /**
@@ -220,34 +218,4 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
 
-function update_db() {
-    $updates = array(
-        // Issue 1
-        "1823" => "2014-10-14 00:00:00",
-        "1845" => "2014-10-14 00:00:00",
-        // Issue 2
-        "1819" => "2014-11-30 20:52:22",
-        "1846" => "2014-11-30 20:52:22",
-        // Issue 3
-        "1820" => "2015-03-02 21:03:37",
-        "1847" => "2015-03-02 21:03:37",
-        // Issue 4
-        "1814" => "2015-06-18 21:08:10",
-        "1844" => "2015-06-18 21:08:10",
-        // Issue 5
-        "1843" => "2016-07-26 11:14:02",
-        "1809" => "2016-07-26 11:14:02",
-    );
-    global $wpdb;
-    foreach ($updates as $key => $value) {        
-    write_log($wpdb->update(
-        'wp_posts',
-        array(
-            'post_date' => $value,
-            'post_date_gmt' => $value
-        ),
-        array('ID' => $key),
-        $format = null,
-        array('%d')) === false);
-    }
-}
+require get_template_directory() . '/exchange/functions.php';
