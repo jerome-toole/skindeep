@@ -137,33 +137,41 @@ function add_downloads_to_physical_products() {
     it_exchange_add_feature_support_to_product_type( 'downloads', 'physical-product-type' );
 }
 
-function add_variant_presets() {
-    write_log("Now add!");
+/**
+ * @brief      Adds custom variant presets for the Skin Deep shop
+ *
+ * @return     None
+ */
+function add_custom_variant_presets() {
+    // Check the preset hasn't already been added
+    $existing_presets = it_exchange_variants_addon_get_presets( array( 'core_only' => false ) );
 
-    // Create a preset variant for Digital/Print
-    $format_preset = array(
-        'slug' => 'format',
-        'title' => 'Format',
-        'values' => array(
-            'print' => array(
-                'slug' => 'print',
-                'title' => 'Print',
-                'order' => 1,
+    if (!isset($existing_presets['format'])) {
+        // Create a preset variant for Digital/Print
+        $format_preset = array(
+            'slug' => 'format',
+            'title' => 'Format',
+            'values' => array(
+                'print' => array(
+                    'slug' => 'print',
+                    'title' => 'Print',
+                    'order' => 1,
+                ),
+                'digital' => array(
+                    'slug' => 'digital',
+                    'title' => 'Digital',
+                    'order' => 2,
+                )
             ),
-            'digital' => array(
-                'slug' => 'digital',
-                'title' => 'Digital',
-                'order' => 2,
-            )
-        ),
-        'default' => 'print',
-        'core' => false,
-        'ui-type' => 'select',
-        'version' => '0.0.31',
-    );
-    it_exchange_variants_addon_create_variant_preset($format_preset);
+            'default' => 'print',
+            'core' => false,
+            'ui-type' => 'select',
+            'version' => '0.0.31',
+        );
+        it_exchange_variants_addon_create_variant_preset($format_preset);
+    }
 }
-add_action( 'admin_init', 'add_variant_presets' );
+add_action( 'admin_init', 'add_custom_variant_presets' );
 
 /**
  * @brief      Determines if the current transaction product is digital.
@@ -174,21 +182,28 @@ add_action( 'admin_init', 'add_variant_presets' );
  */
 function is_transaction_product_digital()
 {
+    // Get the product details from the transaction
     $itemized_data = maybe_unserialize(get_transaction_product_attribute('itemized_data'));
-
-    write_log($itemized_data);
-
     if ( !empty( $itemized_data['it_variant_combo_hash'] ) )
     {
-        // Product is of a particular variant
+        // Product is of a particular variant, get the attributes
         $product_id = get_transaction_product_attribute('product_id');
         $atts = it_exchange_get_variant_combo_attributes_from_hash(
             $product_id,
-            $itemized_data['it_variant_combo_hash'] );
+            $itemized_data['it_variant_combo_hash']);
 
-        if ($atts['title'] == 'Digital')
-        {
-            return true;
+        if (is_array($atts['combo'])) {
+            // Now loop through the purchased item's variant value IDs...
+            foreach ($atts['combo'] as $variant => $option) {
+                // ...Compare it with all the possible value IDs for the given variant
+                $all_options = it_exchange_get_values_for_variant($variant);
+                foreach ($all_options as $qoption) {
+                    // ...And check if the friendly name is 'digital'
+                    if (($option == $qoption->ID) && ($qoption->post_name == 'digital')) {
+                        return true;
+                    }
+                }
+            }
         }
     }
     return false;
