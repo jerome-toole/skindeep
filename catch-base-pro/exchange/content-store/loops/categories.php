@@ -26,7 +26,7 @@ if ( !empty($terms) && ! is_wp_error($terms) ) :
             <a href="<?php echo esc_url( get_term_link( $term ) ); ?>"
                alt="<?php esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) ?>">
 
-                <?php it_product_category_image($taxonomy . '_' . $term->term_id); ?>
+                <?php it_product_category_image($taxonomy, $term->term_id); ?>
 
                 <h2>
                     <?php echo $term->name ?>

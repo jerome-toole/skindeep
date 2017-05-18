@@ -9,7 +9,11 @@
 function install_ithemes_support() {
     add_custom_ithemes_fields();
     install_shop_image_sizes();
+
+    // Allow us to combine downloads and physical products
+    add_downloads_to_physical_products();
 }
+add_action('it_exchange_enabled_addons_loaded', 'install_ithemes_support' );
 
 /**
  * @brief      Adds custom ithemes fields.
@@ -56,13 +60,28 @@ function add_custom_ithemes_fields() {
     }
 }
 
+/**
+ * @brief      Install image sizes for shop images
+ *
+ * @return     None
+ */
 function install_shop_image_sizes() {
     add_image_size("shop_catalog", 300, 300, true);
     add_image_size("shop_single", 600, 600, true);
 }
 
-function it_product_category_image($post_id, $size="shop_catalog") {
-    write_log($post_id);
+/**
+ * @brief      Outputs an image for an iThemes category
+ *
+ * @param      $taxonomy  The taxonomy
+ * @param      $term      The term
+ * @param      $size      The image size
+ * @param      $post_id   The identifier of the post/taxonomy
+ *
+ * @return     None
+ */
+function it_product_category_image($taxonomy, $term, $size="shop_catalog") {
+    $post_id = $taxonomy . '_' . $term;
 
     // Pull out the ACF image
     $image = get_field('image', $post_id);
@@ -81,6 +100,13 @@ function it_product_category_image($post_id, $size="shop_catalog") {
     }
 }
 
+/**
+ * @brief      Outputs an iThemes product image of any installed sizes
+ *
+ * @param      $size  The size
+ *
+ * @return     None
+ */
 function it_get_image($size)
 {
     $image = it_exchange('product', 'get-images')[0][$size];
@@ -101,5 +127,62 @@ function jetpack_remove_inifite_scroll_conditionally() {
     }
 }
 add_action( 'template_redirect', 'jetpack_remove_inifite_scroll_conditionally', 9);
+
+/**
+ * @brief      Adds the downloads feature to physical products.
+ *
+ * @return     None
+ */
+function add_downloads_to_physical_products() {
+    it_exchange_add_feature_support_to_product_type( 'downloads', 'physical-product-type' );
+}
+
+/**
+ * @brief      Determines if the current transaction product is digital.
+ * @note       This function should be called while in a loop using
+ *             it_exchange('transaction', 'product-downloads')
+ *
+ * @return     True if transaction product is digital, False otherwise.
+ */
+function is_transaction_product_digital()
+{
+    $itemized_data = maybe_unserialize(get_transaction_product_attribute('itemized_data'));
+
+    write_log($itemized_data);
+
+    if ( !empty( $itemized_data['it_variant_combo_hash'] ) )
+    {
+        // Product is of a particular variant
+        $product_id = get_transaction_product_attribute('product_id');
+        $atts = it_exchange_get_variant_combo_attributes_from_hash(
+            $product_id,
+            $itemized_data['it_variant_combo_hash'] );
+
+        if ($atts['title'] == 'Digital')
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * @brief      Gets the product attribute from the current transaction product.
+ * @note       This function should be called while in a loop using
+ *             it_exchange('transaction', 'product-downloads')
+ *
+ * @param      $attribute  The attribute to retrieve
+ *
+ * @return     The transaction product attribute.
+ */
+function get_transaction_product_attribute($attribute)
+{
+    $options = array(
+        'attribute' => $attribute,
+        'format' => '',
+        'return' => true
+    );
+    return it_exchange('transaction', 'product-attribute', $options);
+}
 
 ?>
