@@ -137,6 +137,34 @@ function add_downloads_to_physical_products() {
     it_exchange_add_feature_support_to_product_type( 'downloads', 'physical-product-type' );
 }
 
+function add_variant_presets() {
+    write_log("Now add!");
+
+    // Create a preset variant for Digital/Print
+    $format_preset = array(
+        'slug' => 'format',
+        'title' => 'Format',
+        'values' => array(
+            'print' => array(
+                'slug' => 'print',
+                'title' => 'Print',
+                'order' => 1,
+            ),
+            'digital' => array(
+                'slug' => 'digital',
+                'title' => 'Digital',
+                'order' => 2,
+            )
+        ),
+        'default' => 'print',
+        'core' => false,
+        'ui-type' => 'select',
+        'version' => '0.0.31',
+    );
+    it_exchange_variants_addon_create_variant_preset($format_preset);
+}
+add_action( 'admin_init', 'add_variant_presets' );
+
 /**
  * @brief      Determines if the current transaction product is digital.
  * @note       This function should be called while in a loop using
