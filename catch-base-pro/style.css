@@ -580,6 +580,7 @@ ul#menu-main-menu {
 }
 
 #masthead {
+    position: relative;
     line-height: 0;
     width: 100%;
     background: #FFF;
@@ -909,8 +910,8 @@ textarea {
     /* width: 100%; */
 }
 
-.stuck {
-    position: fixed;
+#masthead.stuck {
+    position: fixed !important;
     top: 0px;
 }
 
