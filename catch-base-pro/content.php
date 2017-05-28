@@ -23,7 +23,7 @@
 
 			<div class="entry-container">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h2 class="entry-title"><?php the_title(); ?></h2>
 					<h3 class="entry-author"><?php the_author(); ?></h3>
 				</header><!-- .entry-header -->
 
