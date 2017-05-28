@@ -591,7 +591,6 @@ ul#menu-main-menu {
     line-height: normal;
     margin-left: auto;
     padding: 0;
-    /*padding-right: 2vw;*/
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
