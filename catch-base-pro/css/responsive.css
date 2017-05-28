@@ -750,6 +750,10 @@ Responsive Style
 		margin: 0 0 1em;
 	}
 
+	.sidebar-header-right .widget {
+	    margin-bottom: 0;
+	}
+
 	#featured-content .entry-container {
 		margin-top: 10px;
 	}

@@ -722,7 +722,7 @@ body.archive.category .page-title.hide-cat-title {
     margin-top: 20px;
 }
 
-.sidebar-header-right .widget:last-child {
+.sidebar-header-right .widget {
     margin-bottom: 0;
 }
 
@@ -2434,10 +2434,6 @@ caption {
 }
 
 /* Social Icons */
-.widget_catchbase_social_icons {
-    margin-bottom: 0px;
-}
-
 .widget_catchbase_social_icons .widget-wrap {
     display: flex;
     justify-content: flex-end;
