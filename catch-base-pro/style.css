@@ -911,8 +911,6 @@ textarea {
     height: 100%;
     z-index: 198;
     background-color: rgba(0,0,0,0);
-    white-space:nowrap;
-    overflow:hidden;
 }
 
 .nav-primary ul {
