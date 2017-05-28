@@ -591,7 +591,16 @@ ul#menu-main-menu {
     line-height: normal;
     margin-left: auto;
     padding: 0;
-    padding-right: 2vw;
+    /*padding-right: 2vw;*/
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#masthead .sidebar-header-right section {
+    padding: 0px 2vw;
 }
 
 #masthead .wrapper {
@@ -903,11 +912,12 @@ textarea {
     height: 100%;
     z-index: 198;
     background-color: rgba(0,0,0,0);
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 .nav-primary ul {
     line-height: 80px;
-    /* width: 100%; */
 }
 
 #masthead.stuck {
@@ -2425,7 +2435,7 @@ caption {
 
 /* Social Icons */
 .widget_catchbase_social_icons {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .widget_catchbase_social_icons .widget-wrap {
