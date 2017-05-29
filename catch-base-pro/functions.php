@@ -177,19 +177,17 @@ function jetpackme_remove_rp() {
 }
 add_filter( 'wp', 'jetpackme_remove_rp', 20 );
 
-if (!function_exists('write_log')) {
-    /**
-     * Writes a log message (only defined if WP_DEBUG is enabled)
-     *
-     * @param      string  $log    The log message
-     */
-    function write_log($log) {
-        if (true == WP_DEBUG) {
-            if (is_array($log) || is_object($log)) {
-                error_log(print_r($log, true));
-            } else {
-                error_log($log);
-            }
+/**
+ * Writes a log message (only defined if WP_DEBUG is enabled)
+ *
+ * @param      string  $log    The log message
+ */
+function write_log($log) {
+    if (true == WP_DEBUG) {
+        if (is_array($log) || is_object($log)) {
+            error_log(print_r($log, true));
+        } else {
+            error_log($log);
         }
     }
 }
@@ -217,5 +215,35 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
     return $defaults;
 }
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
+
+/**
+ * @brief      Checks if the current post has a particular credit
+ *
+ * @param      $credit_type  The credit type: 'author' | 'illustrator'
+ *  
+ * @return     true if credit is populated, otherwise false
+ */
+function skindeep_has_post_credit( $credit_type ) {
+    if ( function_exists('get_field') ) {
+        return !empty(get_field( $credit_type ));
+    }
+    return false;
+}
+
+/**
+ * @brief      Outputs the text for the particular credit
+ *
+ * @param      $credit_type  The credit type: 'author' | 'illustrator'
+ *
+ * @return     None
+ */
+function skindeep_get_post_credit( $credit_type ) {
+    if ( function_exists('get_field') ) {
+        printf(
+            '%s %s',
+            $options['post_' . $credit_type . '_credit_text'],
+            get_field( $credit_type ));
+    }
+}
 
 require get_template_directory() . '/exchange/functions.php';
