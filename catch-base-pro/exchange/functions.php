@@ -96,7 +96,7 @@ function it_get_image($size)
  * @return     None
  */
 function jetpack_remove_inifite_scroll_conditionally() {
-    if (it_exchange_is_page() !== false) {
+    if (it_exchange_is_page( 'store' )) {
         remove_theme_support( 'infinite-scroll' );
     }
 }
