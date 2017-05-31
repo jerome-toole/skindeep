@@ -14,7 +14,6 @@
 	<div class="archive-post-wrap">
 		<a href="<?php the_permalink(); ?>" >
 		<figure class="featured-image">
-			<?php write_log("category content!"); ?>
 		    <?php if ( has_post_thumbnail() ) { the_post_thumbnail('square_cats');} ?>
 		</figure>
 		</a>

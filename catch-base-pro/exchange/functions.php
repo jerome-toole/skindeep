@@ -62,22 +62,23 @@ function install_shop_image_sizes() {
 }
 
 function it_product_category_image($post_id, $size="shop_catalog") {
-    write_log($post_id);
-
     // Pull out the ACF image
-    $image = get_field('image', $post_id);
-    if( !empty($image) ) {
+    if (function_exists('get_field'))
+    {
+        $image = get_field('image', $post_id);
+        if( !empty($image) ) {
 
-        // vars
-        $alt = $image['alt'];
-        $caption = $image['caption'];
+            // vars
+            $alt = $image['alt'];
+            $caption = $image['caption'];
 
-        // thumbnail
-        $src = $image['sizes'][ $size ];
-        $width = $image['sizes'][ $size . '-width' ];
-        $height = $image['sizes'][ $size . '-height' ];
+            // thumbnail
+            $src = $image['sizes'][ $size ];
+            $width = $image['sizes'][ $size . '-width' ];
+            $height = $image['sizes'][ $size . '-height' ];
 
-        printf('<img src="%s" alt="%s" width="%d" height="%d" />', $src, $alt, $width, $height);
+            printf('<img src="%s" alt="%s" width="%d" height="%d" />', $src, $alt, $width, $height);
+        }
     }
 }
 

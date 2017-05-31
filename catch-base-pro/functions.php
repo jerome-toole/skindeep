@@ -34,7 +34,6 @@ add_action('after_setup_theme', 'skindeep_setup' );
  * Establishes the requirements of the theme
  */
 function custom_init() {
-    write_log("custom_init() called.");
     $options = catchbase_get_theme_options(); // Get options
 
     // Remove breadcrumbs from woocommerce pages
@@ -57,8 +56,6 @@ function custom_init() {
  * @since      3.0.0
  */
 function skindeep_setup() {
-    write_log("skindeep_setup() called.");
-
     // Skin Deep theme uses custom fields.
     add_custom_skin_deep_fields();
     install_ithemes_support();
@@ -182,7 +179,7 @@ add_filter( 'wp', 'jetpackme_remove_rp', 20 );
  *
  * @param      string  $log    The log message
  */
-function write_log($log) {
+function skindeep_write_log($log) {
     if (true == WP_DEBUG) {
         if (is_array($log) || is_object($log)) {
             error_log(print_r($log, true));
