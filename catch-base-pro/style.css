@@ -271,6 +271,7 @@ big {
 #promotion-message h2,
 #featured-content #featured-heading {
     font-size: 30px;
+    font-weight: 600;
 }
 
 #scrollup:before {
