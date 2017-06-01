@@ -17,20 +17,14 @@ $options = catchbase_get_theme_options();
 	
 	<header class="post-credits">
 	<section class="alignright">
-		<?php if ( !empty( get_field('author') ) ) : ?>
+		<?php if ( skindeep_has_post_credit( 'author' ) ) : ?>
 			<h2 id="post-credits-author" class="post-credits-item">
-				<?php printf(
-					'%s %s',
-					$options['post_author_credit_text'],
-					get_field('author')); ?>
+				<?php skindeep_get_post_credit( 'author' ); ?>
 			</h2>
 		<?php endif; ?>
-		<?php if( !empty( get_field('illustrator') ) ) : ?>
+		<?php if( skindeep_has_post_credit( 'illustrator') ) : ?>
 			<h2 id="post-credits-illustrator" class="post-credits-item">
-				<?php printf(
-					'%s %s',
-					$options['post_illustrator_credit_text'],
-					get_field('illustrator')); ?>
+				<?php skindeep_get_post_credit( 'illustrator' ); ?>
 			</h2>
 		<?php endif; ?>
 	</section>
