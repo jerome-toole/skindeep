@@ -25,7 +25,7 @@
 				<header class="entry-header">
 					<h2 class="entry-title"><?php the_title(); ?></h2>
 					<h3 class="entry-author">
-						<?php the_author(); ?> | <?php the_date('F j'); ?>
+						<?php the_author(); ?><span class="entry-date"><?php the_date('F j'); ?></span>
 					</h3>
 				</header><!-- .entry-header -->
 

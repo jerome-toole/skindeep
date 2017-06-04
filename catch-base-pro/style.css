@@ -271,7 +271,7 @@ big {
 #promotion-message h2,
 #featured-content #featured-heading {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #scrollup:before {
@@ -280,6 +280,10 @@ big {
 
 #featured-content .entry-title {
     font-size: 24px;
+}
+
+.entry-container .entry-date {
+    margin-left: 1em;
 }
 
 .comments-title,
