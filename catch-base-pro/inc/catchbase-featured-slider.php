@@ -226,7 +226,7 @@ function catchbase_post_slider( $options ) {
 						<h1 class="entry-title">
 							<a title="'.the_title('','',false).'" href="' . get_permalink() . '">'.the_title( '<span>','</span>', false ).'</a>
 						</h1>
-						<h3 class="entry-author">' . the_author( '','', false ) . '</h3>
+						<h3 class="entry-author">' . get_the_author( '','', false ) . '</h3>
 						<div class="assistive-text">'.catchbase_page_post_meta().'</div>
 					</header>';
 					if( $excerpt !='') {
