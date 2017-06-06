@@ -26,6 +26,7 @@ function catchbase_get_social_icons(){
 
 		$options 	= catchbase_get_theme_options(); // Get options
 
+		$social_icons['Icegram']		= isset( $options['icegram_campaign'] ) ? $options['icegram_campaign'] : '' ;
 		$social_icons['Facebook-alt']	= isset( $options['facebook_link'] ) ? $options['facebook_link'] : '' ;
 		$social_icons['Twitter']		= isset( $options['twitter_link'] ) ? $options['twitter_link'] : '' ;
 		$social_icons['Googleplus-alt']	= isset( $options['googleplus_link'] ) ? $options['googleplus_link'] : '' ;
@@ -63,6 +64,9 @@ function catchbase_get_social_icons(){
 				}
 				else if ( 'Skype' == $key  ) { 
 					$output .= '<a class="genericon_parent genericon genericon-'. strtolower( $key ) .'" title="'. $title[ 0 ] . '" href="'. esc_attr( $value ) .'"><span class="screen-reader-text">'.$title[ 0 ] . '</span> </a>';
+				}
+				else if ( 'Icegram' == $key ) {
+					$output .= do_shortcode('[icegram campaigns="' . $value . '"]<a class="genericon_parent genericon genericon-subscribe" title="' . $title[ 0 ] . '" href="#"><span class="screen-reader-text">' . $title[0] . '</span></a>[/icegram]');
 				}
 				else {
 					$output .= '<a class="genericon_parent genericon genericon-'. strtolower( $key ) .'" target="_blank" title="'. $title[ 0 ] .'" href="'. esc_url( $value ) .'"><span class="screen-reader-text">'. $title[ 0 ] .'</span> </a>';
@@ -104,10 +108,7 @@ function catchbase_get_social_icons(){
 					$output .= '<img  alt="' . esc_attr( $title ) . '" class ="icon-hover" src="' . esc_url( $image_hover ) . '" />';
 				}
 				$output .= '</a>';
-
-				
-				
-			} 
+			}
 		}
 		
 		$catchbase_social_icons = $output;

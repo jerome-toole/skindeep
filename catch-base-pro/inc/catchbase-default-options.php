@@ -1038,6 +1038,7 @@ function catchbase_get_social_icons_list() {
 											__( 'Foursquare', 'catch-base' ),											
 											__( 'Spotify', 'catch-base' ),
 											__( 'Twitch', 'catch-base' ),
+											__( 'Icegram', 'catch-base' ),
 										);
 
 	return apply_filters( 'catchbase_social_icons_list', $catchbase_social_icons_list );
