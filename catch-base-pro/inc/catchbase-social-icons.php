@@ -112,8 +112,6 @@ function catchbase_get_social_icons(){
 		}
 		
 		$catchbase_social_icons = $output;
-		
-		set_transient( 'catchbase_social_icons', $catchbase_social_icons, 86940 );	
 	}
 	return $catchbase_social_icons;
 } // catchbase_get_social_icons
