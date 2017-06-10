@@ -71,7 +71,6 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 			) );
 		}
 		else if ( $option == 'Icegram' ) {
-			skindeep_write_log("wtf");
 			$wp_customize->add_setting( 'catchbase_theme_options['. $lower_case_option .'_campaign]', array(
 					'capability'		=> 'edit_theme_options',
 					'sanitize_callback' => 'absint',
