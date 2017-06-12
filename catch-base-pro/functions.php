@@ -236,6 +236,7 @@ function skindeep_has_post_credit( $credit_type ) {
  */
 function skindeep_get_post_credit( $credit_type ) {
     if ( function_exists('get_field') ) {
+        $options = catchbase_get_theme_options(); // Get options
         printf(
             '%s %s',
             $options['post_' . $credit_type . '_credit_text'],
