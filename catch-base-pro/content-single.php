@@ -16,7 +16,7 @@ $options = catchbase_get_theme_options();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="post-credits">
-		<section class="alignleft align-left">
+		<section>
 			<h1 class="entry-title">
 				<?php the_title(); ?>
 			</h1>
