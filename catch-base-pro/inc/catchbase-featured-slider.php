@@ -222,13 +222,15 @@ function catchbase_post_slider( $options ) {
 				$catchbase_post_slider .= '
 				</figure><!-- .slider-image -->
 				<div class="entry-container">
+					<a title="'.the_title('','',false).'" href="' . get_permalink() . '">
 					<header class="entry-header">
 						<h1 class="entry-title">
-							<a title="'.the_title('','',false).'" href="' . get_permalink() . '">'.the_title( '<span>','</span>', false ).'</a>
+							'.the_title( '<span>','</span>', false ).'
 						</h1>
 						<h3 class="entry-author">' . get_the_author( '','', false ) . '</h3>
 						<div class="assistive-text">'.catchbase_page_post_meta().'</div>
-					</header>';
+					</header>
+					</a>';
 					if( $excerpt !='') {
 						$catchbase_post_slider .= '<div class="entry-content">'. $excerpt.'</div>';
 					}
@@ -291,7 +293,7 @@ function catchbase_page_slider( $options ) {
 				<figure class="slider-image">';
 				if ( has_post_thumbnail() ) {
 					$catchbase_page_slider .= '<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">
-						'. get_the_post_thumbnail( $post->ID, 'large', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-page-image' ) ).'
+						'. get_the_post_thumbnail( $post->ID, 'catchbase_slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-page-image' ) ).'
 					</a>';
 				}
 				else {
@@ -313,10 +315,11 @@ function catchbase_page_slider( $options ) {
 
 				$catchbase_page_slider .= '
 				</figure><!-- .slider-image -->
+				<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">
 				<div class="entry-container">
 					<header class="entry-header">
 						<h1 class="entry-title">
-							<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">'.the_title( '<span>','</span>', false ).'</a>
+							'.the_title( '<span>','</span>', false ).'
 						</h1>
 						<div class="assistive-text">'.catchbase_page_post_meta().'</div>
 					</header>';
@@ -325,6 +328,7 @@ function catchbase_page_slider( $options ) {
 					}
 					$catchbase_page_slider .= '
 				</div><!-- .entry-container -->
+				</a>
 			</article><!-- .slides -->';
 		endwhile; 
 
@@ -370,7 +374,7 @@ function catchbase_category_slider( $options ) {
 				<figure class="slider-image">';
 				if ( has_post_thumbnail() ) {
 					$catchbase_category_slider .= '<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">
-						'. get_the_post_thumbnail( $post->ID, 'large', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-post-image' ) ).'
+						'. get_the_post_thumbnail( $post->ID, 'catchbase_slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-post-image' ) ).'
 					</a>';
 				}
 				else {
@@ -392,10 +396,11 @@ function catchbase_category_slider( $options ) {
 				
 				$catchbase_category_slider .= '
 				</figure><!-- .slider-image -->
+				<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">
 				<div class="entry-container">
 					<header class="entry-header">
 						<h1 class="entry-title">
-							<a title="Permalink to '.the_title('','',false).'" href="' . get_permalink() . '">'.the_title( '<span>','</span>', false ).'</a>
+							'.the_title( '<span>','</span>', false ).'
 						</h1>
 						<div class="assistive-text">'.catchbase_page_post_meta().'</div>
 					</header>';
@@ -404,6 +409,7 @@ function catchbase_category_slider( $options ) {
 					}
 					$catchbase_category_slider .= '
 				</div><!-- .entry-container -->
+				</a>
 			</article><!-- .slides -->';
 		endwhile; 
 
