@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <section class="post-header">
-	<?php the_post_thumbnail('large'); /* Large */ ?>
+	<?php the_post_thumbnail('catchbase-slider'); /* Slider size (see catchbase-core) */ ?>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php catchbase_entry_meta(); ?>
