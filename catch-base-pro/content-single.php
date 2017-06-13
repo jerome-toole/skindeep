@@ -16,13 +16,13 @@ $options = catchbase_get_theme_options();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="post-credits">
-		<section class="alignleft">
+		<section class="alignleft align-left">
 			<h1 class="entry-title">
 				<?php the_title(); ?>
 			</h1>
 			<?php catchbase_entry_meta(); ?>
 		</section>
-		<section class="alignright">
+		<section class="alignright align-right">
 			<?php if ( skindeep_has_post_credit( 'author' ) ) : ?>
 				<h2 id="post-credits-author" class="post-credits-item">
 					<?php skindeep_get_post_credit( 'author' ); ?>
@@ -34,7 +34,7 @@ $options = catchbase_get_theme_options();
 				</h2>
 			<?php endif; ?>
 		</section>
-		<section class="alignleft">
+		<section class="alignleft align-left">
 			<div id="post-credits-date" class="post-credits-item">
 				<?php the_date('d.m.y'); ?>
 			</div>
