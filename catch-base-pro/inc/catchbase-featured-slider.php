@@ -199,7 +199,7 @@ function catchbase_post_slider( $options ) {
 				<figure class="slider-image">';
 				if ( has_post_thumbnail() ) {
 					$catchbase_post_slider .= '<a title="'.the_title('','',false).'" href="' . get_permalink() . '">
-						'. get_the_post_thumbnail( $post->ID, 'catchbase-slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-post-image cbps' ) ).'
+						'. get_the_post_thumbnail( $post->ID, 'catchbase_slider', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'attached-post-image cbps' ) ).'
 					</a>';
 				}
 				else {
