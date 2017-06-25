@@ -9,6 +9,7 @@
 function install_ithemes_support() {
     add_custom_ithemes_fields();
     install_shop_image_sizes();
+    add_shipping_to_memberships();
 }
 
 /**
@@ -102,5 +103,18 @@ function jetpack_remove_inifite_scroll_conditionally() {
     }
 }
 add_action( 'template_redirect', 'jetpack_remove_inifite_scroll_conditionally', 9);
+
+/**
+ * @brief      Adds the shipping feature to memberships
+ *
+ *             This is important as otherwise no shipping address is gathered
+ *             from a customer, nor can shipping be applied for international
+ *             customers
+ *
+ * @return     None
+ */
+function add_shipping_to_memberships() {
+    it_exchange_add_feature_support_to_product_type( 'shipping', 'membership-product-type' );
+}
 
 ?>
