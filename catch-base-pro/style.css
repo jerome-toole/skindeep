@@ -1584,8 +1584,9 @@ section.post-header {
 }
 
 section.post-header img {
-    width: 100%;
     display: block;
+    width: 100%;
+    max-width: 1500px;
 }
 
 section.post-header .entry-header {
@@ -2295,7 +2296,8 @@ caption {
 #feature-slider .cycle-slideshow img {
     display: block;
     margin: 0 auto;
-        width: 100%;
+    width: 100%;
+    max-width: 1500px;
 }
 
 #feature-slider .cycle-pager { 

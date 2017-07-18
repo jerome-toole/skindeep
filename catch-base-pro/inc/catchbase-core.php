@@ -174,7 +174,7 @@ if ( ! function_exists( 'catchbase_setup' ) ) :
 		// Add Catchbase custom image sizes
     	add_image_size( 'catchbase-featured-content', 400, 225, true); // used in Featured Content Options Ratio 16:9
 
-        add_image_size( 'catchbase-slider', 1200, 514, true); // used in Featured Slider Ratio 21:9
+        add_image_size( 'catchbase-slider', 1500, 514, true); // used in Featured Slider Ratio 21:9
 
 		//Three Archive Images
     	add_image_size( 'catchbase-featured', 780, 439, true); // used in Archive Landecape Ratio 16:9
